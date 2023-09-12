@@ -1,0 +1,1 @@
+This 'Scrap' folder is to document the typically undocumented elements of my work. That is the times when I am for example trying/learning something new, or working on a new feature, that I don't want to be included in my main project file(s) and be independent of the elements in those said files. 
