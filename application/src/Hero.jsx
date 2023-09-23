@@ -1,3 +1,5 @@
+import AiOutlineDown from "react-icons/ai";
+
 function Hero() {
     return(
         <>
@@ -11,8 +13,17 @@ function Hero() {
         <div className="max-w-fit mx-auto mt-[35vh] flex flex-col">
             <h3 className="text-white px-auto hover:cursor-pointer">Learn More about Charlemagne.</h3>
         </div>
+        <div className="hover:cursor-pointer min-w-[20px] min-h-[20px]">
+            <downIcon icon={<downIcon size="28" />}/>
+        </div>
         </>
     );
 }
+
+const downIcon = ({ icon }) => {
+    <div className="downIcon">
+      {icon}
+    </div>
+  }
 
 export default Hero;
