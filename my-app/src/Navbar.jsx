@@ -1,14 +1,14 @@
 function Navbar() {
     return (
         <>
-        <div className="Navbar">
+        <div className="Navbar color-red">
             <h1>CharlemagneDB</h1>
-            <div className="center3">
+            <div className="center3 inline-block">
                 <h3>Products</h3>
                 <h3>Docs</h3>
                 <h3>Solutions</h3>
             </div>
-            <button>Login</button>
+            <button className="inline-block">Login</button>
         </div>
         </>
     );
