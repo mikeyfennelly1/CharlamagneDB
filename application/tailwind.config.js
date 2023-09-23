@@ -4,6 +4,7 @@ module.exports = {
     "./src/App.jsx",
     "./src/Navbar.jsx",
     "./src/Hero.jsx",
+    "./src/DBAnimation.jsx",
   ],
   theme: {
     extend: {
