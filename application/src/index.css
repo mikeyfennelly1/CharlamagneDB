@@ -23,4 +23,8 @@
         font-family: "TT-Travels-Next-Light";
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Light.ttf);
     }
+    @font-face {
+        font-family: "TT-Autonomous-Mono-Reg";
+        src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
+    }
 }
