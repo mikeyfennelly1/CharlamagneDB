@@ -4,8 +4,8 @@ function DBAnimation() {
     return (
         <>
         <div className="">
-            <div className="fixed rounded-full border-2 w-[600px] h-[600px] mx-[calc(50vw-300px)] top-[calc(47vh-300px)] opacity-30
-                            sm:w-[500px] sm:h-[500px] sm:mx-[calc(50vw-250px)] sm:top-[calc(50vh-250px)]">
+            <div className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-30
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
             </div>
         </div>
         </>
