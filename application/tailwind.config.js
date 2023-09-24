@@ -6,6 +6,7 @@ module.exports = {
     "./src/Hero.jsx",
     "./src/DBAnimation.jsx",
     "./src/Page2.jsx",
+    "./src/AnimationPractice.jsx",
   ],
   theme: {
     extend: {
