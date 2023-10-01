@@ -1,5 +1,3 @@
-import AiOutlineDown from "react-icons/ai";
-
 function Hero() {
     return(
         <>
@@ -27,11 +25,5 @@ function Hero() {
         </>
     );
 }
-
-const downIcon = ({ icon }) => {
-    <div className="downIcon">
-      {icon}
-    </div>
-  }
 
 export default Hero;

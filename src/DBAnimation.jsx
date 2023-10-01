@@ -1,5 +1,4 @@
-import {  useScroll, useTransform, motion} from 'framer-motion';
-import { useRef } from 'react';
+import {  useScroll, motion} from 'framer-motion';
 
 function DBAnimation() {
     const { scrollYProgress } = useScroll();
