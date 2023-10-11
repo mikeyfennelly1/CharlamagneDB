@@ -1,4 +1,4 @@
-import {  useScroll, motion, useMotionValueEvent, useTransform} from 'framer-motion';
+import {  useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence} from 'framer-motion';
 
 function DBAnimation() {
     const { scrollYProgress, scrollY } = useScroll();
@@ -12,6 +12,26 @@ function DBAnimation() {
     return (
         <>
         <div className="">
+            {/* <motion.div style={{ scaleY: scaleProgress }}
+                        whileHover={{ scale: 1.2 }}
+                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+            </motion.div>
+            <motion.div style={{ scaleY: scaleProgress }}
+                        whileHover={{ scale: 1.2 }}
+                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+            </motion.div>
+            <motion.div style={{ scaleY: scaleProgress }}
+                        whileHover={{ scale: 1.2 }}
+                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+            </motion.div>
+            <motion.div style={{ scaleY: scaleProgress }}
+                        whileHover={{ scale: 1.2 }}
+                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+            </motion.div> */}
             <motion.div style={{ scaleY: scaleProgress }}
                         whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
