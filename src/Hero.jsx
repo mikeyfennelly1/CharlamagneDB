@@ -18,9 +18,6 @@ function Hero() {
                 <h3 className="text-white px-auto hover:cursor-pointer">
                     Learn More about Charlemagne.</h3>
             </div>
-            <div className="hover:cursor-pointer min-w-[20px] min-h-[20px]">
-                <downIcon icon={<downIcon size="28" />}/>
-            </div>
         </div>
         </>
     );
