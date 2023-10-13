@@ -11,8 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <DBAnimation />
-      <Page2/>
-      <AnimationPractice />
+      <Page2 />
     </>
   );
 }
