@@ -1,33 +1,84 @@
-import {  useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence} from 'framer-motion';
+import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
 import { useRef } from 'react';
 
 function DBAnimation() {
     const targetRef = useRef(null);
     const { scrollYProgress, scrollY } = useScroll();
-    useMotionValueEvent(scrollY, "change", (latest) => {
+    useMotionValueEvent(scrollYProgress, "change", (latest) => {
         console.log("Page scroll: ", latest)
-      })
+    })
 
 
-      const  scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
-      const positionProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
+    const scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
+    const positionProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
 
-      const y = useTransform(
+    const y2 = useTransform(
         scrollYProgress,
-        [0.1, 0.25, 0.7, 1],
-        ["0%", "-55%", "-60%", "-80%"]
-      );
+        [0.55, 0.8],
+        ["-20%", "-50%"]
+    );
+    const y1 = useTransform(
+        scrollYProgress,
+        [0.55, 0.8],
+        ["-20%", "-35%"]
+    );
+    const y0 = useTransform(
+        scrollYProgress,
+        [0.55, 0.8],
+        ["-20%", "-20%"]
+    );
+    const yMinus1 = useTransform(
+        scrollYProgress,
+        [0.55, 0.8],
+        ["-20%", "-5%"]
+    );
+    const yMinus2 = useTransform(
+        scrollYProgress,
+        [0.55, 0.8],
+        ["-20%", "10%"]
+    );
+
+
+    const opacity = useTransform(scrollYProgress, [0.25, 0.5], ["0%", "100%"])
+
+
 
     return (
         <>
-        <section ref={targetRef} className="">
-            <motion.div style={{ scaleY: scaleProgress, y }}
-                        
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-10
+            <section ref={targetRef} className="">
+                <motion.div style={{ scaleY: scaleProgress, y: yMinus2, opacity }}
+
+                    whileHover={{ scale: 1.2 }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                             sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-            </motion.div>
-        </section>
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: yMinus1, opacity }}
+
+                    whileHover={{ scale: 1.2 }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y0, opacity }}
+
+                    whileHover={{ scale: 1.2 }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y1, opacity }}
+
+                    whileHover={{ scale: 1.2 }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y2, opacity }}
+
+                    whileHover={{ scale: 1.2 }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                            sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+
+            </section>
+
         </>
     );
 }
