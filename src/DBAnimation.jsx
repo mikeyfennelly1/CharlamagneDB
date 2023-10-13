@@ -2,9 +2,9 @@ import {  useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence}
 
 function DBAnimation() {
     const { scrollYProgress, scrollY } = useScroll();
-    // useMotionValueEvent(scrollY, "change", (latest) => {
-    //     console.log("Page scroll: ", latest)
-    //   })
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        console.log("Page scroll: ", latest)
+      })
 
 
       const  scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
