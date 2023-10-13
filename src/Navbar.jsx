@@ -1,7 +1,7 @@
 function Navbar() {
     return(
         <>
-        <div className="text-white flex justify-center py-5">
+        <section className="fixed left-[20%] text-white flex mx-auto py-5">
             <div className="flex flex-wrap justify-between w-screen
                             xl:min-w-[1200px] xl:max-w-[1200px]
                             2xl:min-w-[1500px] 2xl:max-w-[1500px]
@@ -24,7 +24,7 @@ function Navbar() {
                     <h1>BM</h1>
                 </div>
             </div>
-        </div>
+        </section>
         </>
     );
 }
