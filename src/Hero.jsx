@@ -18,7 +18,7 @@ function Hero() {
         <motion.section 
         style={{ opacity } }
         ref={targetRef}
-                className="border-2 border-transparent h-[calc(100vh-60px)] bg-">
+                className="border-2 border-transparent h-[calc(100vh-60px)] min-h-[101vh]">
                 <svg className="absolute z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_276_4)">
                     <circle cx="740" cy="936" r="386" fill="#FF00D6" fill-opacity="0.2"/>
@@ -33,9 +33,9 @@ function Hero() {
                 </svg>
 
             <div className="max-w-fit mx-auto mt-[40vh] flex flex-col relative z-10">
-                <h1 className="text-3xl text-mainPink font-[TT-Travels-Next-Light] mx-auto mb-5 text-center 
-                               sm:text-5xl sm:mb-4">
-                    The emperor of all databases.</h1>
+                <h1 className="text-[5rem] text-mainPink font-[TT-Travels-Next-Light] mx-auto mb-5 text-center 
+                               sm:text-10xl sm:mb-4">
+                    The emperor of all <br />databases.</h1>
                 <h3 className="font-[TT-Autonomous-Mono-Reg] text-center text-white mx-auto text-md max-w-[800px] px-10
                                 sm:text-lg">
                     Find out for yourself why Charlemagne was voted as the most loved NoSQL database by developers in 2025.</h3>

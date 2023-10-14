@@ -1,5 +1,5 @@
 import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 function DBAnimation() {
     const targetRef = useRef(null);
@@ -37,7 +37,11 @@ function DBAnimation() {
         [0.55, 0.8],
         ["-20%", "10%"]
     );
-
+    const scaleTiming = useTransform(
+        scrollYProgress,
+        [0.8, 1],
+        [1, 1.2]
+    )
 
     const opacity = useTransform(scrollYProgress, [0.25, 0.5], ["0%", "100%"])
     const opacityH = useTransform(scrollYProgress, [0.55, 0.8], ["0%", "100%"])
@@ -49,34 +53,34 @@ function DBAnimation() {
             <h1 className="text-mainPink font-[TT-Travels-Next-Light] pl-[200px]">Ultimate Reliability</h1>
         </motion.div> */}
             {/* DISK ANIMATION */}
-            <section ref={targetRef} className="border-2">
+            <section ref={targetRef} className="border-2 min-h-[400vh]">
                 <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="fixed text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
+                    
+                    
+                    
+                    
+                    
                     <motion.div style={{ scaleY: scaleProgress, y: yMinus2, opacity }}
-                        whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>
                     <motion.div style={{ scaleY: scaleProgress, y: yMinus1, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>
                     <motion.div style={{ scaleY: scaleProgress, y: y0, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>
                     <motion.div style={{ scaleY: scaleProgress, y: y1, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>
-                    <motion.div style={{ scaleY: scaleProgress, y: y2, opacity }}
+                    <motion.div style={{ scaleY: scaleProgress, y: y2, opacity, scale: scaleTiming }}
 
-                        whileHover={{ scale: 1.2 }}
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>

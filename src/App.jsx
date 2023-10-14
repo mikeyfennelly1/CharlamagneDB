@@ -3,14 +3,15 @@ import Navbar from './Navbar.jsx';
 import Hero from './Hero.jsx';
 import DBAnimation from './DBAnimation.jsx';
 import Page2 from './Page2.jsx';
-import AnimationPractice from './AnimationPractice.jsx';
+import FeatureAnimation from './FeatureAnimation.jsx';
+
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <DBAnimation />
+      <FeatureAnimation />
       <Page2 />
     </>
   );
