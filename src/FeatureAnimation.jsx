@@ -1,9 +1,8 @@
 import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer'
 
 const FeatureAnimation = () => {
-    const { ref: blazingFast, inView: blazingFastVisible } = useInView();
+    const blazingFast = useRef(null);
     const { scrollYProgress } = useScroll({
         target: blazingFast,
         offset: ["start end", "end start",]
@@ -18,7 +17,6 @@ const FeatureAnimation = () => {
         return pos >= 0.4 ? "sticky" : "relative";
     })
 
-    console.log('blazingFastVisible', blazingFastVisible)
 
 
 
