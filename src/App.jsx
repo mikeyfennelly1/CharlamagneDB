@@ -9,14 +9,14 @@ import { useEffect } from 'react';
 
 function App() {
 
-useEffect( () => {
-  (
-    async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    }
-  )()
-}, [])
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
 
   return (
     <>
