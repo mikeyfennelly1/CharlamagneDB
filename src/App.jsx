@@ -5,14 +5,24 @@ import DBAnimation from './DBAnimation.jsx';
 import Page2 from './Page2.jsx';
 import FeatureAnimation from './FeatureAnimation.jsx';
 
+import { useEffect } from 'react';
 
 function App() {
+
+useEffect( () => {
+  (
+    async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    }
+  )()
+}, [])
+
   return (
     <>
       <Navbar />
       <Hero />
       <FeatureAnimation />
-      <Page2 />
     </>
   );
 }

@@ -13,18 +13,20 @@ const FeatureAnimation = () => {
         console.log("Page scroll: ", latest)
     });
     
-    const opacity = useTransform(scrollYProgress, [0.18, 0.2], [0, 1])
+    const opacity = useTransform(scrollYProgress, [0.4, 0.5], [0, 1])
     const position = useTransform(scrollYProgress, (pos) => {
-        return pos >= 0.225 ? "fixed" : "relative"; 
+        return pos >= 0.4 ? "sticky" : "relative";
     })
 
     console.log('blazingFastVisible', blazingFastVisible)
 
+
+
     return (
         <>
-        <section className=' min-h-[400vh]'>
-            <motion.div ref={blazingFast} style={{ opacity, position }} className=" border-2-900 min-w-100% text-white">
-                <h1 ref={blazingFast} className='text-white text-lg font-[TT-Autonomous-Mono-Reg]'>BLAZING FAST DEVELOPMENT WORKFLOW.</h1>
+        <section className="min-h-screen border-2">
+            <motion.div ref={blazingFast} style={{ opacity, position }} className="top-0 text-white">
+                <motion.h1 className='text-white text-lg font-[TT-Autonomous-Mono-Reg]'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
             </motion.div>
         </section>
         </>

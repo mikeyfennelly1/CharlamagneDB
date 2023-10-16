@@ -53,8 +53,8 @@ function DBAnimation() {
             <h1 className="text-mainPink font-[TT-Travels-Next-Light] pl-[200px]">Ultimate Reliability</h1>
         </motion.div> */}
             {/* DISK ANIMATION */}
-            <section ref={targetRef} className="border-2 min-h-[400vh]">
-                <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="fixed text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
+            <motion.section ref={targetRef} className="border-2 min-h-[400vh]">
+                <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
                     
                     
                     
@@ -84,7 +84,7 @@ function DBAnimation() {
                         className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
                     </motion.div>
-            </section>
+            </motion.section>
 
         </>
     );
