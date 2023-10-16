@@ -5,7 +5,19 @@ import DBAnimation from './DBAnimation.jsx';
 import Page2 from './Page2.jsx';
 import AnimationPractice from './AnimationPractice.jsx';
 
+import useEffect from 'react';
+
 function App() {
+
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
+
   return (
     <>
       <Navbar />
