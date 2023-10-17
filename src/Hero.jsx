@@ -7,9 +7,9 @@ function Hero() {
         target: targetRef,
         offset: ["start start", "end start"]
     })
-    useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        console.log("Page scroll: ", latest)
-    });
+    // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    //     console.log("Page scroll: ", latest)
+    // });
 
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     
