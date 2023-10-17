@@ -18,14 +18,14 @@ function Hero() {
         <motion.section 
         style={{ opacity } }
         ref={targetRef}
-                className="min-h-screen h-[calc(100vh-60px)] max-h-[90vh]">
+                className="min-h-[70vh] h-[calc(100vh-60px)] max-h-[90vh]">
                 <svg className="absolute top-[0%] z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_276_4)">
-                    <circle cx="740" cy="936" r="386" fill="#FF00D6" fill-opacity="0.2"/>
+                    <circle cx="740" cy="936" r="386" fill="#FF00D6" className='opacity-20'/>
                     </g>
                     <defs>
-                    <filter id="filter0_f_276_4" x="-196" y="0" width="1872" height="1872" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_f_276_4" x="-196" y="0" width="1872" height="1872" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                     <feGaussianBlur stdDeviation="275" result="effect1_foregroundBlur_276_4"/>
                     </filter>
