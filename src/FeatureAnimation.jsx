@@ -1,5 +1,5 @@
-import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 const FeatureAnimation = () => {
     const blazingFast = useRef(null);
@@ -22,9 +22,11 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <section className="min-h-screen border-2">
+        <section className="min-h-screen">
             <motion.div ref={blazingFast} style={{ opacity, position }} className="top-0 text-white">
-                <motion.h1 className='text-white text-lg font-[TT-Autonomous-Mono-Reg]'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
+                <motion.h1 className='text-white text-3xl font-[TT-Autonomous-Mono-Reg] max-w-fit mx-auto'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
+                <motion.h2 className='text-white text-2xl text-center max-w-[100px] mx-auto mt-[100px]'>
+                    Charlemagne is designed with speed in mind, in query simplicity, an integrated AI tool for schema creation and in response times, so that you can ship a high quality app fast.</motion.h2>
             </motion.div>
         </section>
         </>

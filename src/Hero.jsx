@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform, useMotionValueEvent} from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 function Hero() {
@@ -11,15 +11,15 @@ function Hero() {
     //     console.log("Page scroll: ", latest)
     //   })
 
-    const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.06], [1, 0]);
     
     return(
         <>
         <motion.section 
         style={{ opacity } }
         ref={targetRef}
-                className="border-2 h-[calc(100vh-60px)] max-h-[90vh]">
-                <svg className="absolute z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
+                className="min-h-screen h-[calc(100vh-60px)] max-h-[90vh]">
+                <svg className="absolute top-[0%] z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_276_4)">
                     <circle cx="740" cy="936" r="386" fill="#FF00D6" fill-opacity="0.2"/>
                     </g>

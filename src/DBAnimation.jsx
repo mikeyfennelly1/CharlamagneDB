@@ -1,9 +1,9 @@
-import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 function DBAnimation() {
     const targetRef = useRef(null);
-    const { scrollYProgress, scrollY } = useScroll();
+    const { scrollYProgress } = useScroll();
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         console.log("Page scroll: ", latest)
     })
