@@ -11,8 +11,35 @@ function Hero() {
     //     console.log("Page scroll: ", latest)
     // });
 
+     
+
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-    
+
+    const container = {
+        show: {
+            transition: {
+                staggerChildren: 0.35
+            },
+        },
+    };
+
+    const item = {
+        hidden: {
+            opacity: 0,
+            y: 200
+        }
+    }
+
+
+const Loader = ({ setLoading }) => {
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 4000);
+        return () => clearTimeout(timer);
+    });
+}
+
     return(
         <>
         <motion.section 
