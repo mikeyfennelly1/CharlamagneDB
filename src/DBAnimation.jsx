@@ -1,9 +1,9 @@
-import { useScroll, motion, useMotionValueEvent, useTransform, AnimatePresence } from 'framer-motion';
+import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 function DBAnimation() {
     const targetRef = useRef(null);
-    const { scrollYProgress, scrollY } = useScroll();
+    const { scrollYProgress } = useScroll();
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         console.log("Page scroll: ", latest)
     })
@@ -37,7 +37,11 @@ function DBAnimation() {
         [0.55, 0.8],
         ["-20%", "10%"]
     );
-
+    const scaleTiming = useTransform(
+        scrollYProgress,
+        [0.8, 1],
+        [1, 1.2]
+    )
 
     const opacity = useTransform(scrollYProgress, [0.25, 0.5], ["0%", "100%"])
     const opacityH = useTransform(scrollYProgress, [0.55, 0.8], ["0%", "100%"])
@@ -45,42 +49,42 @@ function DBAnimation() {
 
     return (
         <>
-        {/* <motion.div style={{yMinus2}}>
+            {/* <motion.div style={{yMinus2}}>
             <h1 className="text-mainPink font-[TT-Travels-Next-Light] pl-[200px]">Ultimate Reliability</h1>
         </motion.div> */}
             {/* DISK ANIMATION */}
-            <section ref={targetRef} className="border-2">
-                <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="fixed text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
-                    <motion.div style={{ scaleY: scaleProgress, y: yMinus2, opacity }}
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
-                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-                    </motion.div>
-                    <motion.div style={{ scaleY: scaleProgress, y: yMinus1, opacity }}
+            <motion.section ref={targetRef} className="border-2 min-h-[400vh]">
+                <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
 
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
-                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-                    </motion.div>
-                    <motion.div style={{ scaleY: scaleProgress, y: y0, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
-                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-                    </motion.div>
-                    <motion.div style={{ scaleY: scaleProgress, y: y1, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
-                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-                    </motion.div>
-                    <motion.div style={{ scaleY: scaleProgress, y: y2, opacity }}
 
-                        whileHover={{ scale: 1.2 }}
-                        className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+
+                <motion.div style={{ scaleY: scaleProgress, y: yMinus2, opacity }}
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
                                 sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
-                    </motion.div>
-            </section>
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: yMinus1, opacity }}
+
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y0, opacity }}
+
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y1, opacity }}
+
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+                <motion.div style={{ scaleY: scaleProgress, y: y2, opacity, scale: scaleTiming }}
+
+                    className="fixed rounded-full border-2 w-[400px] h-[400px] mx-[calc(50vw-200px)] top-[calc(47vh-200px)] opacity-50 cursor-pointer
+                                sm:w-[600px] sm:h-[600px] sm:mx-[calc(50vw-300px)] sm:top-[calc(50vh-300px)]">
+                </motion.div>
+            </motion.section>
 
         </>
     );

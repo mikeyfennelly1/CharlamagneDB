@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from './Navbar.jsx';
 import Hero from './Hero.jsx';
-import DBAnimation from './DBAnimation.jsx';
-import Page2 from './Page2.jsx';
 
-import useEffect from 'react';
+import FeatureAnimation from './FeatureAnimation.jsx';
+
+import { useEffect } from 'react';
 
 function App() {
 
@@ -21,8 +21,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <DBAnimation />
-      <Page2 />
+      <FeatureAnimation />
     </>
   );
 }
