@@ -18,7 +18,7 @@ function Hero() {
         <motion.section 
         style={{ opacity } }
         ref={targetRef}
-                className="border-2 border-transparent min-h-[70vh] h-[calc(100vh-60px)] max-h-[90vh]">
+                className="border-2 border-transparent min-h-[100vh] h-[calc(100vh-60px)] max-h-[90vh]">
                 <svg className="absolute top-[0%] z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_276_4)">
                     <circle cx="740" cy="936" r="386" fill="#FF00D6" className='opacity-20'/>
