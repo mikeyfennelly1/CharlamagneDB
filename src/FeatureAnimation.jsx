@@ -37,7 +37,7 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <motion.section ref={blazingFast} className="min-h-[200vh] border-0 border-white">
+        <motion.section ref={blazingFast} className="min-h-[200vh]">
             <motion.div style={{ opacity, position, top, marginTop}} className="left-[calc(50vw-390px)] text-white max-w-[800px] justify-center">
                 <motion.h1 className='text-white text-3xl font-[TT-Autonomous-Mono-Reg] max-w-fit mx-auto'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
                 <motion.h2 className='text-white text-2xl text-center mt-[60px]'>

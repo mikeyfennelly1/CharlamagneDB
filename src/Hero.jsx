@@ -1,50 +1,63 @@
-import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef, useEffect } from 'react';
 
-function Hero() {
+
+
+// const container = {
+//     show: {
+//       transition: {
+//         staggerChildren: 0.35,
+//       },
+//     },
+// };
+
+// const item = {
+//     hidden: { 
+//         opacity: 0,
+//         y: 200 
+//     },
+//     show: {
+//         opacity: 1,
+//         y: 0,
+//         transition: {
+//             ease: [0.6, 0.01, -0.05, 0.95],
+//             duration: 1.6,
+//         },
+//     },
+//     exit: {
+//       opacity: 0,
+//       y: -200,
+//       transition: {
+//         ease: "easeInOut",
+//         duration: 0.8,
+//     },
+// },
+// };
+
+
+
+
+function Hero() {  
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
         offset: ["start start", "end start"]
     })
+    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     // useMotionValueEvent(scrollYProgress, "change", (latest) => {
     //     console.log("Page scroll: ", latest)
     // });
 
-     
-
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-
-    const container = {
-        show: {
-            transition: {
-                staggerChildren: 0.35
-            },
-        },
-    };
-
-    const item = {
-        hidden: {
-            opacity: 0,
-            y: 200
-        }
-    }
-
-
-const Loader = ({ setLoading }) => {
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 4000);
-        return () => clearTimeout(timer);
-    });
-}
+      
 
     return(
         <>
         <motion.section 
         style={{ opacity } }
         ref={targetRef}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 3 }}
                 className="border-2 border-transparent min-h-[100vh] h-[calc(100vh-60px)] max-h-[90vh]">
                 <svg className="absolute top-[0%] z-0 left-[10%]" width="1440" height="1872" viewBox="0 0 1440 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_276_4)">
