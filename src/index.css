@@ -27,4 +27,8 @@
         font-family: "TT-Autonomous-Mono-Reg";
         src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
     }
+    @font-face {
+        font-family: "TT-Autonomous-Mono-Variable";
+        src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Variable\ Roman.ttf);
+    }
 }
