@@ -8,6 +8,7 @@ module.exports = {
     "./src/Page2.jsx",
     "./src/AnimationPractice.jsx",
     "./src/FeatureAnimation.jsx",
+    "./src/terminal.jsx",
   ],
   theme: {
     extend: {

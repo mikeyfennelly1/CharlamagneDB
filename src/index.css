@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+    /* TT Travels Next */
     @font-face {
         font-family: "TT-Travels-Next-Med";
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Medium.ttf);
@@ -24,11 +25,39 @@
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Light.ttf);
     }
     @font-face {
+        font-family: "TT-Travels-Next-Outline";
+        src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Black\ Outline\ Italic.ttf);
+    }
+
+    /* TT Autonomous Mono  */
+    @font-face {
         font-family: "TT-Autonomous-Mono-Reg";
         src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
     }
     @font-face {
         font-family: "TT-Autonomous-Mono-Variable";
         src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Variable\ Roman.ttf);
+    }
+    @font-face {
+        font-family: "TT-Autonomous-Mono-Outline";
+        src: url(../public/fonts/TT\ Autonomous\ ExtraBold\ Outline\ Trial.ttf);
+    }
+
+    /* Svelte */
+    @font-face {
+        font-family: "Svelte";
+        src: url(../public/fonts/SvelteTrial-Regular.ttf);
+    }
+
+    /* PlayfairDisplay */
+    @font-face {
+        font-family: "Playfair";
+        src: url(../public/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    }
+
+    /* Barlow */
+    @font-face {
+        font-family: "Barlow";
+        src: url(../public/fonts/BarlowCondensed-ExtraLight.ttf);
     }
 }

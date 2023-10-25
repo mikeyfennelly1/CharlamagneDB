@@ -47,12 +47,12 @@ const FeatureAnimation = () => {
         gsap.to(refs.current, {
             opacity: 1,
             ease: "none",
-            stagger: 0.1,
+            stagger: 0.05,
             scrollTrigger: {
                 trigger: container.current,
                 start: 'start',
                 end: "+=800",
-                markers: true,
+                markers: false,
                 scrub: true
             },
         })
@@ -70,7 +70,7 @@ const FeatureAnimation = () => {
     const splitLetters = (word) => {
         let letters = [];
         word.split("").forEach( (letter, index) => {
-            letters.push(<span ref={el => {refs.current.push(el)}} key={`letter_${index}`} className='opacity-20'>{letter}</span>)
+            letters.push(<span ref={el => {refs.current.push(el)}} key={`letter_${index}`} className='opacity-10'>{letter}</span>)
         })
         return letters;
     }
@@ -81,8 +81,8 @@ const FeatureAnimation = () => {
         <>
         <motion.section ref={blazingFast} className="min-h-[200vh]">
             <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] left-[calc(50vw-600px)] text-white max-w-[1200px]">
-                <motion.h1 className='text-mainPink text-5xl font-[TT-Autonomous-Mono-Reg] max-w-fit mx-auto'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-2xl text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
+                <motion.h1 className='text-mainPink text-xl font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
+                <motion.div className='text-white text-4xl text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
                     {splitWords(phrase)}
                     </motion.div>
             </motion.div>
