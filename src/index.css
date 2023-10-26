@@ -42,6 +42,12 @@
         font-family: "TT-Autonomous-Mono-Outline";
         src: url(../public/fonts/TT\ Autonomous\ ExtraBold\ Outline\ Trial.ttf);
     }
+    /* Source Code Pro */
+    @font-face {
+        font-family: "SourceCodePro-Medium";
+        src: url(../public/fonts/SourceCodePro-Medium.ttf);
+    }
+
 
     /* Svelte */
     @font-face {
