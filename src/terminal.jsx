@@ -52,24 +52,28 @@ gsap.to(yourElement, {
             </div>
             <div className='relative'>
                 <img src="../images/terminal2.png" alt="" className='inline'/>
-                    <p ref={yourElement} className='ccc font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-10 left-8'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
+                    <p ref={yourElement} className='ccc font-[SourceCodePro-Medium] text-mainPink absolute top-10 left-8'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
                     <div className='cursor h-[2px] w-2 bg-white'></div>
-                        <pre className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[130px] left-8'>
-                            const customerSchema = new cdb.Schema
-                            
-                            name: 
-                                type: String,
-                                required: true,
-                            ,
-                            subscribedToChannel: 
-                                type: String,
-                                required: true,
-                            ,
-                            subscribeDate: 
-                                type: Date,
-                                required: true,
-                                default: Date.now
-                         </pre>
+                        <p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[130px] left-8'>
+                            <span className='text-[#fffc38]'>const</span> <span className='text-[#008cff]'>customerSchema</span> <span className='text-white'>=</span> <span className='text-[#fffc38]'>new</span> cdb.<span className='text-[#00bd74]'>Schema</span> <span className='text-[#ff9900]'>&#123;</span>
+                            <br />
+                            <span className='ml-8'>name<span className='text-white'>:</span> <span className='text-[#fffc38]'>&#123;</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
+                            <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
+
+                            <span className='ml-8'>subscribedToChannel<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
+                            <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
+
+                            <span className='ml-8'>subscribeDate<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span> Date<span className='text-white'>,</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
+                                <span className='ml-16'><span className='text-[#00bbff]'>default</span><span className='text-white'>:</span>  Date<span className='text-white'>.</span>now<br /></span>
+                            <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span></span>
+                            <span className='block text-[#ff9900]'>&#125;</span>
+                         </p>
             </div>
         </motion.div>
         </>
