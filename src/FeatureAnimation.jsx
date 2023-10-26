@@ -19,7 +19,7 @@ const FeatureAnimation = () => {
         useMotionValueEvent(scrollYProgress, "change", (latest) => {
             if (latest <= 0.333550382549243) {
                 setPosition('absolute')
-                setTop('133vh')
+                setTop('100vh')
                 console.log(latest + " " + position + "= absolute")
             }
             else if (latest > 0.333550382549243) {
@@ -27,6 +27,11 @@ const FeatureAnimation = () => {
                 setTop('33vh')
                 setMarginTop('0%')
                 console.log(latest + " " + position + "= fixed")
+            }
+            if (latest > 0.7) {
+                setPosition('relative')
+                setTop('73vh')
+                console.log(latest + " " + position + "= relative")
             }
         });
 
@@ -79,7 +84,7 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <motion.section ref={blazingFast} className="min-h-[200vh]">
+        <motion.section ref={blazingFast} className="min-h-[100vh]">
             <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] left-[calc(50vw-600px)] text-white max-w-[1200px]">
                 <motion.h1 className='text-mainPink text-xl font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
                 <motion.div className='text-white text-4xl text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
