@@ -62,7 +62,7 @@ function Hero() {
         // animate={{ opacity: 1, y: 0 }}
         // transition={{ delay: 1, duration: 3 }}
                 className="border-2 border-transparent min-h-[100vh] h-[calc(100vh-60px)] max-h-[90vh] items-center">
-                <motion.svg 
+                {/* <motion.svg 
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
                 transition={{ delay: 2, duration: 3 }} 
@@ -77,19 +77,19 @@ function Hero() {
                     <feGaussianBlur stdDeviation="275" result="effect1_foregroundBlur_276_4"/>
                     </filter>
                     </defs>
-                </motion.svg>
+                </motion.svg> */}
 
             <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 3 }}
-            className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
-                <div className='grid grid-rows-3 max-w-[1500px] mx-auto w-[100%] text-[7.5rem] text-mainPink font-[TT-Travels-Next-Light] block flex-wrap '>
+            className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[20vh]">
+                <div className='grid grid-rows-3 mx-auto w-[100%] text-[12.5rem] max-w-[75vw] text-mainPink font-[TT-Travels-Next-Light] block flex-wrap '>
                         <div className='pb-[50px] block'>The emperor </div>
                         <div className='pb-[50px] block mx-auto'>of all</div>   
                         <div className='pb-[50px] block ml-auto'>databases.</div>
                 </div>
-                <div className='flex justify-center flex-col'>
+                <div className='flex justify-center flex-col max-h-[200px] mt-[200px]'>
                     <div className='App font-[TT-Autonomous-Mono-Reg] text-center text-white mx-auto text-md max-w-[1500px] px-10 block max-w-[1000px] min-h-[60px]
                                     sm:text-lg'>
                         <Typewriter
@@ -109,10 +109,10 @@ function Hero() {
                         Try For Free
                     </button>
                 </div>
-            <div className="max-w-fit mx-auto flex flex-col mt-[10vh] opacity-60">
+            {/* <div className="max-w-fit mx-auto flex flex-col mt-[10vh] opacity-60">
                 <h3 className="text-white px-auto hover:cursor-pointer">
                     Learn More about Charlemagne.</h3>
-            </div>
+            </div> */}
             </motion.div>
         </motion.section>
         </>
