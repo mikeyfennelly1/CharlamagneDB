@@ -7,7 +7,7 @@ module.exports = {
     "./src/DBAnimation.jsx",
     "./src/Page2.jsx",
     "./src/AnimationPractice.jsx",
-    "./src/FeatureAnimation.jsx",
+    "./src/2.jsx",
     "./src/terminal.jsx",
   ],
   theme: {

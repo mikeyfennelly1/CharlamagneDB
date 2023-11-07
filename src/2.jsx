@@ -28,9 +28,9 @@ const FeatureAnimation = () => {
                 setMarginTop('0%')
                 console.log(latest + " " + position + "= fixed")
             }
-            if (latest > 0.7) {
+            if (latest > 0.5) {
                 setPosition('relative')
-                setTop('73vh')
+                setTop('33vh')
                 console.log(latest + " " + position + "= relative")
             }
         });
@@ -52,12 +52,12 @@ const FeatureAnimation = () => {
         gsap.to(refs.current, {
             opacity: 1,
             ease: "none",
-            stagger: 0.05,
+            stagger: 0.5,
             scrollTrigger: {
                 trigger: container.current,
-                start: 'start',
+                start: '-=800',
                 end: "+=800",
-                markers: false,
+                markers: true,
                 scrub: true
             },
         })
@@ -75,7 +75,7 @@ const FeatureAnimation = () => {
     const splitLetters = (word) => {
         let letters = [];
         word.split("").forEach( (letter, index) => {
-            letters.push(<span ref={el => {refs.current.push(el)}} key={`letter_${index}`} className='opacity-10'>{letter}</span>)
+            letters.push(<span ref={el => {refs.current.push(el)}} key={`letter_${index}`} className='opacity-20'>{letter}</span>)
         })
         return letters;
     }
@@ -85,9 +85,9 @@ const FeatureAnimation = () => {
     return (
         <>
         <motion.section ref={blazingFast} className="min-h-[100vh]">
-            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] left-[calc(50vw-600px)] text-white max-w-[1200px]">
-                <motion.h1 className='text-mainPink text-xl font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-4xl text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
+            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] ml-[20%] text-white max-w-[70vw]">
+                <motion.h1 className='text-mainPink text-[3rem] font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
+                <motion.div className='text-white text-[7.5rem] text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
                     {splitWords(phrase)}
                     </motion.div>
             </motion.div>

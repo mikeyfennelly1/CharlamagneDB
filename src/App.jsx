@@ -2,10 +2,11 @@ import './App.css';
 import Navbar from './Navbar.jsx';
 import Hero from './Hero.jsx';
 
-import FeatureAnimation from './FeatureAnimation.jsx';
+import FeatureAnimation from './2.jsx';
 import Terminal from './terminal.jsx';
 
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 function App() {
 
@@ -20,10 +21,6 @@ function App() {
   }, [])
 
   //////////////////////////// MOUSE
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  })
 
   return (
     <>
