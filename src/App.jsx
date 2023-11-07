@@ -5,12 +5,10 @@ import Hero from './Hero.jsx';
 import FeatureAnimation from './2.jsx';
 import Terminal from './terminal.jsx';
 
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 function App() {
 
-  //////////////////////////// SCROLL smoothing
   useEffect( () => {
     (
       async () => {
@@ -19,8 +17,6 @@ function App() {
       }
     )()
   }, [])
-
-  //////////////////////////// MOUSE
 
   return (
     <>

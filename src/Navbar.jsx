@@ -1,9 +1,12 @@
 function Navbar() {
     return(
         <>
-        <section className="fixed top-0 text-white py-5 z-20 bg-black bg-opacity-70  w-screen mx-[]">
-            <div className="flex flex-wrap justify-between">
-                <div className="flex items-center w-[200px] justify-start pl-20">
+        <section className="fixed top-0 ml-[calc(50vw-750px)] text-white py-5 z-20 bg-black bg-opacity-70">
+            <div className="flex flex-wrap justify-between w-screen
+                            xl:min-w-[1200px] xl:max-w-[1200px]
+                            2xl:min-w-[1500px] 2xl:max-w-[1500px]
+                            ">
+                <div className="flex items-center w-[200px] justify-start">
                     <h1 className="font-[TT-Travels-Next-Med] text-mainPink">CharlemagneDB</h1>
                 </div>
                 <div className="gap-20 bg-[#212121] px-7 h-10 rounded-md hidden pb-0 max-h-10
