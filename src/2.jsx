@@ -28,9 +28,9 @@ const FeatureAnimation = () => {
                 setMarginTop('0%')
                 console.log(latest + " " + position + "= fixed")
             }
-            if (latest > 0.5) {
+            if (latest > 0.64) {
                 setPosition('relative')
-                setTop('33vh')
+                setTop('62vh')
                 console.log(latest + " " + position + "= relative")
             }
         });
@@ -85,9 +85,9 @@ const FeatureAnimation = () => {
     return (
         <>
         <motion.section ref={blazingFast} className="min-h-[100vh]">
-            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] ml-[20%] text-white max-w-[70vw]">
+            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] ml-[30%] text-white max-w-[40vw]">
                 <motion.h1 className='text-mainPink text-[3rem] font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-[7.5rem] text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
+                <motion.div className='text-white text-[3rem] text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
                     {splitWords(phrase)}
                     </motion.div>
             </motion.div>

@@ -1,7 +1,7 @@
 function Navbar() {
     return(
         <>
-        <section className="fixed top-0 ml-[calc(50vw-750px)] text-white py-5 z-20 bg-black bg-opacity-70">
+        <section className="fixed top-0 ml-[calc(50vw-750px)] text-white py-5">
             <div className="flex flex-wrap justify-between w-screen
                             xl:min-w-[1200px] xl:max-w-[1200px]
                             2xl:min-w-[1500px] 2xl:max-w-[1500px]

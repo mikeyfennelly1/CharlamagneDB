@@ -9,6 +9,9 @@ module.exports = {
     "./src/AnimationPractice.jsx",
     "./src/2.jsx",
     "./src/terminal.jsx",
+    "./src/4.jsx",
+    "./src/5.jsx",
+    "./src/6.jsx",
   ],
   theme: {
     extend: {
