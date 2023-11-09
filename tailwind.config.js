@@ -12,6 +12,7 @@ module.exports = {
     "./src/4.jsx",
     "./src/5.jsx",
     "./src/6.jsx",
+    "./src/8.jsx",
   ],
   theme: {
     extend: {

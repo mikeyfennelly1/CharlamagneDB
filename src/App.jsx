@@ -6,6 +6,7 @@ import Terminal from './terminal.jsx';
 import Four from './4.jsx'
 import Five from './5.jsx'
 import Six from './6.jsx'
+import Eight from './8.jsx'
 
 import { useEffect } from 'react';
 
@@ -29,6 +30,7 @@ function App() {
       <Four />
       <Five />
       <Six />
+      <Eight />
     </>
   );
 }
