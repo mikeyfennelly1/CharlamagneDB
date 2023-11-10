@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import HeroSVG from './heroSVG';
 
 
 // const container = {
@@ -62,7 +63,7 @@ function Hero() {
         // animate={{ opacity: 1, y: 0 }}
         // transition={{ delay: 1, duration: 3 }}
                 className="border-2 border-transparent min-h-[100vh] h-[calc(100vh-60px)] max-h-[90vh] items-center">
-                <motion.svg 
+                {/* <motion.svg 
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
                 transition={{ delay: 2, duration: 3 }} 
@@ -77,42 +78,50 @@ function Hero() {
                     <feGaussianBlur stdDeviation="275" result="effect1_foregroundBlur_276_4"/>
                     </filter>
                     </defs>
-                </motion.svg>
+                </motion.svg> */}
 
             <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 3 }}
             className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
-                <div className='grid grid-rows-3 max-w-[1500px] mx-auto w-[100%] text-[7.5rem] text-mainPink font-[TT-Travels-Next-Light] block flex-wrap '>
-                        <div className='pb-[50px] block'>The emperor </div>
-                        <div className='pb-[50px] block mx-auto'>of all</div>   
-                        <div className='pb-[50px] block ml-auto'>databases.</div>
+
+                <HeroSVG className='absolute z-2'/>
+
+                <div className='grid grid-rows-3 w-[1600px] mx-auto w-[100%] text-[7.5rem] text-white font-[TT-Travels-Next-Light] block font-bold flex-wrap'>
+                        <div className='pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
+                        <div className='pb-[50px] block mx-auto'>OF ALL</div>   
+                        <div className='pb-[50px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></div>
                 </div>
                 <div className='flex justify-center flex-col'>
-                    <div className='App font-[TT-Autonomous-Mono-Reg] text-center text-white mx-auto text-md max-w-[1500px] px-10 block max-w-[1000px] min-h-[60px]
-                                    sm:text-lg'>
-                        <Typewriter
-                            options={{
-                                delay: 50,
-                                pauseFor: 1500,
-                            }}
-                            onInit={(typewriter) => {
-                                typewriter.typeString("Find out for yourself why Charlemagne was voted as the most loved NoSQL database by developers in 2025.")
-                                .start();
-                            }}
-                        />
+                    <div className='border-[#F00] w-[1600px] mx-auto'>
+                        <div className='App font-[TT-Autonomous-Mono-Reg] text-white mx-auto text-md max-w-fit block max-w-[1000px] min-h-[60px] opacity-80
+                                        sm:text-lg'>
+                            <Typewriter
+                                options={{
+                                    delay: 50,
+                                    pauseFor: 1500,
+                                }}
+                                className=''
+                                onInit={(typewriter) => {
+                                    typewriter.typeString("Find out for yourself why Charlemagne was voted as the most loved NoSQL database by developers in 2025.")
+                                    .start();
+                                }}
+                            />
                         </div>
-                    <button className="font-[TT-Autonomous-Mono-Reg] text-white text-center border-2 rounded-full mt-5 py-1 px-3
+                    </div>                    
+
+
+                    <button className="font-[TT-Autonomous-Mono-Reg] text-white text-center border-2 border-mainPink rounded-full mt-5 py-1 px-3
                                     sm:text-lg sm:py-2 sm:px-5 sm:mt-7 sm:mx-auto
-                                    hover:bg-white hover:text-black hover:font-black">
+                                    hover:bg-white hover:text-black hover:font-black hover:border-white">
                         Try For Free
                     </button>
                 </div>
-            <div className="max-w-fit mx-auto flex flex-col mt-[10vh] opacity-60">
+            {/* <div className="max-w-fit mx-auto flex flex-col mt-[10vh] opacity-60">
                 <h3 className="text-white px-auto hover:cursor-pointer">
                     Learn More about Charlemagne.</h3>
-            </div>
+            </div> */}
             </motion.div>
         </motion.section>
         </>
