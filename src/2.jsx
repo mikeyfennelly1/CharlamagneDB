@@ -57,7 +57,6 @@ const FeatureAnimation = () => {
                 trigger: container.current,
                 start: '-=800',
                 end: "+=800",
-                markers: true,
                 scrub: true
             },
         })

@@ -5,14 +5,43 @@ import { motion } from 'framer-motion'
 
 const Five = () => {
 
-    const element01 = useRef(null)
+    const container = useRef(null)
+
+    useEffect( () => {
+        gsap.registerPlugin(ScrollTrigger);
+        createAnimations()
+    }, [])
+
+    // let tl = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: container.current,
+    //         start: '-50% center',
+    //         end: '200% center',
+    //         scrub: false,
+    //         markers: true,
+    //         toggleActions: 'onEnter onLeave onEnterBack onLeaveBack'
+    //     }
+    // })
+    const createAnimations = () => {
+        gsap.to(container.current, { 
+            x: 800,
+            scrollTrigger: {
+                trigger: container.current,
+                start: '-50% center',
+                end: '150% center',
+                markers: true,
+            }
+        })
+
+    }
+
 
     return (
         <>
             <div className="mb-[200px] mt-[200px]">
                 <div className="max-w-[1600px] mx-auto grid grid-cols-2 min-h-[500px]">
                     <div className="m-auto">
-                            <svg ref={element01} width="394" height="453" viewBox="0 0 394 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="394" height="453" viewBox="0 0 394 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="-7.45058e-09" y="0.125" width="111.36" height="105.673" transform="matrix(0.866025 0.5 -0.866025 0.5 297.45 214.101)" fill="black" stroke="#FFA800" stroke-width="0.25"/>
                             <path d="M393.488 269.957L393.488 274.317L302.591 326.767" stroke="#FFA800" stroke-width="0.25"/>
                             <rect width="111.864" height="3.98098" transform="matrix(0.866025 0.5 -2.20305e-08 1 205.714 266.991)" fill="url(#paint0_linear_295_4061)"/>
@@ -836,50 +865,27 @@ const Five = () => {
                             </svg>
 
                     </div>
-                    <div className="my-auto mx-auto">
-                        <motion.svg width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="my-auto mx-auto container border-2" style={{x: 0}} ref={container}>
+                        <svg width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             {/* base gradient */}
-                            <motion.path
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                                delay: 2,
-                            }}
+                            <path
+                            
                             d="M93.7536 182.626C64.1503 180.293 19.5832 169.359 1 99.3769V342.417H632.26V199.538C621.873 212.368 587.758 237.678 534.394 236.278C467.689 234.529 471.828 60.1577 426.547 63.6568C381.265 67.1558 370.31 214.117 353.512 215.867C336.714 217.616 331.359 170.962 291.433 172.128C251.508 173.295 237.144 26.3332 202.088 20.5014C167.031 14.6696 130.758 185.541 93.7536 182.626Z" fill="url(#paint0_linear_297_4068)"/>
 
                             {/* Second gradient overlay */}
-                            <motion.path
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                                delay: 2,
-                            }}
+                            <path
+                            
                              d="M93.7535 182.626C64.1503 180.293 19.5832 163.958 1 93.9764V342.417H426.546V63.6568C381.265 67.1558 370.31 214.117 353.512 215.867C336.714 217.616 331.358 170.962 291.433 172.128C251.508 173.295 237.144 26.3332 202.088 20.5014C167.031 14.6696 130.758 185.541 93.7535 182.626Z" fill="url(#paint1_linear_297_4068)"/>
 
                             {/* bright Pink path  */}
-                            <motion.path
-                            initial={{ pathLength: 0 }}
-                            animate={{ pathLength: 1 }}
-                            transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                            }}
+                            <path
+                            
                              d="M1 93.9764C19.5832 163.958 64.1503 180.293 93.7535 182.626C130.758 185.541 167.031 14.6696 202.088 20.5014C237.144 26.3332 251.508 173.295 291.433 172.128C331.358 170.962 336.714 217.616 353.512 215.867C370.31 214.117 381.265 67.1559 426.546 63.6568" stroke="#FF00E5" stroke-opacity="0.7"/>
 
                             {/* White line key/pointer */}
-                            <motion.path
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                                delay: 3,
-                            }}
+                            <path
+                            
                              d="M424.367 63.0735C424.367 64.5462 425.56 65.7402 427.033 65.7402C428.506 65.7402 429.7 64.5462 429.7 63.0735C429.7 61.6007 428.506 60.4068 427.033 60.4068C425.56 60.4068 424.367 61.6007 424.367 63.0735ZM426.533 63.0735V343H427.533V63.0735H426.533Z" fill="url(#paint2_linear_297_4068)" fill-opacity="0.7"/>
 
                              
@@ -897,7 +903,7 @@ const Five = () => {
                             <stop offset="1" stop-color="white" stop-opacity="0"/>
                             </linearGradient>
                             </defs>
-                        </motion.svg>
+                        </svg>
                     </div>
                 </div>
             </div>

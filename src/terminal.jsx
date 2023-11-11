@@ -18,28 +18,6 @@ const Terminal = () => {
     
     const opacity = useTransform(scrollYProgress, [0.1, 0.23], [0, 1])
 
-    ///////////////////////////////
-    
-    
-//     const words = ["Create a schema for my ecommerce store, so that I can track my customers' names, orders and locations."]
-// let cursor = gsap.to('.cursor', {opacity: 0, ease: "power2.inOut", duration: 1, repeat: -1})
-
-// let promptTL = gsap.timeline()
-
-// let masterTl = gsap.timeline()
-
-
-// words.forEach(word => {
-//     let tl = gsap.timeline({repeat: 1})
-//     tl.to('.ccc', {duration: 1, text: word})
-//     masterTl.add(tl)
-// })
-
-// const yourElement = useRef(null)
-// gsap.to(yourElement, {
-//     duration: 2,
-//     text: "This is the new text",
-//     ease: "none",
 //   });
 
     return (
@@ -56,7 +34,6 @@ const Terminal = () => {
                 <div className='relative pt-[100px]'>
                     <img src="../images/terminal2.png" alt="" className='inline'/>
                         <p className=' font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
-                        <div className='cursor h-[2px] w-2 bg-white'></div>
                             <p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8'>
                                 <span className='text-[#fffc38]'>const</span> <span className='text-[#008cff]'>customerSchema</span> <span className='text-white'>=</span> <span className='text-[#fffc38]'>new</span> cdb.<span className='text-[#00bd74]'>Schema</span> <span className='text-[#ff9900]'>&#123;</span>
                                 <br />

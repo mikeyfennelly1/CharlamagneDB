@@ -86,7 +86,7 @@ function Hero() {
             transition={{ delay: 1, duration: 3 }}
             className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
-                <HeroSVG className='absolute z-2'/>
+                <HeroSVG className='absolute z-20'/>
 
                 <div className='grid grid-rows-3 w-[1600px] mx-auto w-[100%] text-[7.5rem] text-white font-[TT-Travels-Next-Light] block font-bold flex-wrap'>
                         <div className='pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
