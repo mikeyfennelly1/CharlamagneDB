@@ -1,27 +1,18 @@
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useLayoutEffect, useRef, useEffect } from 'react'
+import { useLayoutEffect, useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const Five = () => {
 
     const container = useRef(null)
 
+
     useEffect( () => {
         gsap.registerPlugin(ScrollTrigger);
         createAnimations()
     }, [])
 
-    // let tl = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: container.current,
-    //         start: '-50% center',
-    //         end: '200% center',
-    //         scrub: false,
-    //         markers: true,
-    //         toggleActions: 'onEnter onLeave onEnterBack onLeaveBack'
-    //     }
-    // })
     const createAnimations = () => {
         gsap.to(container.current, { 
             x: 800,
@@ -32,7 +23,6 @@ const Five = () => {
                 markers: true,
             }
         })
-
     }
 
 

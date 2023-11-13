@@ -22,17 +22,19 @@ const Terminal = () => {
 
     return (
         <>
-        <motion.div ref={terminalContainer} style={{ opacity }} className='grid grid-cols-2 mx-auto max-w-[1600px]'>
-            <div className='border-2 border-mainPink grid grid-cols-2 p-[150px] min-w-[1600px] max-h-fit bg-gradient-to-b from-[#101] bg-opacity-20'>
-                 <div className='pr-[75px]'>
-                <p className='text-xl font-[TT-Travels-Next-Med] border-2 rounded-full max-w-fit text-white px-4'>AI Driven</p>
-                <h2 className='text-mainPink text-5xl pb-[50px] pt-[30px] font-[TT-Autonomous-Mono-Variable] block max-w-[500px]'>SCHEMA CREATION</h2>
+        <motion.div ref={terminalContainer} style={{ opacity }} className=' lg:mx-auto lg:max-w-[1600px]'>
+            <div className='border-2 border-mainPink max-h-fit bg-gradient-to-b from-[#101] bg-opacity-20 
+                            grid xl:grid-cols-2    lg:p-[150px]   p-[50px] 
+                            w-screen lg:min-w-[1600px]'>
+                 <div className='lg:pr-[75px]'>
+                <p className='text-xl font-[TT-Travels-Next-Med] border-2 rounded-full max-w-fit text-white px-4 mt-[50px]'>AI Driven</p>
+                <h2 className='text-mainPink text-[2rem] lg:text-5xl pb-[50px] pt-[30px] font-[TT-Autonomous-Mono-Variable] block max-w-[500px]'>SCHEMA CREATION</h2>
                 <p className='text-white text-2xl pt-[50px] font-[TT-Autonomous-Mono-Variable] inline max-w-[500px]'>The first databse to have easy query prompting through the command line. We have integrated generative AI to build schemas for you from the ground up, so you can spend less time doing and more time delivering.</p>
             </div>
 
             {/* RIGHT HAND SIDE TERMINAL */}
-                <div className='relative pt-[100px]'>
-                    <img src="../images/terminal2.png" alt="" className='inline'/>
+                <div className='relative py-[80px] lg:block'>
+                    <img src="../images/terminal2.png" alt="" className='inline min-h-[600px]'/>
                         <p className=' font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
                             <p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8'>
                                 <span className='text-[#fffc38]'>const</span> <span className='text-[#008cff]'>customerSchema</span> <span className='text-white'>=</span> <span className='text-[#fffc38]'>new</span> cdb.<span className='text-[#00bd74]'>Schema</span> <span className='text-[#ff9900]'>&#123;</span>

@@ -83,14 +83,18 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <motion.section ref={blazingFast} className="min-h-[100vh]">
-            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] ml-[30%] text-white max-w-[40vw]">
-                <motion.h1 className='text-mainPink text-[3rem] font-[TT-Autonomous-Mono-Variable] font-thin leading max-w-fit self-left'>BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-[3rem] text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit'>
+        <motion.div ref={blazingFast} className="min-h-[100vh]">
+            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] mx-auto text-white mx-[50px]
+            lg:max-w-[40vw]">
+                <motion.h1 className='text-mainPink  font-[TT-Autonomous-Mono-Variable] font-thin max-w-fit
+                                    text-[1.9rem] lg:text-[3rem]'>
+                    BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
+                <motion.div className='text-white text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit
+                                        text-[1.5rem] lg:text-[3rem]'>
                     {splitWords(phrase)}
                     </motion.div>
             </motion.div>
-        </motion.section>
+        </motion.div>
 
         </>
     );

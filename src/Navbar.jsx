@@ -1,7 +1,8 @@
 function Navbar() {
     return(
         <>
-        <section className="sticky top-0 text-white max-w-screen">
+        <section className="hidden md:block 
+        sticky top-0 text-white max-w-screen">
             <div className="flex flex-wrap justify-between w-screen py-5 bg-gradient-to-b from-[#000] bg-opacity-80 absolute z-10">
                 <div className="flex items-center w-[200px] justify-start">
                     <h1 className="font-[TT-Travels-Next-Med] text-mainPink ml-[100px]">CharlemagneDB</h1>
