@@ -15,6 +15,7 @@ module.exports = {
     "./src/7.jsx",
     "./src/8.jsx",
     "./src/heroSVG.jsx",
+    "./src/serverSVG.jsx",
   ],
   theme: {
     extend: {
