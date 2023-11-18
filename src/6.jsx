@@ -7,13 +7,13 @@ const Six = () => {
                                     lg:text-[1.3rem] lg:mx-auto">
                         Companies using Charlemagne as their Primary DB
                     </div>
-                    <div className="border-2 max-h-[600px]">
-            <img className="borer-2 border-green max-h-[250px] inline" src="../images/companyLogos/aws-logo 1.png" alt="" />
-            <img className="borer-2 border-green max-h-[80px] inline" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
-            <img className="borer-2 border-green max-h-[100px] inline" src="../images/companyLogos/intelLogo 1.png" alt="" />
-            <img className="borer-2 border-green max-h-[250px] inline" src="../images/companyLogos/openaiLogo 1.png" alt="" />
-            <img className="borer-2 border-green max-h-[100px] inline" src="../images/companyLogos/shopifyLogo 1.png" alt="" />
-            <img className="borer-2 border-green max-h-[200px] inline" src="../images/companyLogos/youtubeLogo 1.png" alt="" />
+                    <div className=" min-h-[400px] grid grid-cols-4 items-center mt-[100px]">
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/intelLogo 1.png" alt="" />
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/shopifyLogo 1.png" alt="" />
+            <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/youtubeLogo 1.png" alt="" />
                     </div>
                 </div>
             </div>
