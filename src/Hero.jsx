@@ -34,7 +34,7 @@ function Hero() {
                 <HeroSVG/>
 
                 <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw]
-                text-[1.9rem]
+                text-[1.8rem]
                 sm:text-[3rem]
                 md:text-[4.5rem]
                 lg:mx-auto 

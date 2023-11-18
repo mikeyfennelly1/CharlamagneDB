@@ -5,7 +5,7 @@ const Eight = () => {
                 <div className="min-h-[200px] mx-auto grid grid-cols-1  max-w-[3000px] my-[100px]
                                 xl:grid-cols-2 ">
                     <div className="mx-[30px] lg:ml-[100px]">
-                        <div className="text-black font-[TT-Travels-Next-Med] text-[2rem] my-[50px] mb-[150px]
+                        <div className="text-black font-[TT-Travels-Next-Med] text-[1.5rem] my-[50px] mb-[150px]
                                         2xl:text-[3rem] lg:text-[2rem]">
                             Subscribe to the Charlemagne newsletter to stay up-to-date with the latest releases.
                         </div>

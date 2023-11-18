@@ -89,7 +89,9 @@ const FeatureAnimation = () => {
                 <motion.h1 className='text-mainPink font-[TT-Autonomous-Mono-Variable] font-thin max-w-fit text-[1rem]
                                     text-[1.9rem] 2xl:text-[3rem]'>
                     BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit text-[1.5rem] 2xl:text-[3rem]'>
+                <motion.div className='text-white text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit text-[1rem] 
+                md:text-[1.5rem]
+                2xl:text-[3rem]'>
                     {splitWords(phrase)}
                 </motion.div>
             </motion.div>
