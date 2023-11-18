@@ -2,8 +2,8 @@ const HeroSVG = () => {
     return (
         <>
             <svg
-             className="absolute  pointer-events-none scale-300 hidden
-             lg:block left-[calc(50vw-350px)] top-[700px]"
+             className="absolute pointer-events-none scale-300 hidden max-w-screen
+            left-[calc(50vw-350px)] top-[700px]"
              width="729" height="517" viewBox="0 0 729 517" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M728 63V457.5" stroke="url(#paint0_linear_315_17)"/>
                 <path d="M1 445.5L1 51" stroke="url(#paint1_linear_315_17)"/>

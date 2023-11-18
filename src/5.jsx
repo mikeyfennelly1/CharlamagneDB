@@ -22,7 +22,7 @@ const Five = () => {
                 trigger: container.current,
                 start: '-50% center',
                 end: '150% center',
-                markers: true,
+                // markers: true,
             }
         })
     }
@@ -30,7 +30,7 @@ const Five = () => {
 
     return (
         <>
-            <div className="mb-[200px] mt-[200px]">
+            <div className="mb-[200px] mt-[200px] max-w-screen overflow-x-hidden">
                 <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 min-h-[500px]">
                     <div className="m-auto">
                             <serverSVG />

@@ -23,7 +23,7 @@ function Hero() {
         <motion.section 
         style={{ opacity } } 
         ref={targetRef}
-        className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px]">
+        className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px] overflow-hidden">
 
             <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -31,10 +31,10 @@ function Hero() {
             transition={{ delay: 1, duration: 3 }}
             className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
-                <HeroSVG className='absolute z-20'/>
+                <HeroSVG/>
 
                 <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw]
-                text-[2.5rem]
+                text-[1.9rem]
                 sm:text-[3rem]
                 md:text-[4.5rem]
                 lg:mx-auto 

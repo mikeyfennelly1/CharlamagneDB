@@ -24,6 +24,7 @@ function App() {
 
   return (
     <>
+    <div className='max-w-screen overflow-x-hidden'>
       <Navbar />
       <Hero />
       <FeatureAnimation />
@@ -33,6 +34,7 @@ function App() {
       <Six />
       <Seven />
       <Eight />
+    </div>
     </>
   );
 }

@@ -22,8 +22,8 @@ const Terminal = () => {
 
     return (
         <>
-        <motion.div ref={terminalContainer} style={{ opacity }} className=' lg:mx-auto lg:max-w-[1600px]'>
-            <div className='border-2 border-mainPink max-h-fit bg-gradient-to-b from-[#101] bg-opacity-20 
+        <motion.div ref={terminalContainer} style={{ opacity }} className=' lg:mx-auto lg:max-w-[1600px] max-w-screen'>
+            <div className='border-2 border-mainPink max-h-fit max-w-[1600px] bg-gradient-to-b from-[#101] bg-opacity-20 
                             grid xl:grid-cols-2    lg:p-[150px]   p-[50px] 
                             w-screen lg:min-w-[1600px]'>
                  <div className='lg:pr-[75px]'>
