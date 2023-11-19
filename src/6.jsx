@@ -8,35 +8,25 @@ const Six = () => {
 
     const component1 = useRef(null)
 
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({ repeat: -1 });
 
     tl.to(".image1", {
+        duration: 1.5,
         x: -50,
         y: 0,
         opacity: 0,
-        duration: 1.5,
-        ease: 'ease-in',
-    }, ">");
+    });
     tl.to(".image1", {
+        duration: 1.5,
         x: 0,
         y: 0,
         opacity: 1,
-        duration: 1.5,
-        ease: 'ease-in',
     }, ">");
     tl.to(".image1", {
+        duration: 1.5,
         x: 0,
         y: -50,
-        opacity: 0,
-        duration: 1.5,
-        ease: 'ease-in'
-    }, ">");
-    tl.to(".image1", {
-        x: -50,
-        y: 0,
-        opacity: 0,
-        duration: 1.5,
-        ease: 'ease-in'
+        opacity: 0
     }, ">");
 
 
@@ -49,7 +39,7 @@ const Six = () => {
                         Companies using Charlemagne as their Primary DB
                     </div>
                     <div className=" min-h-[400px] grid grid-cols-4 items-center my-[150px]">
-            <img ref={component1} className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
+            <img className="image1  borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
             <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
             <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/intelLogo 1.png" alt="" />
             <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
