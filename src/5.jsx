@@ -1,7 +1,7 @@
 import {gsap} from 'gsap';
 import { useEffect } from 'react'
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-
+import ServerSVG from './serverSVG.jsx'
 
 gsap.registerPlugin(DrawSVGPlugin);
 
@@ -62,7 +62,7 @@ const Five = () => {
             <div className="mb-[200px] mt-[200px] max-w-screen overflow-x-hidden">
                 <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 min-h-[500px]">
                     <div className="m-auto">
-                            <serverSVG />
+                            <ServerSVG />
                     </div>
                     <div className="my-auto mx-auto container" style={{x: 0}}>
                         <svg width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
