@@ -8,32 +8,36 @@ const Six = () => {
     
     useEffect( () => {
         gsap.registerPlugin(ScrollTrigger);
-        createAnimations()
+        createAnimationsA()
     }, [])
     
-    const createAnimations = () => {
+    const createAnimationsA = () => {
         const tl = gsap.timeline({
             onComplete: function () {
               tl.restart();
             }
           });
         tl.to(".image1", {
-            duration: 1.5,
+            duration: 0.6,
             autoAlpha: 0,
             x: 0,
             y: 0,
+            ease: "power4.out",
         });
         tl.to(".image1", {
-            duration: 1.5,
+            duration: 0.6,
             autoAlpha: 1,
             x: 50,
             y: 0,
+            ease: "power4.out",
         }, ">");
         tl.to(".image1", {
-            duration: 1.5,
+            delay: 5,
+            duration: 0.6,
             autoAlpha: 0,
             x: 50,
             y: -50,
+            ease: "power4.in",
         }, ">");
     }
 
