@@ -8,18 +8,36 @@ const Six = () => {
     
     useEffect( () => {
         gsap.registerPlugin(ScrollTrigger);
-        createAnimations1()
-        createAnimations2()
-        createAnimations3()
+        const delayTime1 = 0;
+        const delayTime2 = 7200;
+        const delayTime3 = 7200 * 2;
+
+        (setTimeout(() => {
+            createAnimations1()
+        }, delayTime1));
+
+        (setTimeout(() => {
+            createAnimations2()
+        }, delayTime2));
+        (setTimeout(() => {
+            createAnimations3()
+        }, delayTime3));
+
+
     }, [])
     
+
+
+
     const createAnimations1 = () => {
         const tl = gsap.timeline({
             onComplete: function () {
+                
               tl.restart();
             }
           });
         tl.to(".image1", {
+            delay: 14.4,
             autoAlpha: 0,
             duration: 0.6,
             x: -250,
@@ -56,6 +74,7 @@ const Six = () => {
             }
           });
         tl.to(".image2", {
+            delay: 14.4,
             autoAlpha: 0,
             duration: 0.6,
             x: -250,
@@ -92,6 +111,7 @@ const Six = () => {
             }
           });
         tl.to(".image3", {
+            delay: 14.4,
             autoAlpha: 0,
             duration: 0.6,
             x: -250,
@@ -132,7 +152,8 @@ const Six = () => {
                                     lg:text-[1.3rem] lg:mx-auto">
                         Companies using Charlemagne as their Primary DB
                     </div>
-                    <div className="overflow-hidden min-h-[400px] grid grid-cols-4 items-center my-[150px]">
+                    <div className="overflow-hidden min-h-[150px] items-center my-[150px] relative">
+                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
                             </div>
@@ -145,8 +166,9 @@ const Six = () => {
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
                             </div>
+                        </div>
 
-
+                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/shopifyLogo 1.png" alt="" />
                             </div>
@@ -159,7 +181,10 @@ const Six = () => {
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bostonScientificLogo.png" alt="" />
                             </div>
+                        </div>
                         
+
+                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/deloitteLogo.png" alt="" />
                             </div>
@@ -172,6 +197,7 @@ const Six = () => {
                             <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/asosLogo.png" alt="" />
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
