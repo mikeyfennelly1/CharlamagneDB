@@ -1,33 +1,42 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const Six = () => {
 
-    const component1 = useRef(null)
+    
+    useEffect( () => {
+        gsap.registerPlugin(ScrollTrigger);
+        createAnimations()
+    }, [])
+    
+    const createAnimations = () => {
+        const tl = gsap.timeline({
+            onComplete: function () {
+              tl.restart();
+            }
+          });
+        tl.to(".image1", {
+            duration: 1.5,
+            autoAlpha: 0,
+            x: 0,
+            y: 0,
+        });
+        tl.to(".image1", {
+            duration: 1.5,
+            autoAlpha: 1,
+            x: 50,
+            y: 0,
+        }, ">");
+        tl.to(".image1", {
+            duration: 1.5,
+            autoAlpha: 0,
+            x: 50,
+            y: -50,
+        }, ">");
+    }
 
-    const tl = gsap.timeline({ repeat: -1 });
-
-    tl.to(".image1", {
-        duration: 1.5,
-        x: -50,
-        y: 0,
-        opacity: 0,
-    });
-    tl.to(".image1", {
-        duration: 1.5,
-        x: 0,
-        y: 0,
-        opacity: 1,
-    }, ">");
-    tl.to(".image1", {
-        duration: 1.5,
-        x: 0,
-        y: -50,
-        opacity: 0
-    }, ">");
 
 
     return (
@@ -39,10 +48,10 @@ const Six = () => {
                         Companies using Charlemagne as their Primary DB
                     </div>
                     <div className=" min-h-[400px] grid grid-cols-4 items-center my-[150px]">
-            <img className="image1  borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
-            <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
-            <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/intelLogo 1.png" alt="" />
-            <img className="image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
+            <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
+            <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
+            <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/intelLogo 1.png" alt="" />
+            <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
             <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/shopifyLogo 1.png" alt="" />
             <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/youtubeLogo 1.png" alt="" />
             <img className="borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/jpMorganChaseLogo.png" alt="" />
