@@ -70,6 +70,9 @@ const GraphSVG = () => {
 
         
         const b2Tl = new gsap.timeline()
+            b2Tl.from('.background2', {
+                opacity: 0,
+            })
             b2Tl.to('.background2', {
                 delay: 5,
                 duration: 2,
