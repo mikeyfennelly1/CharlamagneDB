@@ -5,9 +5,11 @@ import HeroSVG from './heroSVG';
 import gsap from 'gsap';
 import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
 import TextPlugin from 'gsap/TextPlugin';
+import SplitText from 'gsap/SplitText';
 
 gsap.registerPlugin(ScrambleTextPlugin) 
 gsap.registerPlugin(TextPlugin)
+gsap.registerPlugin(SplitText) 
 
 
 function Hero() {  
@@ -26,6 +28,14 @@ function Hero() {
           ease: 'none'
         });
     })
+
+    var split = new SplitText("#ID", {type: "chars"});
+    gsap.from(split.chars, {
+      duration: 1, 
+      y: 100, 
+      autoAlpha: 0, 
+      stagger: 0.05
+    });
 
     return(
         <>

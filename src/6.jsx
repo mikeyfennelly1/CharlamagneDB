@@ -152,49 +152,49 @@ const Six = () => {
                                     lg:text-[1.3rem] lg:mx-auto">
                         Companies using Charlemagne as their Primary DB
                     </div>
-                    <div className="overflow-hidden min-h-[150px] items-center my-[150px] relative">
-                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                    <div className="overflow-hidden min-h-[200px] items-center mb-[100px] mt-[70px] lg:my-[150px] mx-[30px] relative">
+                        <div className='grid grid-cols-2 lg:grid-cols-4 py-[20px] absolute max-w-[1600px] min-w-[100%]'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/aws-logo 1.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bloomberg-logo-white 1.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/intelLogo 1.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/openaiLogo 1.png" alt="" />
                             </div>
                         </div>
 
-                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                        <div className='grid grid-cols-2 lg:grid-cols-4 py-[20px] absolute max-w-[1600px] min-w-[100%]'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/shopifyLogo 1.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/youtubeLogo 1.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/jpMorganChaseLogo.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/bostonScientificLogo.png" alt="" />
                             </div>
                         </div>
                         
 
-                        <div className='grid grid-cols-4 absolute max-w-[1600px] min-w-[100%]'>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                        <div className='grid grid-cols-2 lg:grid-cols-4 py-[20px] absolute max-w-[1600px] min-w-[100%]'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/deloitteLogo.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image2 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/stripeLogo.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image1 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/salesForceLogo.png" alt="" />
                             </div>
-                            <div className='max-w overflow-hidden max-w-[250px] mx-auto'>
+                            <div className='max-w mx-[10px] overflow-hidden max-w-[250px] mx-auto'>
                                 <img className="opacity-0 image3 borer-2 border-green max-h-[100px] max-h-[100px] inline mx-auto pb-[50px]" src="../images/companyLogos/asosLogo.png" alt="" />
                             </div>
                         </div>

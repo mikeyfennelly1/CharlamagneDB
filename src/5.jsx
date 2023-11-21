@@ -83,13 +83,13 @@ const Five = () => {
     
     return (
         <>
-            <div className="mb-[200px] mt-[200px] max-w-screen overflow-x-hidden">
+            <div className="lg:mb-[200px] mt-[200px] max-w-screen overflow-x-hidden">
                 <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 min-h-[500px]">
-                    <div className="m-auto">
+                    <div className="mb-[100px] mx-[50px]">
                             <ServerSVG />
                     </div>
-                    <div className="my-auto mx-auto container" style={{x: 0}}>
-                        <svg width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="my-auto mx-auto container mb-[100px]" style={{x: 0}}>
+                        <svg className='mx-auto scale-90' width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             {/* base gradient */}
                             <path
