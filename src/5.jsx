@@ -8,7 +8,14 @@ gsap.registerPlugin(DrawSVGPlugin);
 const Five = () => {
     
     useEffect( () => {
-        const mainlineTl = new gsap.timeline()
+        const mainlineTl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '.draw-mainLine',
+                start: 'top 90%',
+                end: 'bottom 90%',
+                scrub: false,
+            }
+        })
             mainlineTl.to('.draw-mainLine', {
                 duration: 0,
                 autoAlpha: 1,
@@ -21,7 +28,14 @@ const Five = () => {
                 drawSVG: "100%",
             }, '>')
 
-        const keyTl = new gsap.timeline()
+        const keyTl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '.opacityIn',
+                start: 'top 90%',
+                end: 'bottom 90%',
+                scrub: false,
+            }
+        })
             keyTl.to('.draw-key', {
                 duration: 0,
                 opacity: "0%"
@@ -33,7 +47,17 @@ const Five = () => {
             }, '>')
 
         
-        const b1Tl = new gsap.timeline()
+        const b1Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '.opacityIn',
+                start: 'top 90%',
+                end: 'bottom 90%',
+                scrub: false,
+            }
+        })
+            b1Tl.from('.background1', {
+                opacity: 0
+            })
             b1Tl.to('.background1', {
                 delay: 4,
                 duration: 0,

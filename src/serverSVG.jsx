@@ -14,8 +14,8 @@ const ServerSVG = () => {
         const cableLines = new gsap.timeline({
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top center',
-                end: 'bottom center',
+                start: 'top 90%',
+                end: 'bottom 90%',
                 scrub: false,
                 markers: true
             }
@@ -30,8 +30,8 @@ const ServerSVG = () => {
                 ease: "power4.inOut"
             })
             cableLines.to('.cableLines', {
-                delay: 2,
-                duration: 2,
+                delay: 1,
+                duration: 1,
                 opacity: 1,
                 drawSVG: "100%",
                 ease: "power4.inOut"
@@ -41,8 +41,8 @@ const ServerSVG = () => {
             paused: true,
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top center',
-                end: 'bottom center',
+                start: 'top 90%',
+                end: 'bottom 90%',
                 scrub: false,
                 markers: true
             }
@@ -55,7 +55,7 @@ const ServerSVG = () => {
             })
             opacityInTl.to('.opacityIn', {
                 opacity: 1,
-                delay: 3,
+                delay: 1,
                 duration: 3,
             })
     }, [])
