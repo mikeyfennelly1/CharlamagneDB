@@ -14,10 +14,9 @@ const ServerSVG = () => {
         const cableLines = new gsap.timeline({
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top 90%',
-                end: 'bottom 90%',
+                start: 'top 100%',
+                end: 'bottom 100%',
                 scrub: false,
-                markers: true
             }
         })
             cableLines.from('.cableLines', {
@@ -41,10 +40,9 @@ const ServerSVG = () => {
             paused: true,
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top 90%',
-                end: 'bottom 90%',
+                start: 'top 100%',
+                end: 'bottom 100%',
                 scrub: false,
-                markers: true
             }
         })
             opacityInTl.from('.opacityIn', {

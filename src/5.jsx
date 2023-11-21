@@ -11,8 +11,8 @@ const Five = () => {
         const mainlineTl = new gsap.timeline({
             scrollTrigger: {
                 trigger: '.draw-mainLine',
-                start: 'top 90%',
-                end: 'bottom 90%',
+                start: 'top 100%',
+                end: 'bottom 100%',
                 scrub: false,
             }
         })
@@ -31,8 +31,8 @@ const Five = () => {
         const keyTl = new gsap.timeline({
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top 90%',
-                end: 'bottom 90%',
+                start: 'top 100%',
+                end: 'bottom 100%',
                 scrub: false,
             }
         })
@@ -50,8 +50,8 @@ const Five = () => {
         const b1Tl = new gsap.timeline({
             scrollTrigger: {
                 trigger: '.opacityIn',
-                start: 'top 90%',
-                end: 'bottom 90%',
+                start: 'top 100%',
+                end: 'bottom 100%',
                 scrub: false,
             }
         })

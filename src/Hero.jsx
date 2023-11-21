@@ -2,7 +2,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import HeroSVG from './heroSVG';
+import gsap from 'gsap';
+import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
+import TextPlugin from 'gsap/TextPlugin';
 
+gsap.registerPlugin(ScrambleTextPlugin) 
+gsap.registerPlugin(TextPlugin)
 
 
 function Hero() {  
@@ -13,10 +18,14 @@ function Hero() {
     })
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-    new Typewriter('#typewriter', {
-        autoStart: true,
-        delay: 5,
-      });      
+    useEffect( () => {
+        gsap.to('.typewriter', {
+          delay: 0,
+          duration: 8, 
+          text: "Find out for yourself why Charlemagne was voted as the most loved NoSQL database by developers in 2025.",
+          ease: 'none'
+        });
+    })
 
     return(
         <>
@@ -26,8 +35,8 @@ function Hero() {
         className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px] overflow-hidden">
 
             <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 3 }}
             className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
@@ -45,19 +54,8 @@ function Hero() {
                 </div>
                 <div className='flex justify-center flex-col'>
                     <div className='border-[#F00] mx-auto'>
-                        <div className='App font-[TT-Autonomous-Mono-Reg] text-white mx-auto text-md max-w-fit block max-w-[1000px] min-h-[60px] opacity-80 text-center
-                                        sm:text-lg'>
-                            <Typewriter
-                                options={{
-                                    delay: 50,
-                                    pauseFor: 1500,
-                                }}
-                                className=''
-                                onInit={(typewriter) => {
-                                    typewriter.typeString("Find out for yourself why Charlemagne was voted as the most loved NoSQL database by developers in 2025.")
-                                    .start();
-                                }}
-                            />
+                        <div className='typewriter text-[1.3rem] App font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] min-h-[60px] opacity-80 text-center
+                                        sm:text-[1.3rem]'>
                         </div>
                     </div>                    
 
