@@ -101,9 +101,8 @@ const Terminal = () => {
 
                 <div className='relative py-[80px] lg:block text-[0.8rem] max-w-screen'>
                     <img src="../images/terminal3.png" alt="" className='terminal max-w-screen lg:max-w-[700px] inline min-h-[500px] lg:min-h-[600px]'/>
-                        <p className=' font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8 max-w-[700px] font-bold'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
-                            <p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8 cdb-more'></p>
-                            <p className='cdb-more2'></p>
+                        <p className=' text-[0.7rem] sm:text-[1rem] font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8 max-w-[700px] font-bold'>cdb prompt: <span className=' text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
+                            <p className='text-[0.7rem] sm:text-[1rem] response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8 cdb-more'></p>
                 </div>
             </div>
            

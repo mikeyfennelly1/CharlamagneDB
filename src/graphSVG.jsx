@@ -84,7 +84,7 @@ const GraphSVG = () => {
 
     return (
         <>
-                    <div className="scale-75 xl:scale-100 relative">
+                    <div className="scale-75 hidden lg:block xl:scale-100 relative">
                         <svg className='' width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             {/* base gradient */}

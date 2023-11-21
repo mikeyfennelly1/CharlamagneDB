@@ -52,12 +52,12 @@ function Hero() {
 
                 <HeroSVG/>
 
-                <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw]
+                <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw] min-h-[00px]
                 text-[1.8rem]
                 sm:text-[3rem]
                 md:text-[4.5rem]
                 lg:mx-auto 
-                2xl:text-[7.5rem] xl:bg-red'>
+                xl:text-[7.5rem] xl:bg-red'>
                         <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
                         <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>OF ALL</div>   
                         <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></div>
@@ -65,7 +65,7 @@ function Hero() {
                 <div className='flex justify-center flex-col'>
                     <div className='border-[#F00] mx-auto'>
                         <div className='typewriter text-[1.3rem] App font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] min-h-[60px] opacity-80 text-center
-                                        sm:text-[1.3rem]'>
+                                        sm:text-[1.3rem] min-h-[100px]'>
                         </div>
                     </div>                    
 

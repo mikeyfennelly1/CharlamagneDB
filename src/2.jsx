@@ -83,7 +83,7 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <motion.div ref={blazingFast} className="min-h-[100vh] px-auto max-w-screen mb-[150px]">
+        <motion.div ref={blazingFast} className="min-h-[100vh] px-auto max-w-screen mb-[150px] lg:mb-0">
             <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px text-white left-[calc max-w-screen (50vw-800px)] max-w-[80vw] left-[10vw]
             3xl:max-w-[1600px]">
                 <motion.h1 className='text-mainPink font-[TT-Autonomous-Mono-Variable] font-thin max-w-fit text-[1rem]
