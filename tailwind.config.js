@@ -21,7 +21,8 @@ module.exports = {
     "./src/Loco-serverSVG.jsx",
     "./src/loco-2.jsx",
     "./src/loco-4.jsx",
-    "./src/login.jsx"
+    "./src/login.jsx",
+    "./src/pricing1.jsx"
   ],
   theme: {
     extend: {
