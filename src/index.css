@@ -48,6 +48,19 @@
         src: url(../public/fonts/SourceCodePro-Medium.ttf);
     }
 
+    /* Inter  */
+    @font-face {
+        font-family: "Inter-Reg";
+        src: url(../public/fonts/Inter-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Inter-Med";
+        src: url(../public/fonts/Inter-Medium.ttf);
+    }
+    @font-face {
+        font-family: "Inter-Bold";
+        src: url(../public/fonts/Inter-Bold.ttf);
+    }
 
     /* Svelte */
     @font-face {

@@ -9,6 +9,7 @@ import Six from './6.jsx'
 import Seven from './7.jsx'
 import Eight from './8.jsx'
 import Loco from './loco.jsx'
+import Login from './login.jsx'
 
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route exact path='/loco'>
           <Loco/>
+        </Route>
+        <Route exact path='/login'>
+          <Login/>
         </Route>
       </Switch>
     </Router>
