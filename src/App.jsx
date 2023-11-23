@@ -11,6 +11,7 @@ import Eight from './8.jsx'
 import Loco from './loco.jsx'
 
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
 
@@ -25,18 +26,27 @@ function App() {
 
   return (
     <>
-    <div className='max-w-screen overflow-x-hidden'>
-      <Navbar />
-      <Hero />
-      <FeatureAnimation />
-      <Terminal />
-      <Four />
-      <Five />
-      <Six />
-      <Seven />
-      <Eight />
-    </div>
-      <Loco/>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <div className='max-w-screen overflow-x-hidden'>
+            <Navbar />
+            <Hero />
+            <FeatureAnimation />
+            <Terminal />
+            <Four />
+            <Five />
+            <Six />
+            <Seven />
+            <Eight />
+          </div>
+        </Route>
+        <Route exact path='/loco'>
+          <Loco/>
+        </Route>
+      </Switch>
+    </Router>
+
     </>
   );
 }

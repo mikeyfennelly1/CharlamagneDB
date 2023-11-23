@@ -1,7 +1,7 @@
 function Navbar() {
     return(
         <>
-        <section className=" md:block z-100
+        <section className=" md:block z-100 absolute
          top-0 text-white max-w-screen">
             <div className="z-9999 absolute flex flex-wrap justify-between w-screen py-5 bg-gradient-to-b from-[#000] bg-opacity-80">
                 <div className="flex items-center w-[200px] justify-start ml-[100px]">
@@ -10,9 +10,9 @@ function Navbar() {
                 </div>
                 <div className="gap-20 bg-[#212121] px-7 h-10 rounded-md hidden pb-0 max-h-10
                                 lg:flex lg:items-center">
-                    <h3 className="hover:cursor-pointer inline px-7">Products</h3>
-                    <h3 className="hover:cursor-pointer inline px-7">Solutions</h3>
-                    <h3 className="hover:cursor-pointer inline px-7">Docs</h3>
+                    <a href='/loco' className="hover:cursor-pointer inline px-7">Loco</a>
+                    <a href="/pricing" className="hover:cursor-pointer inline px-7">Pricing</a>
+                    <a href="/docs" className="hover:cursor-pointer inline px-7">Docs</a>
                 </div>
                 <div className="items-center w-[200px] justify-end hidden self-center
                                 lg:block">
