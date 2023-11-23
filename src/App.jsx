@@ -8,6 +8,7 @@ import Five from './5.jsx'
 import Six from './6.jsx'
 import Seven from './7.jsx'
 import Eight from './8.jsx'
+import Loco from './loco.jsx'
 
 import { useEffect } from 'react';
 
@@ -35,6 +36,7 @@ function App() {
       <Seven />
       <Eight />
     </div>
+      <Loco/>
     </>
   );
 }
