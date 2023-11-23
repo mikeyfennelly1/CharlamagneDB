@@ -18,7 +18,9 @@ module.exports = {
     "./src/serverSVG.jsx",
     "./src/loco.jsx",
     "./src/Hero-Loco.jsx",
-    "./src/Loco-serverSVG.jsx"
+    "./src/Loco-serverSVG.jsx",
+    "./src/loco-2.jsx",
+    "./src/loco-4.jsx"
   ],
   theme: {
     extend: {
