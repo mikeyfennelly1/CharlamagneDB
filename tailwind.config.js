@@ -23,7 +23,9 @@ module.exports = {
     "./src/loco-4.jsx",
     "./src/login.jsx",
     "./src/pricing1.jsx",
-    "./src/pricingCards-Enterprise.jsx"
+    "./src/pricingCards-Enterprise.jsx",
+    "./src/pricingCards-Loco.jsx",
+    "./src/pricing2.jsx"
   ],
   theme: {
     extend: {
