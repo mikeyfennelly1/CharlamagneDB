@@ -1,8 +1,10 @@
 import gsap from 'gsap'
 import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 
 gsap.registerPlugin(MorphSVGPlugin)
+gsap.registerPlugin(ScrollTrigger)
 
 const Loco2 = () => {
 
@@ -12,65 +14,110 @@ const Loco2 = () => {
         MorphSVGPlugin.convertToPath("#circle3");
         MorphSVGPlugin.convertToPath("#circle4");
         MorphSVGPlugin.convertToPath("#circle5");
-        const c1Tl = new gsap.timeline()
+        const c1Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#oval1',
+                scrub: false,
+                start: "70% 70%",
+                end: "70% 70%",
+            }
+        })
         c1Tl.to("#circle1", {
             duration: 1.5,
-            delay: 2,
+            delay: 0,
             y: 120,
             morphSVG: "#oval1",
+            ease: "power4.in",
         })
         c1Tl.to("#circle1", {
             duration: 1.5,
             y: 0,
+            ease: "power4.out"
         }, '>')
 
 
-        const c2Tl = new gsap.timeline()
+        const c2Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#oval1',
+                scrub: false,
+                start: "70% 70%",
+                end: "70% 70%",
+            }
+        })
         c2Tl.to("#circle2", {
             duration: 1.5,
-            delay: 2,
+            delay: 0,
             y: 120,
             morphSVG: "#oval1",
+            ease: "power4.in",
         })
         c2Tl.to("#circle2", {
             duration: 1.5,
             y: 60,
+            ease: "power4.out"
         }, '>')
 
-        const c3Tl = new gsap.timeline()
+        const c3Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#oval1',
+                scrub: false,
+                start: "70% 70%",
+                end: "70% 70%",
+            }
+        })
         c3Tl.to("#circle3", {
             duration: 1.5,
-            delay: 2,
+            delay: 0,
             y: 120,
             morphSVG: "#oval1",
+            ease: "power4.in",
         })
         c3Tl.to("#circle3", {
             duration: 1.5,
             y: 120,
+            ease: "power4.out"
         }, '>')
 
-        const c4Tl = new gsap.timeline()
+        const c4Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#oval1',
+                scrub: false,
+                start: "70% 70%",
+                end: "70% 70%",
+            }
+        })
         c4Tl.to("#circle4", {
             duration: 1.5,
-            delay: 2,
+            delay: 0,
             y: 120,
             morphSVG: "#oval1",
+            ease: "power4.in",
         })
         c4Tl.to("#circle4", {
             duration: 1.5,
             y: 180,
+            ease: "power4.out"
         }, '>')
 
-        const c5Tl = new gsap.timeline()
+        const c5Tl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#oval1',
+                scrub: false,
+                start: "70% 70%",
+                end: "70% 70%",
+            }
+        })
         c5Tl.to("#circle5", {
             duration: 1.5,
-            delay: 2,
+            delay: 0,
             y: 120,
             morphSVG: "#oval1",
+            ease: "power4.in",
         })
         c5Tl.to("#circle5", {
             duration: 1.5,
             y: 240,
+            ease: "power4.out"
         }, '>')
     })
 

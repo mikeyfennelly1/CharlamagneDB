@@ -32,7 +32,6 @@ const Six = () => {
     const createAnimations1 = () => {
         const tl = gsap.timeline({
             onComplete: function () {
-                
               tl.restart();
             }
           });
