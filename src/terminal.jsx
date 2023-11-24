@@ -37,7 +37,7 @@ const Terminal = () => {
             duration: 5,
             ease: 'none',
             text: {
-                value: "<br><br>const customerSchema = new cdb.Schema {<br>        name: {<br>              type: String, <br>              required: true, <br>        }, <br>        subscribedToChannel: {<br>              type: String,<br>                  required: true,<br>        },<br>        subscribeDate: {<br>               type: Date,<br>               required: true,<br>               default: Date.now<br>        },<br>}",
+                value: "<br><br>const customerSchema = new cdb.Schema {<br>        name: {<br>              type: String, <br>              required: true, <br>        }, <br>        subscribedToChannel: {<br>              type: String,<br>              required: true,<br>        },<br>        subscribeDate: {<br>               type: Date,<br>               required: true,<br>               default: Date.now<br>        },<br>}",
                 preserveSpaces: true,
                 newClass: "text-white"
             }

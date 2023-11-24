@@ -1,9 +1,8 @@
 function Navbar() {
     return(
         <>
-        <section className=" md:block z-100 absolute
-         top-0 text-white max-w-screen">
-            <div className="z-9999 absolute flex flex-wrap justify-between w-screen py-5 bg-gradient-to-b from-[#000] bg-opacity-80">
+        <section className=" md:block z-100 absolute top-0 text-white">
+            <div className="z-9999 absolute flex flex-wrap justify-between max-w-[100vw] w-[99vw] py-5 bg-black">
                 <div className="flex items-center w-[200px] justify-start ml-[100px]">
                     <img className="max-h-[30px]" src="./images/Vector 88.png" alt="" />
                     <a href='/' className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink ml-[10px]">CharlemagneDB</a>

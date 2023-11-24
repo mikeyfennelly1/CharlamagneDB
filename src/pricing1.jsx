@@ -6,7 +6,7 @@ import CardsEnterPrise from './pricingCards-Enterprise.jsx';
 const Pricing1 = () => {
     
     const activeClasses = "cursor-pointer max-w-[400px] py-[30px] px-[50px] rounded-[10px] bg-[#0F0F0F] border-2 border-mainPink";
-    const inactiveClasses = "cursor-pointer max-w-[400px] py-[30px] px-[50px] rounded-[10px] bg-[#0F0F0F]";
+    const inactiveClasses = "cursor-pointer max-w-[400px] py-[30px] px-[50px] rounded-[10px] border-2 border-[#0F0F0F] bg-[#0F0F0F]";
 
     const [activityStateA, setActivityStateA] = useState(activeClasses)
     const [activityStateB, setActivityStateB] = useState(inactiveClasses)
