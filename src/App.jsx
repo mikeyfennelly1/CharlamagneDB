@@ -11,6 +11,7 @@ import Eight from './8.jsx'
 import Loco from './loco.jsx'
 import Login from './login.jsx'
 import Pricing from './pricing.jsx'
+import Docs from './docs.jsx'
 
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route exact path='/pricing'>
           <Pricing/>
+        </Route>
+        <Route exact path='/docs'>
+          <Docs/>
         </Route>
       </Switch>
     </Router>
