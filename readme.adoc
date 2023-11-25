@@ -1,0 +1,59 @@
+:toc:
+:toclevels: 4
+:figma: https://www.figma.com/file/p2GoUK7mae7S8yYjfoeBfS/All-Project-Designs?type=design&node-id=0-1&mode=design&t=TevO0FNjbMAdNY7z-0
+:sass: https://sass-lang.com
+:adobexd: https://www.adobe.com/ie/creativecloud.html
+:tailwindcss: https://tailwindcss.com/
+:cockroachdb: https://www.cockroachlabs.com/
+:scaleai: https://scale.com/
+
+= CharlemagneDB
+
+== What is CharlemagneDB?
+
+CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant processes in database configuration for most simple applications.
+
+=== No, what is CharlemagneDB, really?
+
+CharlemagneDB is my first project with React.
+
+I wanted to build something that was cooler and more animated than my previous project and use more technologies. I decided to build the UI with React, TailwindCSS, GSAP (Green Sock Animation Platform) and a sprinkle of Framer Motion.
+
+For more on this, see link:#my-goals-and-learnings-while-making-charlemagnedb[My goals and learnings while making CharlemagneDB].
+
+== My goals and learnings while making CharlemagneDB
+
+As this was my second project I decided to get a bit more elaborate in the technologies that I was using, but also in the design.  Therefore I kept it to the following:
+
+1. *Design*: Learn how to use {adobexd}[AdobeXD] and {figma}[Figma] to plan out and designing a website for a product like CharlemagneDB.
+2. *Development*: Learn how to use React, GSAP and TailwindCSS to implement the {adobexd}[AdobeXD] and {figma}[Figma] design.
+
+
+=== Designing with Figma
+
+Making CharlemagneDB was a good experience all the way from design to development. I already had a lot of experience with graphics because of my experience with the Adobe suite, so designing this on {adobexd}[AdobeXD] and {figma}[Figma] was a breeze.
+
+=== The Importance of Deign
+
+Something very important that I have learned in the process of making CharlemagneDB is the importance of design, and the realisation of how much time it saves. Something that I had caught myself doing at times in this project is that I would try developing the website only referrencing my imagination. When I did decide to design it the pace of development was much faster.
+
+==== Figma Source
+
+The sources for the {figma}[Figma] design are in the link:./figma[figma] folder.
+
+== My experience using React
+
+I decided to use React to develop this frontend as I wanted to start learning a framework and saw that React was the most popular framework in professional settings, so this was an obvious choice. I found that it was more concise developing in react but the real power of it is all of the plugins that come with react and that you can reuse components. It is very encouraging to see the pace of development with the use of a framework.
+
+=== Implementing with Tailwind
+
+I decided to develop the CSS/styling in {tailwindCSS}[TailwindCSS] because I wanted to expand on my skills, but also on the pace of my development. Tailwind was very helpful in it's simplicity, but I found that at the same time it isn't as organised as SASS or CSS and at times it can be harder to debug the code. Overall though I feel that even though it makes some ugly HTML, overall it is a useful tool and definitely sped up much of the design process.
+
+=== GSAP
+
+When I started making this website I really wanted to use animations more, and animations were one of the main reasons I was excited to start this project and wanted to learn as much as I could from the jump. I started making this project in Framer Motion because their documentation was better at the time which would have been important from the perspective of a beginner. I was soon turned off it however when I saw that IT was rasterizing a dom element when I wanted to change it's shape. When GSAP decided to make a new website however with new documentation right when I needed an alternative, I decided to make the switch. When I used GSAP I preferred it right away. Particularly for the ease of building scroll animations in comparison to Framer Motion, with the markers and also with the fact that you can use percentages. The concept of timelines also appealed to me because it is similar to keyframes in animation softwares like After Effects and Premiere Pro which I had lots of experience in already. Generally I think it is just much more intuitive and provided more options, and also a bigger community of developers.  I used much of the GSAP platform, including timelines, scrollTrigger, the core kit, MorphSVG, DrawSVG and text animations. I feel as though I have became relatively fairly advanced in the short time that I began using it.
+
+
+== Where the idea for CharlemagneDB came from
+
+The idea for a database website came from seeing {cockroachDB}[CockroachDB] and liking the name. Then I saw the company {scaleai}[ScaleAI], and also liked their brand (ScaleAI inspired the black and purple color scheme of Charlemagne and ). The name Charlemagne came from the name of the first Holy Roman Emperor. I thought it was a cool name,  but also has some signifigance in that CharlemagneDB is supposedly "the emperor of all databases" (as seen on the website homepage).
