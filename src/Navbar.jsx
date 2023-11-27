@@ -7,15 +7,15 @@ function Navbar() {
                     <img className="max-h-[30px]" src="./images/Vector 88.png" alt="" />
                     <a href='/' className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink ml-[10px]">CharlemagneDB</a>
                 </div>
-                <div className="mx-auto gap-20 bg-[#212121] px-7 h-10 rounded-md hidden pb-0 max-h-10 max-w-fit
+                <div className="mx-auto gap-20 bg-[#212121] px-7 h-10 rounded-md hidden pb-0 max-h-10 max-w-fit font-[TT-Autonomous-Mono-Reg]
                                 lg:flex lg:items-center">
-                    <a href='/loco' className="hover:cursor-pointer inline px-7">Loco</a>
-                    <a href="/pricing" className="hover:cursor-pointer inline px-7">Pricing</a>
-                    <a href="/docs" className="hover:cursor-pointer inline px-7">Docs</a>
+                    <a href='/loco' className="hover:cursor-pointer inline px-7 hover:text-mainPink">Loco</a>
+                    <a href="/pricing" className="hover:cursor-pointer inline px-7 hover:text-mainPink">Pricing</a>
+                    <a href="/docs" className="hover:cursor-pointer inline px-7 hover:text-mainPink">Docs</a>
                 </div>
-                <div className="ml-auto items-center w-[200px] justify-end hidden self-center
+                <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
                                 lg:block">
-                    <a href="/login" className=" px-7 rounded-full">Log In</a>
+                    <a href="/login" className=" px-7 rounded-full hover:text-mainPink">Log In</a>
                 </div>
                 {/* <div className="flex justify-end items-center min-w-[200px]
                                 lg:hidden">
