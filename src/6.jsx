@@ -148,7 +148,7 @@ const Six = () => {
             <div className="">
                 <div className="max-w-[1600px] lg:mx-auto">
                     <div className="text-mainPink font-[TT-Travels-Next-Med] mx-[50px] font-thin border-2 rounded-full max-w-fit max-h-fit px-6 py-2 text-center
-                                    lg:text-[1.3rem] lg:mx-auto">
+                                    lg:text-[1.3rem] sm:mx-auto">
                         Companies using Charlemagne as their Primary DB
                     </div>
                     <div className="overflow-hidden min-h-[200px] items-center mb-[100px] mt-[70px] lg:my-[150px] mx-[30px] relative">

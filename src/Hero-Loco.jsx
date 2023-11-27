@@ -19,7 +19,7 @@ const HeroLoco = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="invisible xl:visible ">
                         <LocoServer/>
                 </div>
             </div>
