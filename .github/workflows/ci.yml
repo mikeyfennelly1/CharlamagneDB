@@ -42,7 +42,7 @@ jobs:
         git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
 
     - name: Copy website to github-pages branch
-      run: cp -ra ./build/CharlamagneDB/static/* github-pages
+      run: cp -ra ./build/* github-pages
 
 
     - name: Push github-pages branch changes
