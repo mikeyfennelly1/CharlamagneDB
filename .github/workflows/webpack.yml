@@ -34,7 +34,11 @@ jobs:
     - name: Build webpage
       run: npm run build
 
-    # - name: Use Node.js ${{ matrix.node-version }}
-    #   uses: actions/setup-node@v3
-    #   with:
-    #     node-version: ${{ matrix.node-version }}
+    - name: Push github-pages branch changes
+      run: |
+        git config --global user.email "mikeyp.fennelly@gmail.com"
+        git config --global user.name "Mikey Fennelly"
+        cd github-pages
+        git add --all
+        git commit -m "committing all"
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
