@@ -34,11 +34,11 @@ jobs:
     - name: Build webpage
       run: npm run build
 
-    - name: Push github-pages branch changes
+    - name: Push gh-pages branch changes
       run: |
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
-        cd github-pages
+        cd gh-pages
         git add --all
         git commit -m "committing all"
-        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ gh-pages
