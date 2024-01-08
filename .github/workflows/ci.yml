@@ -52,4 +52,4 @@ jobs:
         cd github-pages
         git add --all
         git commit -m "committing all"
-        git push $REPO_URL github-pages
+        git push origin github-pages
