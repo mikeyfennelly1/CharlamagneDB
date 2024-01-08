@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57993949.css",
+    "main.js": "/static/js/main.724a60d6.js",
+    "static/js/787.98651143.chunk.js": "/static/js/787.98651143.chunk.js",
+    "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
+    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
+    "static/media/TT Travels Next Trial Black Outline Italic.ttf": "/static/media/TT Travels Next Trial Black Outline Italic.88737325ee049f5337b8.ttf",
+    "static/media/TT Autonomous ExtraBold Outline Trial.ttf": "/static/media/TT Autonomous ExtraBold Outline Trial.ff2dfa2a4e216f85dc2b.ttf",
+    "static/media/SourceCodePro-Medium.ttf": "/static/media/SourceCodePro-Medium.f4fa00a9bdfab752a663.ttf",
+    "static/media/TT Autonomous Mono Trial Variable Roman.ttf": "/static/media/TT Autonomous Mono Trial Variable Roman.3a5d9af224d81ea45e6d.ttf",
+    "static/media/TT Travels Next Trial Light.ttf": "/static/media/TT Travels Next Trial Light.a02973cd887e660e85c8.ttf",
+    "static/media/TT Travels Next Trial Regular.ttf": "/static/media/TT Travels Next Trial Regular.e5e7e0eca23f64a23057.ttf",
+    "static/media/TT Travels Next Trial Bold.ttf": "/static/media/TT Travels Next Trial Bold.c526cc54fd79621f51c6.ttf",
+    "static/media/TT Travels Next Trial Medium.ttf": "/static/media/TT Travels Next Trial Medium.a53d65de3242a6e9dea2.ttf",
+    "static/media/TT Travels Next Trial Thin.ttf": "/static/media/TT Travels Next Trial Thin.6b1e9e6e988e84b4fadd.ttf",
+    "static/media/BarlowCondensed-ExtraLight.ttf": "/static/media/BarlowCondensed-ExtraLight.4faea5b95ff16cab1095.ttf",
+    "static/media/TT Autonomous Mono Trial Regular.ttf": "/static/media/TT Autonomous Mono Trial Regular.5181c511eaf7f1f3e189.ttf",
+    "static/media/SvelteTrial-Regular.ttf": "/static/media/SvelteTrial-Regular.06f43778c5005ccf8647.ttf",
+    "index.html": "/index.html",
+    "main.57993949.css.map": "/static/css/main.57993949.css.map",
+    "main.724a60d6.js.map": "/static/js/main.724a60d6.js.map",
+    "787.98651143.chunk.js.map": "/static/js/787.98651143.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57993949.css",
+    "static/js/main.724a60d6.js"
+  ]
+}
