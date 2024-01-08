@@ -1,5 +1,5 @@
 import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/all';
 import { ScrollTrigger } from 'gsap/all';
@@ -8,7 +8,6 @@ gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(ScrollTrigger)
 
 const Terminal = () => {
-    // const [position, setPosition] = useState(null)
     const terminalContainer = useRef(null)
     
     const { scrollYProgress } = useScroll({
