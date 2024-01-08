@@ -18,7 +18,6 @@ jobs:
 
     env: 
       GHA_PAT: ${{ secrets.GHA_PAT }}
-      REPO_URL: https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/
 
     steps:
     - uses: actions/checkout@v3
@@ -40,7 +39,7 @@ jobs:
 
     - name: Clone github-pages branch
       run: |
-        git clone -b github-pages $REPO_URL github-pages
+        git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
 
     - name: Copy website to github-pages branch
       run: cp -ra ./build/* github-pages
@@ -52,4 +51,4 @@ jobs:
         cd github-pages
         git add --all
         git commit -m "committing all"
-        git push origin github-pages
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
