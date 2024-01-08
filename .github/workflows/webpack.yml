@@ -16,6 +16,9 @@ jobs:
       matrix:
         node-version: [18.x]
 
+    env: 
+      GHA_PAT: ${{ secrets.GHA_PAT }}
+
     steps:
     - uses: actions/checkout@v3
 
@@ -33,6 +36,14 @@ jobs:
 
     - name: Build webpage
       run: npm run build
+
+    - name: Clone github-pages branch
+      run: |
+        git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
+   
+    - name: Copy website to github-pages branch
+      run: cp -ra ./build/CharlamagneDB/static/* github-pages
+
 
     - name: Push gh-pages branch changes
       run: |
