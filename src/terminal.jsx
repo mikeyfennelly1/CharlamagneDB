@@ -8,7 +8,7 @@ gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(ScrollTrigger)
 
 const Terminal = () => {
-    const [position, setPosition] = useState(null)
+    // const [position, setPosition] = useState(null)
     const terminalContainer = useRef(null)
     
     const { scrollYProgress } = useScroll({

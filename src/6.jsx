@@ -1,7 +1,6 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef, useEffect } from 'react';
-
+import { useEffect } from 'react';
 
 const Six = () => {
 

@@ -5,7 +5,6 @@ import Six from './6.jsx'
 import Loco2 from './loco-2.jsx';
 import Loco4 from './loco-4.jsx';
 
-import gsap from 'gsap'
 
 const Loco = () => {
     return (

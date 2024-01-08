@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import CardsLoco from './pricingCards-Loco.jsx';
-import Five from './5.jsx'
 import CardsEnterPrise from './pricingCards-Enterprise.jsx';
 
 const Pricing1 = () => {
