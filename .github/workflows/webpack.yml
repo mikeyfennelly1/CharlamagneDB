@@ -41,4 +41,4 @@ jobs:
         cd github-pages
         git add --all
         git commit -m "committing all"
-        git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
