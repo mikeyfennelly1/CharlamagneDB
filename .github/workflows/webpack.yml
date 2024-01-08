@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: 18.19.0-alpine3.18
+      image: node:18.19.0-alpine3.18
 
     strategy:
       matrix:
