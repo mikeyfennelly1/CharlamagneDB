@@ -44,7 +44,6 @@ jobs:
     - name: Copy website to github-pages branch
       run: cp -ra ./build/* github-pages
 
-
     - name: Push github-pages branch changes
       run: |
         git config --global user.email "mikeyp.fennelly@gmail.com"
