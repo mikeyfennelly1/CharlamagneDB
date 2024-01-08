@@ -40,16 +40,16 @@ jobs:
     - name: Clone github-pages branch
       run: |
         git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
-   
+
     - name: Copy website to github-pages branch
       run: cp -ra ./build/CharlamagneDB/static/* github-pages
 
 
-    - name: Push gh-pages branch changes
+    - name: Push github-pages branch changes
       run: |
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
-        cd gh-pages
+        cd github-pages
         git add --all
         git commit -m "committing all"
-        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ gh-pages
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/CharlamagneDB/ github-pages
