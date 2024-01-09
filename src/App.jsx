@@ -15,49 +15,50 @@ import Docs from './docs.jsx'
 
 // import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useEffect } from 'react';
 
 function App() {
 
-  // useEffect( () => {
-  //   (
-  //     async () => {
-  //       const LocomotiveScroll = (await import('locomotive-scroll')).default;
-  //       const locomotiveScroll = new LocomotiveScroll();
-  //     }
-  //   )()
-  // }, [])
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
 
   return (
     <>
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <div className='max-w-screen overflow-x-hidden'>
-            <Navbar />
-            <Hero />
-            <FeatureAnimation />
-            <Terminal />
-            <Four />
-            <Five />
-            <Six />
-            <Seven />
-            <Eight />
-          </div>
-        </Route>
-        <Route exact path='/loco'>
-          <Loco/>
-        </Route>
-        <Route exact path='/login'>
-          <Login/>
-        </Route>
-        <Route exact path='/pricing'>
-          <Pricing/>
-        </Route>
-        <Route exact path='/docs'>
-          <Docs/>
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <div className='max-w-screen overflow-x-hidden'>
+              <Navbar />
+              <Hero />
+              <FeatureAnimation />
+              <Terminal />
+              <Four />
+              <Five />
+              <Six />
+              <Seven />
+              <Eight />
+            </div>
+          </Route>
+          <Route exact path='/loco'>
+            <Loco/>
+          </Route>
+          <Route exact path='/login'>
+            <Login/>
+          </Route>
+          <Route exact path='/pricing'>
+            <Pricing/>
+          </Route>
+          <Route exact path='/docs'>
+            <Docs/>
+          </Route>
+        </Switch>
+      </Router>
 
     </>
   );
