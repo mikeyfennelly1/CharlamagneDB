@@ -13,7 +13,7 @@
 
 CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant processes in database configuration for most simple applications.
 
-=== No, what is Points Lab, really?
+=== No, what is CharlemagneDB, really?
 
 CharlemagneDB is my first project with React.
 
