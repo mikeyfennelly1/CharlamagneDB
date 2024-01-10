@@ -14,6 +14,7 @@ import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { constructUrl } from './utils/urlutils.js';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/CharlamagneDB">
+          <Route exact path={constructUrl('/')}>
             <div className='max-w-screen overflow-x-hidden'>
               <Navbar />
               <Hero />
@@ -34,16 +35,16 @@ function App() {
               <Eight />
             </div>
           </Route>
-          <Route exact path='/CharlamagneDB/loco'>
+          <Route exact path={constructUrl('/loco')}>
             <Loco/>
           </Route>
-          <Route exact path='/CharlamagneDB/login'>
+          <Route exact path={constructUrl('/login')}>
             <Login/>
           </Route>
-          <Route exact path='/CharlamagneDB/pricing'>
+          <Route exact path={constructUrl('/pricing')}>
             <Pricing/>
           </Route>
-          <Route exact path='/CharlamagneDB/docs'>
+          <Route exact path={constructUrl('/docs')}>
             <Docs/>
           </Route>
         </Switch>
