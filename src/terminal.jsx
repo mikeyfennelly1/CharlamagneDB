@@ -1,4 +1,4 @@
-import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
+import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/all';
