@@ -22,7 +22,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact >
+          <Route exact path="/CharlamagneDB/">
             <div className='max-w-screen overflow-x-hidden'>
               <Navbar />
               <Hero />
@@ -35,16 +35,16 @@ function App() {
               <Eight />
             </div>
           </Route>
-          <Route exact >
+          <Route exact path="/CharlamagneDB/loco">
             <Loco />
           </Route>
-          <Route exact >
+          <Route exact path="/CharlamagneDB/login">
             <Login/>
           </Route>
-          <Route exact >
+          <Route exact path="/CharlamagneDB/pricing">
             <Pricing/>
           </Route>
-          <Route exact >
+          <Route exact path="/CharlamagneDB/docs">
             <Docs/>
           </Route>
         </Switch>
