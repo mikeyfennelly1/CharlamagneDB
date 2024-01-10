@@ -14,15 +14,15 @@ import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
 
 // import { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Router>
-        <Switch>
-          <Route exact path="/">
+      {/* <Router>
+        <Switch> */}
+          {/* <Route exact path="/"> */}
             <div className='max-w-screen overflow-x-hidden'>
               <Navbar />
               <Hero />
@@ -34,21 +34,21 @@ function App() {
               <Seven />
               <Eight />
             </div>
-          </Route>
-          <Route exact path='/loco'>
+          {/* </Route>
+          <Route exact path='/loco'> */}
             <Loco/>
-          </Route>
-          <Route exact path='/login'>
+          {/* </Route>
+          <Route exact path='/login'> */}
             <Login/>
-          </Route>
-          <Route exact path='/pricing'>
+          {/* </Route>
+          <Route exact path='/pricing'> */}
             <Pricing/>
-          </Route>
-          <Route exact path='/docs'>
+          {/* </Route>
+          <Route exact path='/docs'> */}
             <Docs/>
-          </Route>
-        </Switch>
-      </Router>
+          {/* </Route> */}
+        {/* </Switch>
+      </Router> */}
 
     </>
   );
