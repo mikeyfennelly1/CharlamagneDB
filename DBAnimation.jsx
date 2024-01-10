@@ -1,16 +1,10 @@
-import { useScroll, motion, useMotionValueEvent, useTransform } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 function DBAnimation() {
     const targetRef = useRef(null);
-    const { scrollYProgress } = useScroll();
-    useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        console.log("Page scroll: ", latest)
-    })
-
 
     const scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
-    const positionProgress = useTransform(scrollYProgress, [0, 0.5], [0, 0.25]);
 
     const y2 = useTransform(
         scrollYProgress,
@@ -49,10 +43,6 @@ function DBAnimation() {
 
     return (
         <>
-            {/* <motion.div style={{yMinus2}}>
-            <h1 className="text-mainPink font-[TT-Travels-Next-Light] pl-[200px]">Ultimate Reliability</h1>
-        </motion.div> */}
-            {/* DISK ANIMATION */}
             <motion.section ref={targetRef} className="border-2 min-h-[400vh]">
                 <motion.h1 style={{ y: yMinus1, opacity: opacityH }} className="text-mainPink text-2xl font-[TT-Autonomous-Mono-Reg] mx-[calc(50vw-800px)] top-[43vh] underline font-black">Ultimate Reliability</motion.h1>
 

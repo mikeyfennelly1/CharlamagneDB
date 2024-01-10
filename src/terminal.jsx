@@ -15,10 +15,6 @@ const Terminal = () => {
         offset: ["start end", "end start",]
     });
     
-    useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        console.log(latest)
-    });
-    
     const opacity = useTransform(scrollYProgress, [0.1, 0.23], [0, 1])
 
 //   });

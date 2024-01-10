@@ -8,15 +8,13 @@ import Five from './5.jsx'
 import Six from './6.jsx'
 import Seven from './7.jsx'
 import Eight from './8.jsx'
-// import Loco from './loco.jsx'
+import Loco from './loco.jsx'
 import Login from './login.jsx'
 import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
 
-// import { useEffect } from 'react';
-// import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-// import { constructUrl } from './utils/urlutils.js';
 
 function App() {
 
@@ -38,7 +36,7 @@ function App() {
             </div>
           </Route>
           <Route exact >
-            <div>jgdijegqioj</div>
+            <Loco />
           </Route>
           <Route exact >
             <Login/>

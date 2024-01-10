@@ -20,18 +20,15 @@ const FeatureAnimation = () => {
             if (latest <= 0.333550382549243) {
                 setPosition('absolute')
                 setTop('100vh')
-                console.log(latest + " " + position + "= absolute")
             }
             else if (latest > 0.333550382549243) {
                 setPosition('fixed')
                 setTop('33vh')
                 setMarginTop('0%')
-                console.log(latest + " " + position + "= fixed")
             }
             if (latest > 0.64) {
                 setPosition('relative')
                 setTop('62vh')
-                console.log(latest + " " + position + "= relative")
             }
         });
 
