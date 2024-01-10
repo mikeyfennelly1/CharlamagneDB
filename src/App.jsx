@@ -13,8 +13,6 @@ import Login from './login.jsx'
 import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
 
-import { useEffect } from 'react';
-// import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
