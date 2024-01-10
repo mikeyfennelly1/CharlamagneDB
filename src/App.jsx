@@ -36,16 +36,16 @@ function App() {
             </div>
           {/* </Route>
           <Route exact path='/loco'> */}
-            <Loco/>
+            {/* <Loco/> */}
           {/* </Route>
           <Route exact path='/login'> */}
-            <Login/>
+            {/* <Login/> */}
           {/* </Route>
           <Route exact path='/pricing'> */}
-            <Pricing/>
+            {/* <Pricing/> */}
           {/* </Route>
           <Route exact path='/docs'> */}
-            <Docs/>
+            {/* <Docs/> */}
           {/* </Route> */}
         {/* </Switch>
       </Router> */}
