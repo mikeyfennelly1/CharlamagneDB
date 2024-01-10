@@ -36,7 +36,7 @@ function App() {
             </div>
           </Route>
           <Route exact path={constructUrl('/loco')}>
-            <Loco/>
+            <div>jgdijegqioj</div>
           </Route>
           <Route exact path={constructUrl('/login')}>
             <Login/>
