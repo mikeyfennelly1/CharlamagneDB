@@ -13,7 +13,7 @@ import Login from './login.jsx'
 import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
 
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 // import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { constructUrl } from './utils/urlutils.js';
@@ -24,7 +24,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path={constructUrl('/')}>
+          <Route exact >
             <div className='max-w-screen overflow-x-hidden'>
               <Navbar />
               <Hero />
@@ -37,16 +37,16 @@ function App() {
               <Eight />
             </div>
           </Route>
-          <Route exact path={constructUrl('/loco')}>
+          <Route exact >
             <div>jgdijegqioj</div>
           </Route>
-          <Route exact path={constructUrl('/login')}>
+          <Route exact >
             <Login/>
           </Route>
-          <Route exact path={constructUrl('/pricing')}>
+          <Route exact >
             <Pricing/>
           </Route>
-          <Route exact path={constructUrl('/docs')}>
+          <Route exact >
             <Docs/>
           </Route>
         </Switch>
