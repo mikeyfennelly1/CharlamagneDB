@@ -1,4 +1,5 @@
 import LocoServer from "./Loco-serverSVG";
+import { Link } from 'react-router-dom';
 
 const HeroLoco = () => {
     return (

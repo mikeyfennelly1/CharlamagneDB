@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
 import TextPlugin from 'gsap/TextPlugin';
 import SplitText from 'gsap/SplitText';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrambleTextPlugin) 
 gsap.registerPlugin(TextPlugin)
