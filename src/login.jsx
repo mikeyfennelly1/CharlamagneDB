@@ -11,7 +11,7 @@ const Login = () => {
                         <a href='/' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Log in to your account</h1>
-                        <h2>Don't have an account? <a className="text-mainPink" href="signup">Sign Up</a></h2>
+                        <h2>Don't have an account? <Link className="text-mainPink" to="/CharlamagneDB/signup">Sign Up</Link></h2>
                         <button className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
                             Google
                         </button>
