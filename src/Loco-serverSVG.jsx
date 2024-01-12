@@ -49,9 +49,6 @@ const LocoServer = () => {
                 opacity: 0,
             })
             opacityInTl.to('.opacityIn', {
-                duration: 0,
-            })
-            opacityInTl.to('.opacityIn', {
                 opacity: 1,
                 delay: 1,
                 duration: 3,
