@@ -53,10 +53,10 @@ const LocoServer = () => {
                 delay: 1,
                 duration: 3,
             })
-    }, [])
+    }, [gsap, DrawSVGPlugin])
 
     return (
-        <>stopOpacity
+        <>
     <div className='relative'>
         <svg className='scale-100 mx-auto left-[-20px] sm:left-[100px] md:left-[200px] absolute lg:scale-150 lg:relative lg:left-0' width="394" height="453" viewBox="0 0 394 453" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect className='opacityIn' x="-7.45058e-09" y="0.125" width="111.36" height="105.673" transform="matrix(0.866025 0.5 -0.866025 0.5 297.45 214.101)" fill="black" stroke="#FFA800" strokeWidth="0.25"/>

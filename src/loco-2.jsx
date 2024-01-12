@@ -119,7 +119,7 @@ const Loco2 = () => {
             y: 240,
             ease: "power4.out"
         }, '>')
-    })
+    }, [])
 
     return (
         <>
