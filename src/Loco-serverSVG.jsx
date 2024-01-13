@@ -53,7 +53,7 @@ const LocoServer = () => {
                 delay: 1,
                 duration: 3,
             })
-    }, [gsap, DrawSVGPlugin])
+    }, [])
 
     return (
         <>
