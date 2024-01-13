@@ -8,6 +8,8 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 const LocoServer = () => {
     
+    // console.log("LocoServer MOUNTED")
+
     useEffect( () => {
 
         gsap.registerPlugin(ScrollTrigger);
@@ -19,23 +21,23 @@ const LocoServer = () => {
                 scrub: false,
             }
         })
-            cableLines.from('.cableLines', {
-                opacity: 0,
-            })
-            cableLines.to('.cableLines', {
-                duration: 0,
-                opacity: 1,
-                drawSVG: 0,
-                ease: "power4.inOut"
-            })
-            cableLines.to('.cableLines', {
-                delay: 1,
-                duration: 1,
-                opacity: 1,
-                drawSVG: "100%",
-                ease: "power4.inOut"
-            }, '>')
-
+        cableLines.from('.cableLines', {
+            opacity: 0,
+        })
+        cableLines.to('.cableLines', {
+            duration: 0,
+            opacity: 1,
+            drawSVG: 0,
+            ease: "power4.inOut"
+        })
+        cableLines.to('.cableLines', {
+            delay: 1,
+            duration: 1,
+            opacity: 1,
+            drawSVG: "100%",
+            ease: "power4.inOut"
+        }, '>')
+        
         const opacityInTl = new gsap.timeline({
             paused: true,
             scrollTrigger: {
@@ -45,14 +47,14 @@ const LocoServer = () => {
                 scrub: false,
             }
         })
-            opacityInTl.from('.opacityIn', {
-                opacity: 0,
-            })
-            opacityInTl.to('.opacityIn', {
-                opacity: 1,
-                delay: 1,
-                duration: 3,
-            })
+        opacityInTl.from('.opacityIn', {
+            opacity: 0,
+        })
+        opacityInTl.to('.opacityIn', {
+            opacity: 1,
+            delay: 1,
+            duration: 3,
+        })
     }, [])
 
     return (
