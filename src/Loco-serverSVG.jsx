@@ -56,27 +56,29 @@ const LocoServer = () => {
             duration: 3,
         })
 
-        const opacityInTl2 = new gsap.timeline({
+
+        const changeToVisible = new gsap.timeline({
+            paused: true,
             scrollTrigger: {
-                trigger: '.opacityIn2',
+                trigger: '.changeToVisible',
                 start: 'top 100%',
                 end: 'bottom 100%',
                 scrub: false,
             }
         })
-        opacityInTl2.to('.opacityIn2', {
+        changeToVisible.to('.changeToVisible', {
             autoAlpha: 0,
         })
-        opacityInTl2.to('.opacityIn2', {
+        changeToVisible.to('.changeToVisible', {
             autoAlpha: 1,
-            delay: 1,
             duration: 0,
         })
+
     }, [])
 
     return (
         <>
-        <svg style={{opacity: 0}} className='opacityIn2 scale-100 mx-auto left-[-20px] sm:left-[100px] md:left-[200px] absolute lg:scale-150 lg:relative lg:left-0' width="394" height="453" viewBox="0 0 394 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg style={{opacity: 0, visibility: 'hidden'}} className='changeToVisible scale-100 mx-auto left-[-20px] sm:left-[100px] md:left-[200px] absolute lg:scale-150 lg:relative lg:left-0' width="394" height="453" viewBox="0 0 394 453" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect className='opacityIn' x="-7.45058e-09" y="0.125" width="111.36" height="105.673" transform="matrix(0.866025 0.5 -0.866025 0.5 297.45 214.101)" fill="black" stroke="#FFA800" strokeWidth="0.25"  style={{visibility: 'hidden'}}/>
             <path  className='cableLines' d="M393.488 269.957L393.488 274.317L302.591 326.767" stroke="#FFA800" strokeWidth="0.25" style={{visibility: 'hidden'}}/>
             <rect className='opacityIn'  x="0.108253" y="0.1875" width="111.614" height="3.75396" transform="matrix(0.866025 0.5 -2.20305e-08 1 205.728 266.8)" fill="black" stroke="#FFA800" strokeWidth="0.25" style={{visibility: 'hidden'}}/>
