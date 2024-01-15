@@ -1,4 +1,4 @@
-import gsap from 'gsap'
+import { gsap } from 'gsap'
 import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
 import { useEffect } from 'react'
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -21,7 +21,7 @@ const LocoServer = () => {
                 scrub: false,
             }
         })
-        cableLines.from('.cableLines', {
+        cableLines.to('.cableLines', {
             opacity: 0,
         })
         cableLines.to('.cableLines', {
@@ -47,7 +47,7 @@ const LocoServer = () => {
                 scrub: false,
             }
         })
-        opacityInTl.from('.opacityIn', {
+        opacityInTl.to('.opacityIn', {
             opacity: 0,
         })
         opacityInTl.to('.opacityIn', {
