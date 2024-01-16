@@ -57,3 +57,16 @@ When I started making this website I really wanted to use animations more, and a
 == Where the idea for CharlemagneDB came from
 
 The idea for a database website came from seeing {cockroachDB}[CockroachDB] and liking the name. Then I saw the company {scaleai}[ScaleAI], and also liked their brand (ScaleAI inspired the black and purple color scheme of Charlemagne and ). The name Charlemagne came from the name of the first Holy Roman Emperor. I thought it was a cool name,  but also has some signifigance in that CharlemagneDB is supposedly "the emperor of all databases" (as seen on the website homepage).
+
+
+== Some of my biggest challenges with CharlemagneDB
+=== Flash of unstyled content (FOUC) with GSAP svg animations
+
+This was a problem that I had noticed when I pushed my code to the remote and therefore Github Pages, that the animation for the server svg on the 'loco' page and on the home page weren't behaving as they were locally. The idea was to have an animation that animated this svg element in by drawing the lines in the shape from a blank screen (a lot of people would know this as a trim paths animation). However the elements that were supposed to animate just on opacity, and not stroke length weren't opaque at all on the intial render. on www.mikeyfennelly1.github.io/CharlamagneDB. Then it would animate the opacity from 1 to 0 quickly, and then perform the animation as intended.
+
+I figured out what this problem was by aggressive googling and found that others have had the same problem. The problem was that the browser renders the HTML and CSS before executing the Javascript. As svg is a native HTML element, this meant that the browser was rendering the SVG and adding the appropriate styling before executing the animation (which was of course in the JS). This gave the FOUC specified. 
+
+I found that the reason that it worked locally and not remotely was because locally it executed the process of rendering HTML and CSS, and then executing the JS much faster for some reason. When I inspected the local with the Google devtools I saw the number for the opacity change from 1 to 0, but much faster than in the remote.
+
+The solution I found:
+To add "visibility: hidden" inline styling to the containing div, and instead of animating the opacity. I changed both the opacity and the visibility with GSAP's 'autoAlpha' property. What this does is change the visibility to 'visible' once the opacity is above 0. So once the svg element initially rendered it has an opacity of 1, but a visibility of hidden. GSAP then animates this opacity down to 0 (the first keyframe), and once at the first keyframe animates it back up to 1. This in turn changes the visibility to 'visible', and the animation works as intended.

@@ -56,7 +56,6 @@ const LocoServer = () => {
             duration: 3,
         })
 
-
         const changeToVisible = new gsap.timeline({
             paused: true,
             scrollTrigger: {
