@@ -16,14 +16,20 @@ const FeatureAnimation = () => {
     const [top, setTop] = useState(null)
     const [marginTop, setMarginTop] = useState(null)
 
+    console.log("window.innerWidth:" + window.innerWidth)
+
         useMotionValueEvent(scrollYProgress, "change", (latest) => {
             if (latest <= 0.333550382549243) {
                 setPosition('absolute')
                 setTop('100vh')
             }
-            else if (latest > 0.333550382549243) {
+            else if (latest > 0.333550382549243 & window.innerWidth > 1600) {
                 setPosition('fixed')
                 setTop('33vh')
+                setMarginTop('0%')
+            } else if (latest > 0.333550382549243 & window.innerWidth < 1600) {
+                setPosition('fixed')
+                setTop('10vh')
                 setMarginTop('0%')
             }
             if (latest > 0.64) {
@@ -81,12 +87,12 @@ const FeatureAnimation = () => {
     return (
         <>
         <motion.div ref={blazingFast} className="min-h-[100vh] px-auto max-w-screen mb-[150px] flex justify-center lg:mb-0">
-            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px text-white max-w-screen (50vw-800px)] max-w-[80vw]
+            <motion.div ref={container} style={{ opacity, position, top, marginTop }} className="min-h-[400px] text-white max-w-[90vw] 
             2xl:max-w-[1600px]">
                 <motion.h1 className='text-mainPink font-[TT-Autonomous-Mono-Variable] font-thin max-w-fit text-[1rem]
-                                    text-[1.9rem] 2xl:text-[3rem]'>
+                text-[1.9rem] 2xl:text-[3rem]'>
                     BLAZING FAST DEVELOPMENT WORKFLOW.</motion.h1>
-                <motion.div className='text-white text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit text-[1rem]
+                <motion.div className='text-white text-center mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit text-[1.7rem]
                 md:text-[1.5rem]
                 2xl:text-[3rem]'>
                     {splitWords(phrase)}
