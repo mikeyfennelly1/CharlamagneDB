@@ -64,8 +64,8 @@ function Hero() {
                 </div>
                 <div className='flex justify-center flex-col'>
                     <div className='border-[#F00] mx-auto'>
-                        <div className='typewriter text-[1.3rem] App font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] min-h-[60px] opacity-80 text-center
-                                        sm:text-[1.3rem] min-h-[100px]'>
+                        <div className='typewriter text-[1rem] App font-[TT-Autonomous-Mono-Reg] text-white     mx-auto max-w-fit block max-w-[1000px] opacity-80 text-center
+                                        sm:text-[1.3rem] min-h-[120px]'>
                         </div>
                     </div>                    
 
