@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
+import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
 import {auth} from './utils/firebase'
 
 const Login = () => {
@@ -13,6 +13,17 @@ const Login = () => {
             console.log(error);
         }
     } 
+
+    //Sign in with Google
+    const githubProvider = new GithubAuthProvider();
+    const GithubLogin = async () => {
+        try {
+            const result = await signInWithPopup(auth, githubProvider)
+            console.log(result.user);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     return (
         <>
@@ -32,7 +43,9 @@ const Login = () => {
                         className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
                             Google
                         </button>
-                        <button className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
+                        <button 
+                        onClick={GithubLogin}
+                        className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
                             GitHub
                         </button>
                         <p className="text-[0.7rem] opacity-70 px-auto py-[10px]">Or with email and password.</p>
