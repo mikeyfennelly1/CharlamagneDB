@@ -4,7 +4,7 @@ import { auth } from './utils/firebase'
 
 function Navbar() {
 
-    const [user, loading] = useAuthState(auth)
+    const [user] = useAuthState(auth)
 
     return(
         <>
