@@ -30,7 +30,8 @@ function Navbar() {
                 <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
                     lg:block">
                     <Link to="/CharlamagneDB/dashboard" className=" px-7 rounded-full hover:text-mainPink max-h-[10px]">
-                        <img className='max-h-[20px]' src={user.photoURL}
+                        <h2 className='inline pr-4 text-mainPink font-semibold'>{user.displayName}</h2>
+                        <img className='max-h-[20px] inline rounded-full' src={user.photoURL}
                         alt="" />
                     </Link>
                 </div>
