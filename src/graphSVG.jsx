@@ -38,12 +38,12 @@ const GraphSVG = () => {
         })
             keyTl.to('.draw-key', {
                 duration: 0,
-                opacity: "0%"
+                autoAlpha: "0%"
             })
             keyTl.to('.draw-key', {
                 delay: 4,
                 duration: 2,
-                opacity: "100%"
+                autoAlpha: "100%"
             }, '>')
 
         
@@ -56,39 +56,57 @@ const GraphSVG = () => {
             }
         })
             b1Tl.from('.background1', {
-                opacity: 0
+                autoAlpha: 0
             })
             b1Tl.to('.background1', {
                 delay: 4,
                 duration: 0,
-                opacity: "0%",
+                autoAlpha: "0%",
             })
             b1Tl.to('.background1', {
                 duration: 2,
-                opacity: "100%",
+                autoAlpha: "100%",
             }, ">")
 
         
         const b2Tl = new gsap.timeline()
             b2Tl.from('.background2', {
-                opacity: 0,
+                autoAlpha: 0,
             })
             b2Tl.to('.background2', {
                 delay: 5,
                 duration: 2,
-                opacity: "0%",
+                autoAlpha: "0%",
             })
             b2Tl.to('.background2', {
                 duration: 2,
-                opacity: "100%",
+                autoAlpha: "100%",
             }, ">")
+
+            const changeToVisible = new gsap.timeline({
+                paused: true,
+                scrollTrigger: {
+                    trigger: '.changeToVisible',
+                    start: 'top 100%',
+                    end: 'bottom 100%',
+                    scrub: false,
+                }
+            })
+            changeToVisible.to('.changeToVisible', {
+                autoAlpha: 0,
+            })
+            changeToVisible.to('.changeToVisible', {
+                autoAlpha: 1,
+                duration: 0,
+            })
+    
     }, [])
 
 
     return (
         <>
                     <div className="scale-75 hidden lg:block xl:scale-100 relative">
-                        <svg className='' width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg style={{opacity: 0, visibility: 'hidden'}} className='changeToVisible' width="602" height="343" viewBox="0 0 602 343" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             {/* base gradient */}
                             <path

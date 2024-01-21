@@ -71,6 +71,7 @@ const FeatureAnimation = () => {
             const letters = splitLetters(word);
             body.push(<div key={`word_${index}`} className='mr-4 inline-block'>{letters}</div>)
         })
+        console.log(body)
         return body;
     }
 
