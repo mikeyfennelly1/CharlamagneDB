@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './utils/firebase'
 
 function Navbar() {
+
+    const [user, loading] = useAuthState(auth)
+
     return(
         <>
         <section className=" md:block z-1000 absolute top-0 text-white">
@@ -15,13 +20,21 @@ function Navbar() {
                     <Link to="/CharlamagneDB/pricing" className="hover:cursor-pointer inline px-7 hover:text-mainPink">Pricing</Link>
                     <Link to="/CharlamagneDB/docs" className="hover:cursor-pointer inline px-7 hover:text-mainPink">Docs</Link>
                 </div>
+                {!user && (
                 <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
                                 lg:block">
                     <Link to="/CharlamagneDB/login" className=" px-7 rounded-full hover:text-mainPink">Log In</Link>
                 </div>
-                {/* <div className="flex justify-end items-center min-w-[200px]
-                                lg:hidden">
-                </div> */}
+                )}
+                {user && (
+                <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
+                    lg:block">
+                    <Link to="/CharlamagneDB/dashboard" className=" px-7 rounded-full hover:text-mainPink max-h-[10px]">
+                        <img src={user.photoURL}
+                        alt="" />
+                    </Link>
+                </div>
+                )}
             </div>
         </section>
         </>
