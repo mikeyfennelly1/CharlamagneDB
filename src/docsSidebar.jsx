@@ -18,6 +18,11 @@ const DocsSidebar = () => {
     // some way to construct the actual document
 
     // All while linking them together
+    const [state, setState] = useState();
+
+    const clickTitle = () => {
+        setState()
+    }
 
     return (
         <>
