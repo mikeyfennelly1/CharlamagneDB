@@ -1,6 +1,19 @@
 import { Link } from 'react-router-dom';
+import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
+import {auth} from './utils/firebase'
 
 const Login = () => {
+    // Sign in with google
+    const googleProvider = new GoogleAuthProvider();
+    const GoogleLogin = async () => {
+        try {
+            const result = await signInWithPopup(auth, googleProvider)
+            console.log(result.user);
+        } catch (error) {
+            console.log(error);
+        }
+    } 
+
     return (
         <>
             <div className="bg-[#0F0F0F] min-h-screen">
@@ -14,7 +27,9 @@ const Login = () => {
                     </div>
                         <h1 className="font-[Inter-Bold]">Log in to your account</h1>
                         <h2>Don't have an account? <Link className="text-mainPink" to="/CharlamagneDB/signup">Sign Up</Link></h2>
-                        <button className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
+                        <button 
+                        onClick={GoogleLogin}
+                        className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
                             Google
                         </button>
                         <button className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[10px] rounded-[10px]">
