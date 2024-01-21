@@ -104,26 +104,26 @@ const GraphSVG = () => {
                             <path
                             id='path'
                             className='draw-mainLine stroke-[#FF00E5] opacity-0'
-                             d="M1 93.9764C19.5832 163.958 64.1503 180.293 93.7535 182.626C130.758 185.541 167.031 14.6696 202.088 20.5014C237.144 26.3332 251.508 173.295 291.433 172.128C331.358 170.962 336.714 217.616 353.512 215.867C370.31 214.117 381.265 67.1559 426.546 63.6568" stroke="#FF00E5" stroke-opacity="0.7"/>
+                             d="M1 93.9764C19.5832 163.958 64.1503 180.293 93.7535 182.626C130.758 185.541 167.031 14.6696 202.088 20.5014C237.144 26.3332 251.508 173.295 291.433 172.128C331.358 170.962 336.714 217.616 353.512 215.867C370.31 214.117 381.265 67.1559 426.546 63.6568" stroke="#FF00E5" strokeOpacity="0.7"/>
 
                             {/* White line key/pointer */}
                             <path
                             className='draw-key opacity-0'
-                             d="M424.367 63.0735C424.367 64.5462 425.56 65.7402 427.033 65.7402C428.506 65.7402 429.7 64.5462 429.7 63.0735C429.7 61.6007 428.506 60.4068 427.033 60.4068C425.56 60.4068 424.367 61.6007 424.367 63.0735ZM426.533 63.0735V343H427.533V63.0735H426.533Z" fill="url(#paint2_linear_297_4068)" fill-opacity="0.7" />
+                             d="M424.367 63.0735C424.367 64.5462 425.56 65.7402 427.033 65.7402C428.506 65.7402 429.7 64.5462 429.7 63.0735C429.7 61.6007 428.506 60.4068 427.033 60.4068C425.56 60.4068 424.367 61.6007 424.367 63.0735ZM426.533 63.0735V343H427.533V63.0735H426.533Z" fill="url(#paint2_linear_297_4068)" fillOpacity="0.7" />
 
                              
                             <defs>
                             <linearGradient id="paint0_linear_297_4068" x1="326.246" y1="-234.348" x2="270.733" y2="385.555" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FF00E5" stop-opacity="0.17"/>
-                            <stop offset="1" stop-color="#5200FF" stop-opacity="0"/>
+                            <stop stopColor="#FF00E5" stopOpacity="0.17"/>
+                            <stop offset="1" stopColor="#5200FF" stopOpacity="0"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_297_4068" x1="326.246" y1="-234.348" x2="270.732" y2="385.555" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FF00E5" stop-opacity="0.17"/>
-                            <stop offset="1" stop-color="#5200FF" stop-opacity="0"/>
+                            <stop stopColor="#FF00E5" stopOpacity="0.17"/>
+                            <stop offset="1" stopColor="#5200FF" stopOpacity="0"/>
                             </linearGradient>
                             <linearGradient id="paint2_linear_297_4068" x1="427.533" y1="63.0735" x2="427.533" y2="343" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0"/>
+                            <stop stopColor="white"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0"/>
                             </linearGradient>
                             </defs>
                         </svg>

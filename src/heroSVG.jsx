@@ -11,20 +11,20 @@ const HeroSVG = () => {
                 <path d="M727.5 516H333" stroke="url(#paint3_linear_315_17)"/>
                 <defs>
                 <linearGradient id="paint0_linear_315_17" x1="728.5" y1="63" x2="728.5" y2="457.5" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#CC00FF"/>
-                <stop offset="1" stop-color="#FFA800" stop-opacity="0"/>
+                <stop stopColor="#CC00FF"/>
+                <stop offset="1" stopColor="#FFA800" stopOpacity="0"/>
                 </linearGradient>
                 <linearGradient id="paint1_linear_315_17" x1="0.5" y1="445.5" x2="0.5" y2="51" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#CC00FF"/>
-                <stop offset="1" stop-color="#FFA800" stop-opacity="0"/>
+                <stop stopColor="#CC00FF"/>
+                <stop offset="1" stopColor="#FFA800" stopOpacity="0"/>
                 </linearGradient>
                 <linearGradient id="paint2_linear_315_17" x1="1" y1="0.500031" x2="395.5" y2="0.500013" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#CC00FF"/>
-                <stop offset="1" stop-color="#FFA800" stop-opacity="0"/>
+                <stop stopColor="#CC00FF"/>
+                <stop offset="1" stopColor="#FFA800" stopOpacity="0"/>
                 </linearGradient>
                 <linearGradient id="paint3_linear_315_17" x1="727.5" y1="516.5" x2="333" y2="516.5" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#CC00FF"/>
-                <stop offset="1" stop-color="#FFA800" stop-opacity="0"/>
+                <stop stopColor="#CC00FF"/>
+                <stop offset="1" stopColor="#FFA800" stopOpacity="0"/>
                 </linearGradient>
                 </defs>
             </svg>
