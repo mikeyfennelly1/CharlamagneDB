@@ -15,14 +15,16 @@ const DocsPage1 = () => {
         { title: 'Insert and view a document', body: lorem, id: 6 },
     ])
 
+    // const [activeDocID, setActiveDocID] = useState(1)
+
     return (
         <>
             <div className="min-h-screen flex flex-cols-2">
                 <div className="inline min-w-[500px]">
-                    <DocsSidebar docs={docs}/>
+                    <DocsSidebar docs={docs} />
                 </div>
                 <div className="inline">
-                    <DocsContent docs={docs}/>
+                    <DocsContent docs={docs} />
                 </div>
             </div>
         </>

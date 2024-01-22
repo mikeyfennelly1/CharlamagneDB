@@ -3,19 +3,15 @@ import { useState } from "react";
 const DocsSidebar = (props) => {
 
     const docs = props.docs;
-    // Information for the docs
+    const activeDocID = props.activeDocID
+    // Need to know which is active
+    // We want the active doc title to have a pink background
+    // Style it appropriately
 
-    // some way to construct the sidebar button for each doc
-
-    // some way to construct the actual document
-
-    // All while linking them together
-    const [state, setState] = useState();
-
-    const clickTitle = () => {
-        setState()
-    }
-
+    const [docClasses, setDocCLasses] = useState()
+    const activeDocClasses = "pr-auto bg-mainPink bg-opacity-10"
+    const inactiveDocClasses = "pr-auto"
+    
 
     return (
         <>
@@ -27,7 +23,7 @@ const DocsSidebar = (props) => {
                     </div>
                     <div>
                         {docs.map((doc) => (
-                            <div className="pr-auto" key={ doc.id }>
+                            <div className={doc.id === activeDocID ? activeDocClasses : inactiveDocClasses} key={ doc.id }>
                                 <button className="min-h-[50px]"> { doc.title }</button>
                             </div>
                         ))}
