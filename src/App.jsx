@@ -12,7 +12,7 @@ import Loco from './loco.jsx'
 import Login from './login.jsx'
 import Pricing from './pricing.jsx'
 import Docs from './docs.jsx'
-import Context from './context.jsx'
+import Dashboard from './dashboard.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';
@@ -61,8 +61,8 @@ function App() {
           <Route exact path="/CharlamagneDB/docs">
             <Docs/>
           </Route>
-          <Route exact path="/CharlamagneDB/context">
-            <Context />
+          <Route exact path="/CharlamagneDB/dashboard">
+            <Dashboard/>
           </Route>
         </Switch>
       </Router>
