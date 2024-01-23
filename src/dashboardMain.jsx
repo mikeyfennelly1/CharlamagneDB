@@ -1,9 +1,7 @@
 const DashboardMain = () => {
     return (
         <>
-            <section className="text-white inline max-w-fit border-2">
-                <h1>Overview</h1>
-            </section>
+                    <h1 className="pl-[20px] border max-w-[200px] text-white inline-block">Overview</h1>
         </>
     );
 }

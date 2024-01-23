@@ -20,8 +20,8 @@ const Dashboard = () => {
         <ActivityContext.Provider value={useState(1)}> 
             <DashboardNavbar />
             <DashboardProjectBar />
-            <DashboardSidebar dashboardSidebarItems={dashboardSidebarItems}/>
-            <DashboardMain/>
+            <DashboardSidebar dashboardSidebarItems={dashboardSidebarItems} />
+            <DashboardMain />
         </ActivityContext.Provider>
         </>
     );
@@ -37,8 +37,8 @@ const DashboardSidebar = (props) => {
     const dashboardSidebarItems = props.dashboardSidebarItems;
     return (
         <>
-            <section className="text-white font-[TT-Autonomous-Mono-Reg] inline max-w-fit">
-                <div className="min-h-screen max-w-fit bg-[#121212] p-[50px]">
+            <section className="text-white font-[TT-Autonomous-Mono-Reg] inline-block max-w-fit">
+                <div className="min-h-screen max-w-fit bg-[#121212] p-[50px] inline-block">
                     <div>
                         <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
                         <ul className="mb-[50px] mt-[40px]">
