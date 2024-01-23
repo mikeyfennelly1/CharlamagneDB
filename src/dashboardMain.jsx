@@ -1,17 +1,16 @@
 const DashboardMain = () => {
     return (
         <>       
-        <div className="text-white max-w-[1400px] min-h-[200px] inline-block px-[200px] py-[100px]">
+        <div className="text-white min-w-[1400px] max-w-[1400px] min-h-[200px] inline-block px-[200px] py-[100px] font-[TT-Autonomous-Mono-Reg]">
             <h1 className="text-mainPink text-2xl font-[TT-Travels-Next-Reg]">Overview</h1>
-            <p className="text-white font-[TT-Autonomous-Mono-Reg]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis eligendi ad ipsam aliquam voluptates nisi officiis numquam a sint! Dolor, eligendi consectetur. Eaque hic ipsam consequuntur voluptatum. Placeat, accusamus!
-                Natus voluptates at minus assumenda? Distinctio praesentium ducimus amet cupiditate, soluta consequatur eveniet excepturi, molestias quasi voluptas laudantium dolor inventore cumque aliquam unde nam? Optio tempora quas itaque perferendis. Omnis.
-                Nemo expedita, officia repudiandae unde voluptatibus accusantium ipsa est porro amet similique aliquid. Ipsam a explicabo dignissimos consequuntur. Suscipit, quae voluptatem quis sed quidem veritatis sequi dolor blanditiis cumque quo.
-                Temporibus sapiente eaque dolores veritatis consequatur reprehenderit ullam accusamus est sed quos id saepe mollitia, libero possimus reiciendis suscipit. Iste perspiciatis doloribus id libero? Numquam autem iste nulla adipisci accusantium?
-                Eos modi porro assumenda praesentium rerum quo perspiciatis quidem! Recusandae autem deserunt corporis adipisci veritatis molestias, odit atque quaerat nemo quod? Quo ratione laudantium sapiente, quia facilis cupiditate nemo officiis?
-                Natus minima qui exercitationem? Aliquam illum pariatur eius, aliquid id et voluptatem, nesciunt ipsa vel doloremque eligendi ipsum? Autem reiciendis laboriosam voluptatum molestiae eligendi eaque illo neque est eveniet modi.
-                Illum dolor magni laboriosam dicta unde voluptates, vel aperiam architecto tenetur amet error aliquid repellat hic cumque officia? Pariatur ex provident quod debitis ea adipisci autem obcaecati porro inventore consequuntur!
-            </p>
+            <div className="border-2 min-w-max min-h-[600px] mt-[40px] rounded-[40px] border-mainPink bg-[#111] relative">
+                <div className="pt-[50px] pl-[80px]">
+                    <h1 className="top-[60px] left-[60px]  text-[1.3rem]">Database Deployments</h1>
+                </div>
+                <div className="mt-[40px] mx-[80px] border-b">
+                    <h2 className="border-b max-w-fit pr-[20px] text-[1.2rem]">ExampleCluster</h2>
+                </div>
+            </div>
         </div>
         </>
     );
