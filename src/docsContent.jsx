@@ -3,7 +3,7 @@ const DocsContent = (props) => {
 
     return (
         <>
-                <div className="px-[150px] my-[200px]">
+                <div className=" border px-[150px] my-[200px] max-w-[1400px]">
                     {docs.map((doc) => (
                         <div key={ doc.id }>
                             <h1 className="mb-[50px] font-[TT-Travels-Next-Med] text-mainPink text-2xl">{ doc.title }</h1>

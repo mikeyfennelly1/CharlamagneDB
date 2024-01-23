@@ -9,7 +9,7 @@ export default function CounterUseStatePage() {
     <>
     <div className="text-white">
         <CounterContext.Provider value={useState("Active")}> 
-            <AddOneButton />
+            <ChangeActivityButton />
             <Counter />
         </CounterContext.Provider>
     </div>
@@ -17,7 +17,7 @@ export default function CounterUseStatePage() {
   );
 }
 
-const AddOneButton = () => {
+const ChangeActivityButton = () => {
     const [activityContext , setActivityContext] = useContext(CounterContext);
 
     return (

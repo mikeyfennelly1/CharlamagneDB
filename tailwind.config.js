@@ -26,9 +26,7 @@ module.exports = {
     "./src/pricingCards-Enterprise.jsx",
     "./src/pricingCards-Loco.jsx",
     "./src/pricing2.jsx",
-    "./src/docsSidebar.jsx",
-    "./src/docsContent.jsx",
-    "./src/context.jsx"
+    "./src/docsPage1.jsx"
   ],
   theme: {
     extend: {
