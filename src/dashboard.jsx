@@ -5,12 +5,11 @@ import DashboardProjectBar from './dashboardProjectBar';
 const ActivityContext = createContext(null)
 
 const dashboardSidebarItems = [
-    { title: 'Create an account', body: "lorem", id: 1 },
-    { title: 'Deploy a free cluster', body: "lorem", id: 2 },
-    { title: 'Manage the IP access List', body: "lorem", id: 3 },
-    { title: 'Create a Database User', body: "lorem", id: 4 },
-    { title: 'Connect to the cluster', body: "lorem", id: 5 },
-    { title: 'Insert and view a document', body: "lorem", id: 6 },
+    { title: 'Quickstart', body: "lorem", id: 1 },
+    { title: 'Backup', body: "lorem", id: 2 },
+    { title: 'Database Access', body: "lorem", id: 3 },
+    { title: 'Network Access', body: "lorem", id: 4 },
+    { title: 'Advanced', body: "lorem", id: 5 },
 ];
 
 const Dashboard = () => {
@@ -29,7 +28,7 @@ const Dashboard = () => {
 export default Dashboard;
 
 const sidebarActiveClasses = "text-mainPink"
-const sidebarInactiveClasses = "text-white"
+const sidebarInactiveClasses = "text-white opacity-80"
 
 const DashboardSidebar = (props) => {
     const [activityContext, setActivityContext] = useContext(ActivityContext)
@@ -37,17 +36,21 @@ const DashboardSidebar = (props) => {
     return (
         <>
             <section className="grid grid-cols-2 text-white font-[TT-Autonomous-Mono-Reg]">
-                <div className="text-white  min-h-screen min-w-[500px] font-[TT-Autonomous-Mono-Reg] mt-[100px] bg-[#121212] pl-[50px] pt-[50px]">
+                <div className="text-white  min-h-screen max-w-fit font-[TT-Autonomous-Mono-Reg] bg-[#121212] p-[50px] pt-[50px]">
                     <div>
-                        <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-lg">CharlemagneDB Documentation</h2>
-                        <h2 className="text-white mb-[50px] text-lg mt-[20px]">CharlemagneDB Loco</h2>
+                        <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
+                        <ul className="text-white mb-[50px] mt-[40px]">
+                            <h2 className="text-white mb-[10px] text-xl mt-[40px]">Deployment</h2>
+                            <li className='opacity-80'>Databases</li>
+                        </ul>
                     </div>
                     <div>
-                        {dashboardSidebarItems.map((doc) => (
-                            <div className={(doc.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ doc.id } >
+                        <h2 className="text-white mb-[10px] text-xl mt-[40px]">Security</h2>
+                        {dashboardSidebarItems.map((item) => (
+                            <div className={(item.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ item.id } >
                                 <button
-                                onClick={() => setActivityContext(doc.id)}>
-                                    { doc.title }
+                                onClick={() => setActivityContext(item.id)}>
+                                    { item.title }
                                 </button>
                             </div>
                         ))}

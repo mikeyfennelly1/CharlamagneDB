@@ -11,7 +11,7 @@ const DashboardNavbar = () => {
             <div className="flex flex-wrap justify-between max-w-[100vw] w-[99vw] py-5 bg-black min-h-[100px] text-[1.3rem]">
                 <div className="mx-auto flex items-center w-[400px] justify-start ml-[100px]">
                     <img className="max-h-[30px]" src="./images/Vector 88.png" alt="" />
-                    <Link to="/CharlamagneDB/" className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink ml-[10px]">{user.displayName}'s CDB Dashboard</Link>
+                    <Link to="/CharlamagneDB/" className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink">{user.displayName}'s CDB Dashboard</Link>
                 </div>
                 {!user && (
                 <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
