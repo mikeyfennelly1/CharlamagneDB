@@ -29,7 +29,8 @@ module.exports = {
     "./src/docsPage1.jsx",
     "./src/dashboard.jsx",
     "./src/dashboardNavbar.jsx",
-    "./src/dashboardProjectBar.jsx"
+    "./src/dashboardProjectBar.jsx",
+    "./src/dashboardMain.jsx"
   ],
   theme: {
     extend: {

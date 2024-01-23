@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from 'react';
 import DashboardNavbar from './dashboardNavbar';
 import DashboardProjectBar from './dashboardProjectBar';
+import DashboardMain from './dashboardMain';
 
 const ActivityContext = createContext(null)
 
@@ -20,6 +21,7 @@ const Dashboard = () => {
             <DashboardNavbar />
             <DashboardProjectBar />
             <DashboardSidebar dashboardSidebarItems={dashboardSidebarItems}/>
+            <DashboardMain/>
         </ActivityContext.Provider>
         </>
     );
@@ -35,17 +37,17 @@ const DashboardSidebar = (props) => {
     const dashboardSidebarItems = props.dashboardSidebarItems;
     return (
         <>
-            <section className="grid grid-cols-2 text-white font-[TT-Autonomous-Mono-Reg]">
-                <div className="text-white  min-h-screen max-w-fit font-[TT-Autonomous-Mono-Reg] bg-[#121212] p-[50px] pt-[50px]">
+            <section className="text-white font-[TT-Autonomous-Mono-Reg] inline max-w-fit">
+                <div className="min-h-screen max-w-fit bg-[#121212] p-[50px]">
                     <div>
                         <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
-                        <ul className="text-white mb-[50px] mt-[40px]">
-                            <h2 className="text-white mb-[10px] text-xl mt-[40px]">Deployment</h2>
+                        <ul className="mb-[50px] mt-[40px]">
+                            <h2 className="mb-[10px] text-xl mt-[40px]">Deployment</h2>
                             <li className='opacity-80'>Databases</li>
                         </ul>
                     </div>
                     <div>
-                        <h2 className="text-white mb-[10px] text-xl mt-[40px]">Security</h2>
+                        <h2 className="mb-[10px] text-xl mt-[40px]">Security</h2>
                         {dashboardSidebarItems.map((item) => (
                             <div className={(item.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ item.id } >
                                 <button
