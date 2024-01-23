@@ -64,7 +64,7 @@ const bodyInactiveClasses = "hidden"
 
 const DocsContent = (props) => {
     const docs = props.docs;
-    const [activityContext, setActivityContext] = useContext(ActivityContext)
+    const [activityContext] = useContext(ActivityContext)
 
     return (
         <>
