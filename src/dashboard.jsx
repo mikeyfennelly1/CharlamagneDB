@@ -20,8 +20,10 @@ const Dashboard = () => {
         <ActivityContext.Provider value={useState(1)}> 
             <DashboardNavbar />
             <DashboardProjectBar />
-            <DashboardSidebar dashboardSidebarItems={dashboardSidebarItems} />
-            <DashboardMain />
+            <div className='flex'>
+                <DashboardSidebar dashboardSidebarItems={dashboardSidebarItems} />
+                <DashboardMain />
+            </div>
         </ActivityContext.Provider>
         </>
     );
