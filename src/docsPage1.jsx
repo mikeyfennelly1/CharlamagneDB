@@ -28,8 +28,8 @@ const DocsPage1 = () => {
  
 export default DocsPage1;
 
-const activeClasses = "text-mainPink"
-const inactiveClasses = "text-white"
+const sidebarActiveClasses = "text-mainPink"
+const sidebarInactiveClasses = "text-white"
 
 const DocsSidebar = (props) => {
     const [activityContext, setActivityContext] = useContext(ActivityContext)
@@ -44,8 +44,8 @@ const DocsSidebar = (props) => {
                     </div>
                     <div>
                         {docs.map((doc) => (
-                            <div className={(doc.id === activityContext ? activeClasses : inactiveClasses)} key={ doc.id } >
-                                <button className="text-white"
+                            <div className={(doc.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ doc.id } >
+                                <button
                                 onClick={() => setActivityContext(doc.id)}>
                                     { doc.title }
                                 </button>
@@ -59,6 +59,9 @@ const DocsSidebar = (props) => {
     );
 }
 
+const bodyActiveClasses = "visible"
+const bodyInactiveClasses = "hidden"
+
 const DocsContent = (props) => {
     const docs = props.docs;
     const [activityContext, setActivityContext] = useContext(ActivityContext)
@@ -67,7 +70,7 @@ const DocsContent = (props) => {
         <>
                 <div className=" border px-[150px] my-[200px] max-w-[1400px]">
                     {docs.map((doc) => (
-                        <div key={ doc.id }>
+                        <div className={(doc.id === activityContext ? bodyActiveClasses : bodyInactiveClasses)} key={ doc.id }>
                             <h1 className="mb-[50px] font-[TT-Travels-Next-Med] text-mainPink text-2xl">{ doc.title }</h1>
                             <p className="font-[TT-Autonomous-Mono-Reg] text-white text-xl">{ doc.body }</p>
                         </div>
