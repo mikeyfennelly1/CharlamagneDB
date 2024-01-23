@@ -3,13 +3,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './utils/firebase'
 
 function Navbar() {
-
     const [user] = useAuthState(auth)
 
     return(
         <>
         <section className=" md:block z-1000 absolute top-0 text-white">
-            <div className="absolute flex flex-wrap justify-between max-w-[100vw] w-[99vw] py-5 bg-black grid grid-cols-3 border-b">
+            <div className="absolute flex flex-wrap justify-between max-w-[100vw] w-[99vw] py-5 bg-black grid grid-cols-3">
                 <div className="mx-auto flex items-center w-[200px] justify-start ml-[100px]">
                     <img className="max-h-[30px]" src="./images/Vector 88.png" alt="" />
                     <Link to="/CharlamagneDB/" className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink ml-[10px]">CharlemagneDB</Link>

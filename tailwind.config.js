@@ -27,7 +27,9 @@ module.exports = {
     "./src/pricingCards-Loco.jsx",
     "./src/pricing2.jsx",
     "./src/docsPage1.jsx",
-    "./src/dashboard.jsx"
+    "./src/dashboard.jsx",
+    "./src/dashboardNavbar.jsx",
+    "./src/dashboardProjectBar.jsx"
   ],
   theme: {
     extend: {
