@@ -1,17 +1,9 @@
-import { useState, memo } from "react";
+const activeDocClasses = "pr-auto bg-mainPink bg-opacity-10"
+const inactiveDocClasses = "pr-auto"
 
 const DocsSidebar = (props) => {
 
     const docs = props.docs;
-    // Need to know which is active
-    // We want the active doc title to have a pink background
-    // Style it appropriately
-    // const [activeDocID, setActiveDocID] = useState(1)
-    // const [docClasses, setDocCLasses] = useState()
-    const activeDocClasses = "pr-auto bg-mainPink bg-opacity-10"
-    const inactiveDocClasses = "pr-auto"
-    
-    // console.log("child page rendered | activeDocID: " + activeDocID)
 
     return (
         <>
