@@ -1,16 +1,22 @@
 import { createContext, useState, useContext } from "react";
+import CreateAnAccount from "./documentation/CreateAnAccount";
+import ConnectToTheCluster from "./documentation/ConnectToTheCluster";
+import CreateADatabaseUser from "./documentation/CreateADatabaseUser";
+import DeployAFreeCluster from "./documentation/DeployAFreeCluster";
+import InsertAndViewADocument from "./documentation/InsertAndViewADocument";
+import ManageTheIPAccessList from "./documentation/ManageTheIPAccessList";
 
 const ActivityContext = createContext(null)
 
 const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores enim dignissimos facilis saepe laborum perferendis id minima ad, officiis, itaque nostrum alias illo optio repellendus eius quia cupiditate quasi adipisci. Laboriosam, laborum qui nisi, magnam voluptates soluta vitae nesciunt dolorum blanditiis minima voluptatem asperiores error, cumque explicabo beatae! Deleniti dicta iure eligendi harum odio sapiente molestiae sit provident minima atque. Iure veritatis nisi explicabo officiis commodi pariatur quidem provident! Laborum, odio quasi ratione incidunt suscipit et quaerat hic sunt earum qui ullam consequatur officia nobis voluptates, eveniet, exercitationem quos deleniti. Molestias similique quam consectetur aperiam aliquid iure earum et commodi unde eligendi mollitia ut ipsum, fuga obcaecati ipsa? Culpa at quos reiciendis consectetur odio ad enim facilis cumque nemo voluptatibus."
 
 const docs = [
-    { title: 'Create an account', body: lorem, id: 1 },
-    { title: 'Deploy a free cluster', body: lorem, id: 2 },
-    { title: 'Manage the IP access List', body: lorem, id: 3 },
-    { title: 'Create a Database User', body: lorem, id: 4 },
-    { title: 'Connect to the cluster', body: lorem, id: 5 },
-    { title: 'Insert and view a document', body: lorem, id: 6 },
+    { title: 'Create account', body: <CreateAnAccount/>, id: 1 },
+    { title: 'Deploy a free cluster', body: <DeployAFreeCluster/>, id: 2 },
+    { title: 'Manage the IP access List', body: <ManageTheIPAccessList/>, id: 3 },
+    { title: 'Create a Database User', body: <CreateADatabaseUser/>, id: 4 },
+    { title: 'Connect to the cluster', body: <ConnectToTheCluster/>, id: 5 },
+    { title: 'Insert and view a document', body: <InsertAndViewADocument/>, id: 6 },
 ];
 
 const DocsPage1 = () => {
@@ -29,7 +35,7 @@ const DocsPage1 = () => {
 export default DocsPage1;
 
 const sidebarActiveClasses = "text-mainPink"
-const sidebarInactiveClasses = "text-white"
+const sidebarInactiveClasses = "text-white opacity-80"
 
 const DocsSidebar = (props) => {
     const [activityContext, setActivityContext] = useContext(ActivityContext)
@@ -40,9 +46,10 @@ const DocsSidebar = (props) => {
                 <div className="text-white  min-h-screen min-w-[500px] font-[TT-Autonomous-Mono-Reg] mt-[100px] bg-[#121212] pl-[50px] pt-[50px]">
                     <div>
                         <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-lg">CharlemagneDB Documentation</h2>
-                        <h2 className="text-white mb-[50px] text-lg mt-[20px]">CharlemagneDB Loco</h2>
+                        <h2 className="text-white mb-[50px] text-lg mt-[20px]  font-semibold">CharlemagneDB Loco</h2>
                     </div>
                     <div>
+                        <h2 className="text-white mb-[10px] text-lg mt-[20px] font-semibold">Get Started with Loco</h2>
                         {docs.map((doc) => (
                             <div className={(doc.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ doc.id } >
                                 <button
@@ -72,7 +79,7 @@ const DocsContent = (props) => {
                     {docs.map((doc) => (
                         <div className={(doc.id === activityContext ? bodyActiveClasses : bodyInactiveClasses)} key={ doc.id }>
                             <h1 className="mb-[50px] font-[TT-Travels-Next-Med] text-mainPink text-2xl">{ doc.title }</h1>
-                            <p className="font-[TT-Autonomous-Mono-Reg] text-white text-xl">{ doc.body }</p>
+                            <div className="font-[TT-Autonomous-Mono-Reg] text-white text-xl">{ doc.body }</div>
                         </div>
                     ))}
                 </div>
