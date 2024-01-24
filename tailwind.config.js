@@ -1,37 +1,52 @@
 // /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    // App
     "./src/App.jsx",
-    "./src/Navbar.jsx",
-    "./src/Hero.jsx",
+    // dashboard
+    "./src/dashboard/dashboard.jsx",
+    "./src/dashboard/dashboardNavbar.jsx",
+    "./src/dashboard/dashboardProjectBar.jsx",
+    "./src/dashboard/dashboardMain.jsx",
+    // docs
+    "./src/docs/docsPage1.jsx",
+    "./src/documentation/doc-components/note.jsx",
+    // landing-page
+    "./src/landing-page/2.jsx",
+    "./src/landing-page/4.jsx",
+    "./src/landing-page/5.jsx",
+    "./src/landing-page/6.jsx",
+    "./src/landing-page/7.jsx",
+    "./src/landing-page/8.jsx",
+    "./src/landing-page/Hero.jsx",
+    "./src/landing-page/terminal.jsx",
+    // loco
+    "./src/loco/loco.jsx",
+    "./src/loco/Loco-serverSVG.jsx",
+    "./src/loco/loco-4.jsx",
+    "./src/loco/Hero-Loco.jsx",
+    "./src/loco/loco-2.jsx",
+    // login
+    "./src/login/login.jsx",
+    // misc
+    "./src/misc/Navbar.jsx",
+    "./src/misc/heroSVG.jsx",
+    "./src/misc/serverSVG.jsx",
+    // pricing
+    "./src/pricing/pricing1.jsx",
+    "./src/pricing/pricingCards-Enterprise.jsx",
+    "./src/pricing/pricingCards-Loco.jsx",
+    "./src/pricing/pricing2.jsx",
+    
+
+    
+    
+
+    
+
     "./src/DBAnimation.jsx",
     "./src/Page2.jsx",
     "./src/AnimationPractice.jsx",
-    "./src/2.jsx",
-    "./src/terminal.jsx",
-    "./src/4.jsx",
-    "./src/5.jsx",
-    "./src/6.jsx",
-    "./src/7.jsx",
-    "./src/8.jsx",
-    "./src/heroSVG.jsx",
-    "./src/serverSVG.jsx",
-    "./src/loco.jsx",
-    "./src/Hero-Loco.jsx",
-    "./src/Loco-serverSVG.jsx",
-    "./src/loco-2.jsx",
-    "./src/loco-4.jsx",
-    "./src/login.jsx",
-    "./src/pricing1.jsx",
-    "./src/pricingCards-Enterprise.jsx",
-    "./src/pricingCards-Loco.jsx",
-    "./src/pricing2.jsx",
-    "./src/docsPage1.jsx",
-    "./src/dashboard.jsx",
-    "./src/dashboardNavbar.jsx",
-    "./src/dashboardProjectBar.jsx",
-    "./src/dashboardMain.jsx",
-    "./src/documentation/doc-components/note.jsx"
   ],
   theme: {
     extend: {

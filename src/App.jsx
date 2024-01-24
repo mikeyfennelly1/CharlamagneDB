@@ -11,7 +11,7 @@ import Eight from './landing-page/8.jsx'
 import Loco from './loco/loco.jsx'
 import Login from './login/login.jsx'
 import Pricing from './pricing/pricing.jsx'
-import Docs from './docs.jsx'
+import Docs from './docs/docs.jsx'
 import Dashboard from './dashboard/dashboard.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'

@@ -1,5 +1,5 @@
-import Eight from "./landing-page/8";
-import Navbar from "../Navbar";
+import Eight from "../landing-page/8";
+import Navbar from "../misc/Navbar";
 import DocsPage1 from "./docsPage1";
 
 const Docs = () => {
