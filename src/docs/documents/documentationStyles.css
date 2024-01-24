@@ -1,0 +1,38 @@
+p {
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: rgb(220, 0, 225);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: disc;
+    padding-left: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+ol {
+    list-style-position: outside;
+    list-style-type: lower-alpha;
+    padding-left: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+li {
+    margin-bottom: 15px;
+    opacity: 0.9;
+}

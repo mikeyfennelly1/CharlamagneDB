@@ -1,5 +1,5 @@
-import Eight from './8.jsx';
-import Navbar from './Navbar.jsx';
+import Eight from '../landing-page/8.jsx';
+import Navbar from '../misc/Navbar.jsx';
 import Pricing1 from './pricing1.jsx';
 import Pricing2 from './pricing2.jsx';
 

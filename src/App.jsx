@@ -1,18 +1,18 @@
 import './App.css';
-import Navbar from './Navbar.jsx';
-import Hero from './Hero.jsx';
-import FeatureAnimation from './2.jsx';
-import Terminal from './terminal.jsx';
-import Four from './4.jsx'
-import Five from './5.jsx'
-import Six from './6.jsx'
-import Seven from './7.jsx'
-import Eight from './8.jsx'
-import Loco from './loco.jsx'
-import Login from './login.jsx'
-import Pricing from './pricing.jsx'
+import Navbar from './misc/Navbar.jsx';
+import Hero from './landing-page/Hero.jsx';
+import FeatureAnimation from './landing-page/2.jsx';
+import Terminal from './landing-page/terminal.jsx';
+import Four from './landing-page/4.jsx'
+import Five from './landing-page/5.jsx'
+import Six from './landing-page/6.jsx'
+import Seven from './landing-page/7.jsx'
+import Eight from './landing-page/8.jsx'
+import Loco from './loco/loco.jsx'
+import Login from './login/login.jsx'
+import Pricing from './pricing/pricing.jsx'
 import Docs from './docs.jsx'
-import Dashboard from './dashboard.jsx';
+import Dashboard from './dashboard/dashboard.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';

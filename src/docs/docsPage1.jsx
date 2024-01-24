@@ -1,10 +1,10 @@
 import { createContext, useState, useContext } from "react";
-import CreateAnAccount from "./documentation/CreateAnAccount";
-import ConnectToTheCluster from "./documentation/ConnectToTheCluster";
-import CreateADatabaseUser from "./documentation/CreateADatabaseUser";
-import DeployAFreeCluster from "./documentation/DeployAFreeCluster";
-import InsertAndViewADocument from "./documentation/InsertAndViewADocument";
-import ManageTheIPAccessList from "./documentation/ManageTheIPAccessList";
+import CreateAnAccount from "./documents/CreateAnAccount";
+import ConnectToTheCluster from "./documents/ConnectToTheCluster";
+import CreateADatabaseUser from "./documents/CreateADatabaseUser";
+import DeployAFreeCluster from "./documents/DeployAFreeCluster";
+import InsertAndViewADocument from "./documents/InsertAndViewADocument";
+import ManageTheIPAccessList from "./documents/ManageTheIPAccessList";
 
 const ActivityContext = createContext(null)
 

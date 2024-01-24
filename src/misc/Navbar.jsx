@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './utils/firebase'
+import { auth } from '../utils/firebase'
 
 function Navbar() {
     const [user] = useAuthState(auth)

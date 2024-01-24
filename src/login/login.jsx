@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
-import {auth} from './utils/firebase'
+import {auth} from '../utils/firebase'
 
 const Login = () => {
     // Sign in with google

@@ -1,5 +1,5 @@
-import ServerSVG from './serverSVG.jsx'
-import GraphSVG from './graphSVG.jsx';
+import ServerSVG from '../misc/serverSVG.jsx'
+import GraphSVG from '../misc/graphSVG.jsx';
 
 const Five = () => {
     
