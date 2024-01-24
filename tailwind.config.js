@@ -10,7 +10,12 @@ module.exports = {
     "./src/dashboard/dashboardMain.jsx",
     // docs
     "./src/docs/docsPage1.jsx",
-    "./src/documentation/doc-components/note.jsx",
+      // docs/doc-components
+      "./src/docs/doc-components/note.jsx",
+      "./src/docs/doc-components/codeSnippet.jsx",
+      "./src/docs/doc-components/tip.jsx",
+      "./src/docs/doc-components/inlineCodeSnippet.jsx",
+      "./src/docs/doc-components/tabs/TitlesBar.jsx",
     // landing-page
     "./src/landing-page/2.jsx",
     "./src/landing-page/4.jsx",
@@ -37,16 +42,7 @@ module.exports = {
     "./src/pricing/pricingCards-Enterprise.jsx",
     "./src/pricing/pricingCards-Loco.jsx",
     "./src/pricing/pricing2.jsx",
-    
 
-    
-    
-
-    
-
-    "./src/DBAnimation.jsx",
-    "./src/Page2.jsx",
-    "./src/AnimationPractice.jsx",
   ],
   theme: {
     extend: {

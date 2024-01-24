@@ -1,6 +1,13 @@
-import Note from '../doc-components/note';
+import CodeSnippet from '../../doc-components/codeSnippet';
+import Tip from '../../doc-components/tip';
+import Note from '../../doc-components/note';
+import InlineCodeSnippet from '../../doc-components/inlineCodeSnippet';
+import TabsSection from '../../doc-components/TabsSection';
+// import Content1 from './tabs-contents/Content1';
+// import Content2 from './tabs-contents/Content2';
+// import Content3 from './tabs-contents/Content3';
 
-import './documentationStyles.css'
+import '../documentationStyles.css'
 
 const CreateAnAccount = () => {
     return (
@@ -82,6 +89,23 @@ const CreateAnAccount = () => {
                 {/* Register a new Atlas Account */}
                 <h2>Register a new Atlas Account</h2>
                 <p>Select a tab based on how you would like to register your account:</p>
+
+                <CodeSnippet code={"atlas auth register [options]"}/>
+                <p>To learn more about the command syntax and parameters, see the Atlas CLI documentation for atlas auth register.</p>
+                <Tip tip={
+                    <ul>
+                        <li>Install the Atlas CLI</li>
+                        <li>Connect to the Atlas CLI</li>
+                    </ul>
+                }/>
+                <Note message={
+                    <p>If you run <InlineCodeSnippet code={"atlas setup"}/> with the default selections, you don't need to run <InlineCodeSnippet code={"atlas auth register"}/>.</p>
+                }/>
+                
+                <TabsSection 
+                data={TabsData}
+                />
+
                 
             </div>
         </>
@@ -89,3 +113,9 @@ const CreateAnAccount = () => {
 }
  
 export default CreateAnAccount;
+
+const TabsData = [
+    {title: "title1", page: "page contents for title1", key: 1}, 
+    {title: "title2", page: "page contents for title2", key: 2},
+    {title: "title3", page: "page contents for title3", key: 3}
+]

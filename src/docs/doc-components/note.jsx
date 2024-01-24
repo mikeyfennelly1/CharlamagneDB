@@ -1,6 +1,5 @@
 const Note = (props) => {
     const message = props.message
-
     return (
         <>
             <div className="text-[1rem] my-[50px] border-l-8 border-mainPink">

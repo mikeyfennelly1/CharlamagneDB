@@ -47,6 +47,10 @@
         font-family: "SourceCodePro-Medium";
         src: url(../public/fonts/SourceCodePro-Medium.ttf);
     }
+    @font-face {
+        font-family: "SourceCodePro-Variable";
+        src: url(../public/fonts/SourceCodePro-VariableFont_wght.ttf);
+    }
 
     /* Inter  */
     @font-face {
