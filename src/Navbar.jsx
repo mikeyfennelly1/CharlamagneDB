@@ -26,12 +26,12 @@ function Navbar() {
                 </div>
                 )}
                 {user && (
-                <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
+                <div className="ml-auto mr-[10px] border border-mainPink max-w-fit pt-2 px-7 h-10 rounded-md hidden pb-0 max-h-10 max-w-fit font-[TT-Autonomous-Mono-Reg]
                     lg:block">
-                    <Link to="/CharlamagneDB/dashboard" className=" px-7 rounded-full hover:text-mainPink max-h-[10px]">
-                        <h2 className='inline pr-4 text-mainPink font-semibold'>{user.displayName}</h2>
-                        <img className='max-h-[20px] inline rounded-full' src={user.photoURL}
-                        alt="" />
+                    <Link to="/CharlamagneDB/dashboard" className="items-center my-auto rounded-full hover:text-mainPink max-h-[10px]">
+                        <button className='text-white'>Go To Dashboard</button>
+                        {/* <img className='max-h-[20px] inline rounded-full' src={user.photoURL}
+                        alt="" /> */}
                     </Link>
                 </div>
                 )}
