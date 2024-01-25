@@ -4,26 +4,30 @@ import DashboardContext from "./dashboardContext"
 const sidebarActiveClasses = "text-mainPink"
 const sidebarInactiveClasses = "text-white opacity-80"
 
+const overviewActiveClasses = "hover:cursor-pointer font-[TT-Travels-Next-Med] text-mainPink text-2xl"
+const overviewInctiveClasses = "hover:cursor-pointer font-[TT-Travels-Next-Med] text-white text-2xl opacity-80"
+
 const DashboardSidebar = (props) => {
-    const [activityContext, setActivityContext] = useContext(DashboardContext)
+    const [dashboardContext, setDashboardContext] = useContext(DashboardContext)
+    console.log(dashboardContext)
     const dashboardSidebarItems = props.dashboardSidebarItems;
     return (
         <>
             <section className="text-white font-[TT-Autonomous-Mono-Reg] max-w-fit">
                 <div className=" max-w-fit bg-[#121212] min-h-screen p-[50px]">
                     <div>
-                        <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
+                        <h2 onClick={() => setDashboardContext("Overview")} className={("Overview" === dashboardContext ? overviewActiveClasses : overviewInctiveClasses)}>Overview</h2>
                         <ul className="mb-[50px] pl-0 mt-[40px]">
-                            <h2 className="mb-[10px] text-xl mt-[40px]">Deployment</h2>
-                            <button className='opacity-80'>Databases</button>
+                            <h2 className=" mb-[10px] text-2xl mt-[40px] text-white">Deployment</h2>
+                            <button onClick={() => setDashboardContext("Databases")} className={("Databases" === dashboardContext ? sidebarActiveClasses : sidebarInactiveClasses)}>Databases</button>
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-[10px] text-xl mt-[40px]">Security</h2>
+                        <h2 className=" mb-[10px] text-2xl mt-[40px] text-white">Security</h2>
                         {dashboardSidebarItems.map((item) => (
-                            <div className={(item.id === activityContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ item.id } >
+                            <div className={(item.title === dashboardContext ? sidebarActiveClasses : sidebarInactiveClasses)} key={ item.title } >
                                 <button
-                                onClick={() => setActivityContext(item.id)}>
+                                onClick={() => setDashboardContext(item.title)}>
                                     { item.title }
                                 </button>
                             </div>
