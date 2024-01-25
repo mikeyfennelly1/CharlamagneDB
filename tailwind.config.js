@@ -5,24 +5,26 @@ module.exports = {
     "./src/App.jsx",
     // dashboard
     "./src/dashboard/dashboard.jsx",
-    "./src/dashboard/dashboardNavbar.jsx",
-    "./src/dashboard/dashboardProjectBar.jsx",
-    "./src/dashboard/dashboardMain.jsx",
+        // dashboard/dashboard-items/
+        "./src/dashboard/dashboard-items/dashboardNavbar.jsx",
+        "./src/dashboard/dashboard-items/dashboardProjectBar.jsx",
+        "./src/dashboard/dashboard-items/dashboardMain.jsx",
+        "./src/dashboard/dashboard-items/dashboardSidebar.jsx",
     // docs
     "./src/docs/docsPage1.jsx",
-      // docs/CreateAnAccount/tabs-contents
-      "./src/docs/documents/CreateAnAccount/tabs-contents/LocoCLI.jsx",
-      "./src/docs/documents/CreateAnAccount/tabs-contents/LocoUI.jsx",
-      // docs/documents/DeployAFreeCluster
-      "./src/docs/documents/DeployAFreeCluster/DeployAFreeCluster.jsx",
-      // docs/doc-components
-      "./src/docs/doc-components/note.jsx",
-      "./src/docs/doc-components/codeSnippet.jsx",
-      "./src/docs/doc-components/tip.jsx",
-      "./src/docs/doc-components/important.jsx",
-      "./src/docs/doc-components/inlineCodeSnippet.jsx",
-      "./src/docs/doc-components/tabs/TitlesBar.jsx",
-      "./src/docs/doc-components/tabs/TabsContentSection.jsx",
+        // docs/CreateAnAccount/tabs-contents
+        "./src/docs/documents/CreateAnAccount/tabs-contents/LocoCLI.jsx",
+        "./src/docs/documents/CreateAnAccount/tabs-contents/LocoUI.jsx",
+        // docs/documents/DeployAFreeCluster
+        "./src/docs/documents/DeployAFreeCluster/DeployAFreeCluster.jsx",
+        // docs/doc-components
+        "./src/docs/doc-components/note.jsx",
+        "./src/docs/doc-components/codeSnippet.jsx",
+        "./src/docs/doc-components/tip.jsx",
+        "./src/docs/doc-components/important.jsx",
+        "./src/docs/doc-components/inlineCodeSnippet.jsx",
+        "./src/docs/doc-components/tabs/TitlesBar.jsx",
+        "./src/docs/doc-components/tabs/TabsContentSection.jsx",
     // landing-page
     "./src/landing-page/2.jsx",
     "./src/landing-page/4.jsx",

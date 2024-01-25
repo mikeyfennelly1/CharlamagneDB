@@ -9,8 +9,8 @@ const DashboardSidebar = (props) => {
     const dashboardSidebarItems = props.dashboardSidebarItems;
     return (
         <>
-            <section className="text-white font-[TT-Autonomous-Mono-Reg] inline-block max-w-fit">
-                <div className="min-h-screen max-w-fit bg-[#121212] p-[50px] inline-block">
+            <section className="text-white font-[TT-Autonomous-Mono-Reg] max-w-fit">
+                <div className=" max-w-fit bg-[#121212] min-h-screen p-[50px]">
                     <div>
                         <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
                         <ul className="mb-[50px] mt-[40px]">
