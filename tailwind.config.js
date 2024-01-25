@@ -16,6 +16,7 @@ module.exports = {
       "./src/docs/doc-components/tip.jsx",
       "./src/docs/doc-components/inlineCodeSnippet.jsx",
       "./src/docs/doc-components/tabs/TitlesBar.jsx",
+      "./src/docs/doc-components/tabs/TabsContentSection.jsx",
     // landing-page
     "./src/landing-page/2.jsx",
     "./src/landing-page/4.jsx",

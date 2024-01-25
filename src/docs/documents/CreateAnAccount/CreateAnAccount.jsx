@@ -115,7 +115,7 @@ const CreateAnAccount = () => {
 export default CreateAnAccount;
 
 const TabsData = [
-    {title: "title1", page: "page contents for title1", key: 1}, 
-    {title: "title2", page: "page contents for title2", key: 2},
-    {title: "title3", page: "page contents for title3", key: 3}
+    {title: "title1", content: "page contents for title1", key: 1}, 
+    {title: "title2", content: "page contents for title2", key: 2},
+    {title: "title3", content: "page contents for title3", key: 3}
 ]
