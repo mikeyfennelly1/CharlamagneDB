@@ -1,13 +1,40 @@
+import Tip from "../doc-components/tip";
+import Note from "../doc-components/note";
+import CodeSnippet from "../doc-components/codeSnippet";
+import InlineCodeSnippet from "../doc-components/inlineCodeSnippet";
+
 const InsertAndViewADocument = () => {
     return (
         <>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore id similique, ex sed recusandae dolorum totam adipisci, tenetur consectetur, iusto repellat obcaecati repellendus corporis aperiam unde. Omnis, ducimus velit!
-            Consectetur voluptates modi at dolores alias neque tempora numquam cupiditate eveniet ipsa eligendi voluptatum dolor ipsam ipsum accusantium ad mollitia, asperiores debitis molestias officiis assumenda ducimus. Recusandae aspernatur mollitia facilis.
-            Praesentium inventore, unde est deleniti, tempore totam delectus nemo architecto nesciunt officiis atque ratione possimus repudiandae modi corrupti aliquam, minus fugiat distinctio et eveniet accusamus eaque recusandae! Unde, ad eaque.
-            Quae impedit, similique veniam aperiam explicabo unde quo? Et quisquam quos minima suscipit. Veniam assumenda autem dignissimos ipsa dolor at error iure inventore vero beatae. Deserunt expedita nemo obcaecati ab?
-            Laborum inventore totam delectus autem unde possimus eum quae, alias consectetur similique voluptate veniam ex molestias necessitatibus impedit facilis facere cumque a dolor sit placeat optio corrupti! Rem, soluta quas!
-            Quasi ad officiis reprehenderit enim similique, molestiae mollitia ut, id consequatur delectus tempore incidunt quo debitis voluptatem magni deserunt eligendi in illum totam saepe nemo explicabo itaque aperiam harum. Natus!
-            Sed obcaecati placeat, inventore at cumque voluptas debitis ipsam voluptates possimus sequi fuga molestias omnis, ab ullam unde iure aperiam doloremque mollitia ut voluptatibus dolorem minus odit quas? Veniam, modi?
+            <div>
+                <p>After you've connected to your Loco cluster, you can interact with it. In this tutorial, you insert data into your cluster and read the new data by using csh, the Loco UI, CharlemagneDB Compass, or a supported CharlemagneDB driver.</p>
+                <h3>Required Access</h3>
+                <p>To interact with a cluster, you must be a database user.</p>
+                <h3>Prerequisites</h3>
+                <p>Before you start, you must configure your preferred connection method. To learn more, see Connect to Your Cluster.</p>
+                <h3>Insert and View Data</h3>
+                <p>The following sample application:</p>
+                <ul>
+                    <li>Establishes a connection to your Loco cluster.</li>
+                    <li>Inserts a document to a collection called people in the gettingStarted database.</li>
+                    <li>Searches the people collection for documents that have a name.last value of Turing and returns the document.</li>
+                </ul>
+                <p>Create a file called <InlineCodeSnippet code={"insert-data.js"}/> and copy the following code into the file:</p>
+                <Note message={"Replace the placeholder with your Loco connection string."}/>
+                
+{/* Multi Line Code block needed here */}
+
+                <p>To run the sample application, use the following command:</p>
+                <CodeSnippet code={"node insert-data.js"}/>
+
+                <Note message={"You might see a different value for ObjectId, because it is a system-generated value."}/>
+                <Tip message={"To learn more about querying data with Node.js, see the Node.js documentation."} />
+                <h2>Next Steps</h2>
+                <p>If you continue to grow your cluster, consider scaling your cluster to support more users and operations.</p>
+                <p>Since you selected the Add sample dataset checkbox when you created your first cluster, Loco automatically loads the sample data. To learn more, see loading sample data.</p>
+                <p>You can also generate synthetic data. To learn more, see Generate Synthetic Data.</p>
+            </div>
+
         </>
     );
 }

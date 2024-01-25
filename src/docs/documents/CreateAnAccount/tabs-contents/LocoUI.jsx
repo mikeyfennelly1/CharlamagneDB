@@ -84,9 +84,9 @@ const LocoUITabContent = () => {
         <>
             <div className='text-white pl-[30px] py-[50px]'>
                 <p>To log in using the Loco UI:</p>
-                <p>If you already created a MongoDB account using your email address, sign in to your account:</p>
+                <p>If you already created a CharlemagneDB account using your email address, sign in to your account:</p>
                 <ol className='mt-[30px]'>
-                    <li>Navigate to MongoDB Loco login page.</li>
+                    <li>Navigate to CharlemagneDB Loco login page.</li>
                     <li>Enter your email address.</li>
                     <li>Click Next.</li>
                     <li>Follow the prompts to log in to your account.</li>
@@ -122,7 +122,7 @@ const LocoUI = () => {
     return (
         <>
             <div className="text-white bg-[#222] min-w-[300px] px-[80px] py-[40px]">
-                <p>To register using the Loco UI, start at the MongoDB Loco registration page.</p>
+                <p>To register using the Loco UI, start at the CharlemagneDB Loco registration page.</p>
                 <div className="">
                     <TabsSection 
                     data={AccountOrEmailTabsData}

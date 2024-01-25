@@ -11,7 +11,7 @@ const LocoCLITabContent = () => {
     return (
         <>
             <div className="bg-[#222] px-[80px] py-[50px]">
-                <p>To create one cluster, load sample data, add your IP address to your project IP access list, and create a MongoDB user for your cluster using the Loco CLI, run the following command:</p>
+                <p>To create one cluster, load sample data, add your IP address to your project IP access list, and create a CharlemagneDB user for your cluster using the Loco CLI, run the following command:</p>
                 <CodeSnippet code={"loco setup [options]"} />
                 <p>To learn more about the command syntax and parameters, see the Loco CLI documentation for loco setup.</p>
                 <p>For step-by-step instructions on using this command, see Create and Configure a Loco Cluster using the Loco CLI.</p>
@@ -67,7 +67,7 @@ const LocoUITabContent = () => {
                     </li>
                     <li>
                         <h3>Select the M0 option.</h3>
-                        <p>M0 clusters are free forever and suitable for users learning MongoDB or developing small proof-of-concept applications.</p>
+                        <p>M0 clusters are free forever and suitable for users learning CharlemagneDB or developing small proof-of-concept applications.</p>
                     </li>
                     <li>
                         <h3>Specify a name for your cluster in the Name box.</h3>
@@ -82,7 +82,7 @@ const LocoUITabContent = () => {
                     <li>
                         <h3>Add the sample dataset.</h3>
                         <p>Select the Add sample dataset checkbox.</p>
-                        <p>You can use the sample dataset to quickly start experimenting with data in MongoDB and using tools such as the Loco UI and MongoDB Charts.</p>
+                        <p>You can use the sample dataset to quickly start experimenting with data in CharlemagneDB and using tools such as the Loco UI and CharlemagneDB Charts.</p>
                     </li>
                     <li>
                         <h3>Select your preferred Provider.</h3>

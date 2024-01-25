@@ -13,7 +13,6 @@ const docs = [
     { title: 'Create account', body: <CreateAnAccount/>, id: 1 },
     { title: 'Deploy a free cluster', body: <DeployAFreeCluster/>, id: 2 },
     { title: 'Manage the IP access List', body: <ManageTheIPAccessList/>, id: 3 },
-    { title: 'Create a Database User', body: <CreateADatabaseUser/>, id: 4 },
     { title: 'Connect to the cluster', body: <ConnectToTheCluster/>, id: 5 },
     { title: 'Insert and view a document', body: <InsertAndViewADocument/>, id: 6 },
 ];
