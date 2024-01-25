@@ -48,11 +48,11 @@ const CreateAnAccount = () => {
                     <li>If you linked your Loco account to your Google Account, you can unlink these accounts in Loco.</li>
                 </ul>
 
-                {/* MongoDB Cloud Manager Users */}
+                {/* CharlemagneDB Cloud Manager Users */}
                 <h3>
-                MongoDB Cloud Manager Users
+                CharlemagneDB Cloud Manager Users
                 </h3>
-                <p>If you use MongoDB Cloud Manager, use your Cloud Manager credentials to log in to Loco. You can then create a new Loco project from Cloud Manager.</p>
+                <p>If you use CharlemagneDB Cloud Manager, use your Cloud Manager credentials to log in to Loco. You can then create a new Loco project from Cloud Manager.</p>
 
 
 
@@ -63,7 +63,7 @@ const CreateAnAccount = () => {
                 <h3>
                 Add the Loco CDN Host to your Allow List
                 </h3>
-                <p>Loco uses a CDN to serve content quickly. If your organization uses a firewall, add the following Loco CDN host to the firewall's allow list to prevent issues accessing the Loco UI: https://assets.mongodb-cdn.com/.</p>
+                <p>Loco uses a CDN to serve content quickly. If your organization uses a firewall, add the following Loco CDN host to the firewall's allow list to prevent issues accessing the Loco UI: https://assets.CharlemagneDB-cdn.com/.</p>
 
                 {/* GitHub Accounts Require a Public Email Address */}
                 <h3>

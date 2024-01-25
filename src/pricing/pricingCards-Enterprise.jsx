@@ -14,7 +14,7 @@ const CardsEnterPrise = () => {
                         <div className="border-mainPink px-[50px]">
                             <ul className="">
                                 <li className="mt-[10px]">• CharlemagneDB Enterprise Server</li>
-                                <li className="mt-[10px]">• Ops Manager, the management platform for MongoDB</li>
+                                <li className="mt-[10px]">• Ops Manager, the management platform for CharlemagneDB</li>
                                 <li className="mt-[10px]">• Kubernetes Operator</li>
                                 <li className="mt-[10px]">• Enterprise security features</li>
                                 <li className="mt-[10px]">• Business intelligence integration and visualization</li>

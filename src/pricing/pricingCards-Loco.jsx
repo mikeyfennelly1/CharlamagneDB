@@ -42,7 +42,7 @@ const CardsLoco = () => {
                         <Link to="/CharlamagneDB/login">
                             <button to='/CharlamagneDB/login' className=" text-[1.3rem] bg-mainPink text-black px-[30px] py-[10px] my-[50px] hover:bg-black hover:text-white">Try For Free</button>
                         </Link>
-                        <p className="text-[1.2rem] my-[50px]">For learning and exploring MongoDB in a cloud environment. Basic configuration options.</p>
+                        <p className="text-[1.2rem] my-[50px]">For learning and exploring CharlemagneDB in a cloud environment. Basic configuration options.</p>
                         <ul className="text-[1rem]">
                             <li className="mb-[20px]">• 512MB to 5GB of storage</li>
                             <li className="mb-[20px]">• Shared RAM</li>
