@@ -62,24 +62,81 @@ const GoogleAccountContent = () => {
     );
 }
 
-const TabsData = [
+const AccountOrEmailTabsData = [
     {title: "Email Address", content: <EmailAddressContent />},
     {title: "Github Account", content: <GithubAccountContent />},
     {title: "Google Account", content: <GoogleAccountContent />},
 ]
 
+
+const AtlasCLITabContent = () => {
+    return (
+        <>
+            <div className='text-white pl-[30px] py-[50px]'>
+                <p>random1</p>
+            </div>
+        </>
+    );
+}
+
+const AtlasUITabContent = () => {
+    return (
+        <>
+            <div className='text-white pl-[30px] py-[50px]'>
+                <p>To log in using the Atlas UI:</p>
+                <p>If you already created a MongoDB account using your email address, sign in to your account:</p>
+                <ol className='mt-[30px]'>
+                    <li>Navigate to MongoDB Atlas login page.</li>
+                    <li>Enter your email address.</li>
+                    <li>Click Next.</li>
+                    <li>Follow the prompts to log in to your account.</li>
+                </ol>
+
+                <h2>Create an Atlas Organization and Project</h2>
+                <p>Atlas creates an organization and project for you. You can also create them on your own.</p>
+                <p>At the Organization level, you can implement security controls and create users which work across one or more Projects. To learn more, see The Organization Level.</p>
+                <p>You can create project-level Atlas users and roles with appropriate access to the different production and development application environments. To learn more, see The Project Level.</p>
+                <p>Create an Atlas organization and then create a project in this organization. You will deploy your first cluster in this project.</p>
+
+                <h2>Next Steps</h2>
+                <p>With your Atlas account, open the organization and project, and then proceed to Deploy a Free Cluster.</p>
+                <Tip tip={
+                    <div>
+                        <p className='font-bold'>See Also:</p>
+                        <p>To learn about shortcuts you can use to navigate your new Atlas account, see Quickly Navigate with Atlas Goto.</p>
+                    </div>
+
+                } />
+            </div>
+        </>
+    );
+}
+
+const TabsData = [
+    {title: "Atlas CLI", content: <AtlasCLITabContent />},
+    {title: "Atlas UI", content: <AtlasUITabContent />},
+]
+
+
 const AtlasUI = () => {
     return (
         <>
             <div className="text-white bg-[#222] min-w-[300px] px-[80px] py-[40px]">
-                <p>To register using the Atlas UI, start at the MongoDB Atlas registration page</p>
+                <p>To register using the Atlas UI, start at the MongoDB Atlas registration page.</p>
+                <div className="">
+                    <TabsSection 
+                    data={AccountOrEmailTabsData}
+                    />
+                </div>
+
+                
+                <h2>Log in to your Atlas Account</h2>
+                <p>Select a tab based on how you would like to log in:</p>
                 <div className="">
                     <TabsSection 
                     data={TabsData}
                     />
                 </div>
-                <h2>Log in to your Atlas Account</h2>
-                <p>Select a tab based on how you would like to log in:</p>
             </div>
         </>
     );
