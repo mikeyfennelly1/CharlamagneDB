@@ -1,13 +1,17 @@
 const ManageTheIPAccessList = () => {
     return (
         <>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nam similique necessitatibus voluptatibus facilis odio qui modi esse sed earum doloribus perferendis reiciendis enim, quibusdam assumenda accusantium soluta magnam eveniet?
-            Quod rem eum reiciendis voluptas, nisi provident animi neque ea id, odit laborum voluptatem tempore nobis quia quibusdam! Quisquam voluptatum unde vel odit reprehenderit nam. Deserunt, quas? Corrupti, sed rerum?
-            Incidunt itaque minus rerum eos molestias dolorem placeat consequuntur veritatis quis. Optio rerum magnam quibusdam ut qui. Est voluptates cumque accusamus libero, cupiditate voluptas dicta sapiente odio, nihil temporibus perferendis?
-            Quas tenetur delectus assumenda quam iusto excepturi, nihil saepe error illo. Atque tempore modi aliquam, quisquam et hic quos nostrum quidem cupiditate iste explicabo fugiat vero nobis ipsam error dignissimos!
-            Voluptate totam saepe voluptatem odit ex, accusamus aspernatur ut excepturi. Quo facilis inventore repellat dolore excepturi dignissimos placeat assumenda earum, harum illo tempora quae, consequuntur debitis asperiores natus tenetur corrupti!
-            Quidem, molestias. Consequatur recusandae illum provident iure quibusdam, necessitatibus eveniet mollitia, velit a deleniti minus maiores porro corporis! At atque veniam velit officiis dignissimos sed architecto minima, aliquid sunt. Ratione?
-            Veniam assumenda suscipit ad aut ab sit ut facilis dignissimos cumque, architecto velit asperiores tempore dicta molestias ipsum ratione provident omnis nihil doloribus, laudantium dolor quam ipsa. Facere, magni ex?
+            <div>
+                <p>An IP is a unique numeric identifier for a device connecting to a network. In Atlas, you can only connect to a cluster from a trusted IP address. Within Atlas, you can create a list of trusted IP addresses, referred to as a IP access list, that can be used to connect to your cluster and access your data.</p>
+                <h3>Required Access</h3>
+                <p>To add your IP address to an IP access list, you must have Project Data Access Read/Write access or higher to the project.</p>
+                <h3>Procedure</h3>
+                <p>Since you selected the Automate security setup checkbox when you created your first cluster, Atlas automatically adds your IP address to the IP access list.</p>
+                <p>To add other IP access list entries, see Configure IP Access List Entries.</p>
+                <p>To learn more about the security features available, see Configure Security Features for Database Deployments.</p>
+                <h2>Next Steps</h2>
+                <p>Now that you added your connection IP address to the IP access list, proceed to Connect to Your Cluster.</p>
+            </div>
         </>
     );
 }
