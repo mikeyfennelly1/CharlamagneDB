@@ -8,7 +8,7 @@ const DashboardMain = () => {
                     <h1 className="top-[60px] left-[60px]  text-[1.3rem]">Database Deployments</h1>
                 </div>
                 <div className="mt-[40px] mx-[80px] border-b">
-                    <h2 className="border-b max-w-fit pr-[20px] text-[1.2rem]">ExampleCluster</h2>
+                    <h2 className="border-b m-0 max-w-fit pr-[20px] text-[1.2rem] text-white hover:cursor-pointer ">ExampleCluster</h2>
                 </div>
             </div>
         </div>

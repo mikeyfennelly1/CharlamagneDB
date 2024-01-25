@@ -1,7 +1,7 @@
-import Tip from "../doc-components/tip";
-import Note from "../doc-components/note";
-import CodeSnippet from "../doc-components/codeSnippet";
-import InlineCodeSnippet from "../doc-components/inlineCodeSnippet";
+import Tip from "../../doc-components/tip";
+import Note from "../../doc-components/note";
+import CodeSnippet from "../../doc-components/codeSnippet";
+import InlineCodeSnippet from "../../doc-components/inlineCodeSnippet";
 
 const InsertAndViewADocument = () => {
     return (

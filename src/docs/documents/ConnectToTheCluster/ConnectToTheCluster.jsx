@@ -1,6 +1,6 @@
-import Note from "../doc-components/note";
-import CodeSnippet from "../doc-components/codeSnippet";
-import InlineCodeSnippet from "../doc-components/inlineCodeSnippet";
+import Note from "../../doc-components/note";
+import CodeSnippet from "../../doc-components/codeSnippet";
+import InlineCodeSnippet from "../../doc-components/inlineCodeSnippet";
 
 const ConnectToTheCluster = () => {
     return (
