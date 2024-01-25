@@ -13,9 +13,9 @@ const DashboardSidebar = (props) => {
                 <div className=" max-w-fit bg-[#121212] min-h-screen p-[50px]">
                     <div>
                         <h2 className="font-[TT-Travels-Next-Med] text-mainPink text-2xl">Overview</h2>
-                        <ul className="mb-[50px] mt-[40px]">
+                        <ul className="mb-[50px] pl-0 mt-[40px]">
                             <h2 className="mb-[10px] text-xl mt-[40px]">Deployment</h2>
-                            <li className='opacity-80'>Databases</li>
+                            <button className='opacity-80'>Databases</button>
                         </ul>
                     </div>
                     <div>
