@@ -2,7 +2,7 @@ import CodeSnippet from '../../doc-components/codeSnippet';
 import Tip from '../../doc-components/tip';
 import Note from '../../doc-components/note';
 import InlineCodeSnippet from '../../doc-components/inlineCodeSnippet';
-import TabsSection from '../../doc-components/TabsSection';
+import TabsSection from '../../doc-components/tabs/TabsSection';
 // import Content1 from './tabs-contents/Content1';
 // import Content2 from './tabs-contents/Content2';
 // import Content3 from './tabs-contents/Content3';

@@ -6,7 +6,6 @@ import DeployAFreeCluster from "./documents/DeployAFreeCluster";
 import InsertAndViewADocument from "./documents/InsertAndViewADocument";
 import ManageTheIPAccessList from "./documents/ManageTheIPAccessList";
 
-const ActivityContext = createContext(null)
 
 const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores enim dignissimos facilis saepe laborum perferendis id minima ad, officiis, itaque nostrum alias illo optio repellendus eius quia cupiditate quasi adipisci. Laboriosam, laborum qui nisi, magnam voluptates soluta vitae nesciunt dolorum blanditiis minima voluptatem asperiores error, cumque explicabo beatae! Deleniti dicta iure eligendi harum odio sapiente molestiae sit provident minima atque. Iure veritatis nisi explicabo officiis commodi pariatur quidem provident! Laborum, odio quasi ratione incidunt suscipit et quaerat hic sunt earum qui ullam consequatur officia nobis voluptates, eveniet, exercitationem quos deleniti. Molestias similique quam consectetur aperiam aliquid iure earum et commodi unde eligendi mollitia ut ipsum, fuga obcaecati ipsa? Culpa at quos reiciendis consectetur odio ad enim facilis cumque nemo voluptatibus."
 
@@ -18,6 +17,8 @@ const docs = [
     { title: 'Connect to the cluster', body: <ConnectToTheCluster/>, id: 5 },
     { title: 'Insert and view a document', body: <InsertAndViewADocument/>, id: 6 },
 ];
+
+const ActivityContext = createContext(null)
 
 const DocsPage1 = () => {
     return (
