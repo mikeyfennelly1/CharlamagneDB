@@ -10,6 +10,9 @@ module.exports = {
     "./src/dashboard/dashboardMain.jsx",
     // docs
     "./src/docs/docsPage1.jsx",
+      // docs/CreateAnAccount/tabs-contents
+      "./src/docs/documents/CreateAnAccount/tabs-contents/AtlasCLI.jsx",
+      "./src/docs/documents/CreateAnAccount/tabs-contents/AtlasUI.jsx",
       // docs/doc-components
       "./src/docs/doc-components/note.jsx",
       "./src/docs/doc-components/codeSnippet.jsx",

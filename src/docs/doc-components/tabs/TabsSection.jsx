@@ -5,14 +5,23 @@ import TabsContentSection from "./TabsContentSection.jsx";
 
 const TabsSection = (props) => {
     const Data = props.data
-    const ListOfTitlesAndKeys = Data.map(({ title, key }) => ({ title, key }));
-    const ListOfContentsAndKeys = Data.map(({ content, key }) => ({ content, key }));
-
+    
+    
+    const TabsDataWithKey = Data.map((tab, index) => ({
+        ...tab,
+        key: index + 1
+    }));
+    
+    const ListOfTitlesAndKeys = TabsDataWithKey.map(({ title, key }) => ({ title, key }));
+    const ListOfContentsAndKeys = TabsDataWithKey.map(({ content, key }) => ({ content, key }));
+    
     return (
         <>
         <TitlesContext.Provider value={useState(1)}>
-            <TitlesBar ListOfTitlesAndKeys={ListOfTitlesAndKeys}/>
-            <TabsContentSection ListOfContentsAndKeys={ListOfContentsAndKeys}/>
+            <div className="mt-[50px]">
+                <TitlesBar ListOfTitlesAndKeys={ListOfTitlesAndKeys}/>
+                <TabsContentSection ListOfContentsAndKeys={ListOfContentsAndKeys}/>
+            </div>
         </TitlesContext.Provider>
         </>
     );
