@@ -11,8 +11,8 @@ module.exports = {
     // docs
     "./src/docs/docsPage1.jsx",
       // docs/CreateAnAccount/tabs-contents
-      "./src/docs/documents/CreateAnAccount/tabs-contents/AtlasCLI.jsx",
-      "./src/docs/documents/CreateAnAccount/tabs-contents/AtlasUI.jsx",
+      "./src/docs/documents/CreateAnAccount/tabs-contents/LocoCLI.jsx",
+      "./src/docs/documents/CreateAnAccount/tabs-contents/LocoUI.jsx",
       // docs/doc-components
       "./src/docs/doc-components/note.jsx",
       "./src/docs/doc-components/codeSnippet.jsx",
