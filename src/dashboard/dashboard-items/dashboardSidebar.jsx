@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import CreateADatabaseUser from "./dashboardContext"
 import DashboardContext from "./dashboardContext"
 
 const sidebarActiveClasses = "text-mainPink"
