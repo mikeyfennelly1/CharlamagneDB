@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import DashboardContext from "./dashboardContext";
+import DashboardContext from "../dashboardContext";
+
+const overviewVisibleClasses = "visible text-white min-w-[1350px] max-w-[1350px] min-h-[200px] inline-block px-[200px] py-[100px] font-[TT-Autonomous-Mono-Reg]"
+const overviewInvisibleClasses = "hidden"
 
 const Overview = () => {
-    const [dashboardContext, setDashboardContext] = useContext(DashboardContext)
-    console.log(dashboardContext)
+    const [dashboardContext] = useContext(DashboardContext)
     return (
         <>
-        <div className="text-white min-w-[1400px] max-w-[1400px] min-h-[200px] inline-block px-[200px] py-[100px] font-[TT-Autonomous-Mono-Reg]">
+        <div className={(dashboardContext === "Overview" ? overviewVisibleClasses : overviewInvisibleClasses)}>
             <h1 className="text-mainPink text-2xl font-[TT-Travels-Next-Reg]">Overview</h1>
             <div className="border-2 min-w-max min-h-[600px] mt-[40px] rounded-[40px] border-mainPink bg-[#111] relative">
                 <div className="pt-[50px] pl-[80px]">

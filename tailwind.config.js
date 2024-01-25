@@ -10,6 +10,14 @@ module.exports = {
         "./src/dashboard/dashboard-items/dashboardProjectBar.jsx",
         "./src/dashboard/dashboard-items/dashboardMain.jsx",
         "./src/dashboard/dashboard-items/dashboardSidebar.jsx",
+        // dashboard/dashboard-items/dashboardMainItems
+        "./src/dashboard/dashboard-items/dashboardMainItems/Advanced.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/Backup.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/DatabaseAccess.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/Databases.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/NetworkAccess.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/Overview.jsx",
+        "./src/dashboard/dashboard-items/dashboardMainItems/Quickstart.jsx",
     // docs
     "./src/docs/docsPage1.jsx",
         // docs/CreateAnAccount/tabs-contents
