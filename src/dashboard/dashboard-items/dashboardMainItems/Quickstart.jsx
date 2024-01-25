@@ -1,19 +1,137 @@
-import { useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import DashboardContext from "../dashboardContext";
+import '../../../docs/documents/documentationStyles.css'
+import { Card } from "react-bootstrap";
 
-const QuickstartVisibleClasses = "text-white visible"
+const QuickstartVisibleClasses = "text-white visible visible text-white min-w-[1350px] max-w-[1350px] min-h-[200px] inline-block px-[200px] py-[100px] font-[TT-Autonomous-Mono-Reg]"
 const QuickstartInvisibleClasses = "text-white hidden"
 
+const CardContext1 = createContext(null)
+const CardContext2 = createContext(null)
 
 const Quickstart = () => {
     const [dashboardContext] = useContext(DashboardContext)
     return (
         <>
             <div className={(dashboardContext === "Quickstart" ? QuickstartVisibleClasses : QuickstartInvisibleClasses)}>
-                <p>Quickstart</p>
+                <h2>Security Quickstart</h2>
+                <p>To access data stored in Atlas, you’ll need to create users and set up network security controls. Learn more about security setup</p>
+                <h3>How would you like to authenticate your connection?</h3>
+                <p>Your first user will have permission to read and write any data in your project.</p>
+
+                <CardContext1.Provider value={useState("Username and Password")}>
+                <div className="">
+                    <UsernameAndPasswordCard />
+                    <CertificateCard />
+                    <UsernameAndPasswordContent />
+                    <CertificateContent />
+                </div>
+                </CardContext1.Provider>
+
+                <CardContext2.Provider value={useState("My Local Environment")}>
+                    <h2>Where would you like to connect from?</h2>
+                    <p>Enable access for any network(s) that need to read and write data to your cluster.</p>
+                <div className="flex items-start">
+                    <MyLocalEnvironmentCard/>
+                    <CloudEnvironmentCard/>
+                    <MyLocalEnvironmentContent/>
+                </div>
+                </CardContext2.Provider>
+
+
             </div>
         </>
     );
 }
  
 export default Quickstart;
+
+const UsernameAndPasswordCard = () => {
+
+    const [cardContext, setCardContext] = useContext(CardContext1)
+    return (
+        <>
+            <div onClick={() => setCardContext("Username and Password")}
+            className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block min-w-[300px] ml-[20px] p-10 ` + (cardContext === "Username and Password" ? "border-mainPink text-mainPink" : null) }>Username and Password</div>
+        </>
+    );
+}
+
+const UsernameAndPasswordContent = () => {
+    const [cardContext, setCardContext] = useContext(CardContext1)
+    return (
+        <>
+            <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Username and Password" ? null : "hidden") }>
+                <p>Create a database user using a username and password. Users will be given the read and write to any database privilege by default. You can update these permissions and/or create additional users later. Ensure these credentials are different to your MongoDB Cloud username and password. You can manage existing users via the Database Access Page.</p>
+                <p className="text-[1rem] pb-0 mb-0 opacity-60">Username</p>
+                <input type="text" placeholder="Enter Username" className="bg-[#111] p-2 rounded-[10px] border min-w-[400px] mb-[20px]"/>
+
+                <p className="text-[1rem] pb-0 mb-0 opacity-60">Password</p>
+                <input type="text" placeholder="Enter Password" className="bg-[#111] p-2 rounded-[10px] border min-w-[400px] mb-[20px]"/>
+                <button className="hover:cursor-[not-allowed] bg-[#111] p-2 rounded-[10px] border  px-4 ml-[20px]">Autogenerate Secure Password</button>
+            </div>
+        </>
+    );
+}
+
+const CertificateContent = () => {
+    const [cardContext, setCardContext] = useContext(CardContext1)
+    return (
+        <>
+            <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Certificate" ? null : "hidden") }>
+                <p>MongoDB uses X.509 certificates for passwordless authentication. Users will be given the read and write to any database privilege by default.</p>
+                <p className="text-[1rem] pb-0 mb-0 opacity-60">Common Name</p>
+                <input type="text" placeholder="e.g. new-user_31" className="bg-[#111] p-2 rounded-[10px] border min-w-[400px] mb-[20px]"/>
+            </div>
+        </>
+    );
+}
+
+const CertificateCard = () => {
+
+    const [cardContext, setCardContext] = useContext(CardContext1)
+    return (
+        <>
+            <div onClick={() => setCardContext("Certificate")}
+            className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block min-w-[300px] ml-[20px] p-10 ` + (cardContext === "Certificate" ? "border-mainPink text-mainPink" : null) }>Certificate</div>
+        </>
+    );
+}
+
+const MyLocalEnvironmentCard = () => {
+
+    const [cardContext, setCardContext] = useContext(CardContext2)
+    return (
+        <>
+            <div onClick={() => setCardContext("My Local Environment")}
+            className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block max-w-[400px] ml-[20px] p-10 ` + (cardContext === "My Local Environment" ? "border-mainPink text-mainPink" : null) }>My Local Environment
+            <p className="text-[0.8rem] opacity-80 text-white">Use this to add network IP addresses to the IP Access List. This can be modified at any time.</p>
+            </div>
+        </>
+    );
+}
+
+const MyLocalEnvironmentContent = () => {
+    const [cardContext, setCardContext] = useContext(CardContext2)
+    return (
+        <>
+            <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "My Local Environment" ? null : "hidden") }>
+                <p>Add entries to your IP Access List</p>
+                
+            </div>
+        </>
+    );
+}
+
+const CloudEnvironmentCard = () => {
+
+    const [cardContext, setCardContext] = useContext(CardContext2)
+    return (
+        <>
+            <div onClick={() => setCardContext("Cloud Environment")}
+            className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block max-w-[400px] ml-[20px] p-10 ` + (cardContext === "Cloud Environment" ? "border-mainPink text-mainPink" : null) }>Cloud Environment
+            <p className="text-[0.8rem] opacity-80 text-white">Use this to configure network access between Atlas and your cloud or on-premise environment. Specifically, set up IP Access Lists, Network Peering, and Private Endpoints.</p>
+            </div>
+        </>
+    );
+}
