@@ -13,10 +13,13 @@ module.exports = {
       // docs/CreateAnAccount/tabs-contents
       "./src/docs/documents/CreateAnAccount/tabs-contents/LocoCLI.jsx",
       "./src/docs/documents/CreateAnAccount/tabs-contents/LocoUI.jsx",
+      // docs/documents/DeployAFreeCluster
+      "./src/docs/documents/DeployAFreeCluster/DeployAFreeCluster.jsx",
       // docs/doc-components
       "./src/docs/doc-components/note.jsx",
       "./src/docs/doc-components/codeSnippet.jsx",
       "./src/docs/doc-components/tip.jsx",
+      "./src/docs/doc-components/important.jsx",
       "./src/docs/doc-components/inlineCodeSnippet.jsx",
       "./src/docs/doc-components/tabs/TitlesBar.jsx",
       "./src/docs/doc-components/tabs/TabsContentSection.jsx",

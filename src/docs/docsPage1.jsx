@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from "react";
 import CreateAnAccount from "./documents/CreateAnAccount/CreateAnAccount";
 import ConnectToTheCluster from "./documents/ConnectToTheCluster";
 import CreateADatabaseUser from "./documents/CreateADatabaseUser";
-import DeployAFreeCluster from "./documents/DeployAFreeCluster";
+import DeployAFreeCluster from "./documents/DeployAFreeCluster/DeployAFreeCluster";
 import InsertAndViewADocument from "./documents/InsertAndViewADocument";
 import ManageTheIPAccessList from "./documents/ManageTheIPAccessList";
 
