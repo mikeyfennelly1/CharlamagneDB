@@ -34,8 +34,9 @@ const Quickstart = () => {
                 <div className="flex items-start">
                     <MyLocalEnvironmentCard/>
                     <CloudEnvironmentCard/>
-                    <MyLocalEnvironmentContent/>
                 </div>
+                    <MyLocalEnvironmentContent/>
+                    <CloudEnvironmentContent/>
                 </CardContext2.Provider>
 
 
@@ -112,13 +113,28 @@ const MyLocalEnvironmentCard = () => {
 }
 
 const MyLocalEnvironmentContent = () => {
-    const [cardContext, setCardContext] = useContext(CardContext2)
+    const [cardContext] = useContext(CardContext2)
     return (
         <>
-            <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "My Local Environment" ? null : "hidden") }>
-                <p>Add entries to your IP Access List</p>
-                
+        <div className={(cardContext === "My Local Environment" ? "" : "hidden") }>
+            <p className="mt-[50px] mx-[20px]">Add entries to your IP Access List</p>
+            <div className="block text-white bg-[#222] p-10 mx-[20px] rounded-[10px] ">
+                <p>Only an IP address you add to your Access List will be able to connect to your project's clusters. You can manage existing IP entries via the Network Access Page.</p>
+                <div className="mt-[30px]">
+                    <div className="inline-block text-white">
+                        <p className="font-bold">IP Address</p>
+                        <input type="text" placeholder="Enter IP Address" className="bg-[#111] p-2 rounded-[10px] border min-w-[300px] mb-[20px]" />
+                    </div>
+                    <div className="inline-block text-white ml-10">
+                        <p className="font-bold">Description</p>
+                        <input type="text" placeholder="Enter Description" className="bg-[#111] p-2 rounded-[10px] border min-w-[300px] mb-[20px]" />
+                    </div>
+                </div>
+                <div>
+                    <button className="bg-[#111] p-2 rounded-[10px] border ">Add Entry</button>
+                </div>
             </div>
+        </div>
         </>
     );
 }
@@ -131,6 +147,46 @@ const CloudEnvironmentCard = () => {
             <div onClick={() => setCardContext("Cloud Environment")}
             className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block max-w-[400px] ml-[20px] p-10 ` + (cardContext === "Cloud Environment" ? "border-mainPink text-mainPink" : null) }>Cloud Environment
             <p className="text-[0.8rem] opacity-80 text-white">Use this to configure network access between Atlas and your cloud or on-premise environment. Specifically, set up IP Access Lists, Network Peering, and Private Endpoints.</p>
+            </div>
+        </>
+    );
+}
+
+const CloudEnvironmentContent = () => {
+
+    const [cardContext] = useContext(CardContext2)
+    return (
+        <>
+            <div className={"" + (cardContext === "Cloud Environment" ? null : "hidden") }>
+            <p className="mt-[50px] mx-[20px]">Set your network security with any of the following options</p>
+            <div className="block text-white bg-[#222] p-10 mx-[20px] rounded-[10px] ">
+                <p>Only an IP address you add to your Access List will be able to connect to your project's clusters. You can manage existing IP entries via the Network Access Page.</p>
+                <div className="mt-[30px]">
+                    <div className="inline-block text-white">
+                        <p className="font-bold">IP Address</p>
+                        <input type="text" placeholder="Enter IP Address" className="bg-[#111] p-2 rounded-[10px] border min-w-[300px] mb-[20px]" />
+                    </div>
+                    <div className="inline-block text-white ml-10">
+                        <p className="font-bold">Description</p>
+                        <input type="text" placeholder="Enter Description" className="bg-[#111] p-2 rounded-[10px] border min-w-[300px] mb-[20px]" />
+                    </div>
+                </div>
+                <div>
+                    <button className="bg-[#111] p-2 rounded-[10px] border ">Add Entry</button>
+                </div>
+            </div>
+            <div className="mx-[20px] flex justify-start mt-[50px]">
+                <div className="inline-block p-10 bg-[#222] max-w-[300px] rounded-[10px] mr-[20px]">
+                    <p className="opacity-60">VC Peering</p>
+                    <p className="max-w-[250px] text-[0.9rem]">Peer your VPC with your Atlas cluster's VPC to ensure that traffic does not traverse the public internet. Requires an M10 cluster or higher.</p>
+                    <button className="inline-block1 hover:cursor-[not-allowed]">Configure</button>
+                </div>
+                <div className="inline-block p-10 bg-[#222] max-w-[300px] rounded-[10px] mr-[20px]">
+                    <p className="opacity-60">Private Endpoint</p>
+                    <p className="max-w-[250px] text-[0.9rem]">Use your Private Endpoint to create a one-way connection from your VPC to your MongoDB Atlas VPC, ensuring Atlas cannot initiate connections back to your network. Requires an M10 cluster or higher.</p>
+                    <button className="inline-block1 hover:cursor-[not-allowed]">Configure</button>
+                </div>
+            </div>
             </div>
         </>
     );

@@ -14,7 +14,7 @@ const DashboardSidebar = (props) => {
     return (
         <>
             <section className="text-white font-[TT-Autonomous-Mono-Reg] max-w-fit">
-                <div className=" max-w-fit bg-[#121212] min-h-screen p-[50px]">
+                <div className=" max-w-fit bg-[#121212] min-h-[100%] p-[50px]">
                     <div>
                         <h2 onClick={() => setDashboardContext("Overview")} className={("Overview" === dashboardContext ? overviewActiveClasses : overviewInctiveClasses)}>Overview</h2>
                         <ul className="mb-[50px] pl-0 mt-[40px]">

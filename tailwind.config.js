@@ -18,7 +18,7 @@ module.exports = {
         "./src/dashboard/dashboard-items/dashboardMainItems/NetworkAccess.jsx",
         "./src/dashboard/dashboard-items/dashboardMainItems/Overview.jsx",
         // dashboard/dashboard-items/dashboardMainItems/Quickstart
-            "./src/dashboard/dashboard-items/dashboardMainItems/Quickstart/Quickstart.jsx",
+            "./src/dashboard/dashboard-items/dashboardMainItems/Quickstart.jsx",
     // docs
     "./src/docs/docsPage1.jsx",
         // docs/CreateAnAccount/tabs-contents
