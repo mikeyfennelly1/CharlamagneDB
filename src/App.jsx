@@ -16,9 +16,12 @@ import Dashboard from './dashboard/dashboard.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './utils/firebase'
 
 function App() {
-
+  
   useEffect( () => {
     (
       async () => {
@@ -28,9 +31,10 @@ function App() {
         }  
         locomotiveScroll()
       }
-    )()
-  }, [])
-
+      )()
+    }, [])
+    
+    const [user] = useAuthState(auth)
 
   return (
     <>
@@ -52,8 +56,14 @@ function App() {
           <Route exact path="/CharlamagneDB/loco">
             <Loco />
           </Route>
-          <Route exact path="/CharlamagneDB/login">
-            <Login/>
+          
+          <Route exact path="/CharlamagneDB/login"> 
+            {!user && (
+              <Login/>
+            )}
+            {user && (
+              <Redirect to="/CharlamagneDB/dashboard" />
+            )}
           </Route>
           <Route exact path="/CharlamagneDB/pricing">
             <Pricing/>
@@ -62,7 +72,12 @@ function App() {
             <Docs/>
           </Route>
           <Route exact path="/CharlamagneDB/dashboard">
-            <Dashboard/>
+            {user && (
+              <Dashboard/>
+            )}
+            {!user && (
+              <Redirect to="/CharlamagneDB/login" />
+            )}
           </Route>
         </Switch>
       </Router>

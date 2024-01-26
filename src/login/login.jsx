@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
 import {auth} from '../utils/firebase'
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Login = () => {
     // Sign in with google
@@ -24,6 +25,9 @@ const Login = () => {
             console.log(error);
         }
     }
+
+    const [user] = useAuthState(auth)
+    console.log(user)
 
     return (
         <>
