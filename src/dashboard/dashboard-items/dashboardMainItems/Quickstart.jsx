@@ -1,7 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import DashboardContext from "../dashboardContext";
 import '../../../docs/documents/documentationStyles.css'
-import { Card } from "react-bootstrap";
 
 const QuickstartVisibleClasses = "text-white visible visible text-white min-w-[1350px] max-w-[1350px] min-h-[200px] inline-block px-[200px] py-[100px] font-[TT-Autonomous-Mono-Reg]"
 const QuickstartInvisibleClasses = "text-white hidden"
@@ -59,7 +58,7 @@ const UsernameAndPasswordCard = () => {
 }
 
 const UsernameAndPasswordContent = () => {
-    const [cardContext, setCardContext] = useContext(CardContext1)
+    const [cardContext] = useContext(CardContext1)
     return (
         <>
             <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Username and Password" ? null : "hidden") }>
@@ -76,7 +75,7 @@ const UsernameAndPasswordContent = () => {
 }
 
 const CertificateContent = () => {
-    const [cardContext, setCardContext] = useContext(CardContext1)
+    const [cardContext] = useContext(CardContext1)
     return (
         <>
             <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Certificate" ? null : "hidden") }>

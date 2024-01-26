@@ -1,7 +1,4 @@
-import CodeSnippet from '../../doc-components/codeSnippet';
-import Tip from '../../doc-components/tip';
 import Note from '../../doc-components/note';
-import InlineCodeSnippet from '../../doc-components/inlineCodeSnippet';
 import TabsSection from '../../doc-components/tabs/TabsSection';
 import LocoCLI from './tabs-contents/LocoCLI';
 import LocoUI from './tabs-contents/LocoUI';

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { TitlesContext } from "./titlesContext"
 
 const ActiveTitleClasses = "hover:cursor-pointer text-mainPink inline-block bg-[#222] px-[20px] py-[10px]"

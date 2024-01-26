@@ -1,5 +1,5 @@
 import { TitlesContext } from "./titlesContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 const ActiveContentClasses = "visible text-white"
 const InActiveContentClasses = "hidden text-white"

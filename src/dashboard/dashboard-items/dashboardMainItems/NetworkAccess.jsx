@@ -7,7 +7,6 @@ const DatabaseAccessVisibleClasses = "text-white visible visible text-white min-
 const DatabaseAccessInvisibleClasses = "text-white hidden"
 
 const NetworkAccess = () => {
-    const [user] = useAuthState(auth)
     const [dashboardContext] = useContext(DashboardContext)
     return (
         <>
