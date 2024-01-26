@@ -1,7 +1,5 @@
 import { useContext } from "react";
 import DashboardContext from "../dashboardContext";
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../../../utils/firebase'
 
 const DatabaseAccessVisibleClasses = "text-white visible visible text-white min-w-[1350px] max-w-[1350px] min-h-[200px] inline-block px-[200px] py-[20px] font-[TT-Autonomous-Mono-Reg]"
 const DatabaseAccessInvisibleClasses = "text-white hidden"
