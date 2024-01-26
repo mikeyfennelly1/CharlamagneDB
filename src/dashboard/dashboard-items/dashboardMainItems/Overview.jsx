@@ -17,6 +17,10 @@ const Overview = () => {
                 <div className="mt-[40px] mx-[80px] border-b">
                     <h2 className="border-b m-0 max-w-fit pr-[20px] text-[1.2rem] text-white hover:cursor-pointer ">ExampleCluster</h2>
                 </div>
+                <div className="mt-[40px] max-w-[900px] mx-[80px]">
+                        <p className="text-center px-[100px] mt-[100px] opacity-60">Your cluster has been automatically paused due to prolonged inactivity. Resume your cluster to connect to it and to gain access to your data.</p>
+                        <button className="block bg-[#222] p-2 cursor-[not-allowed] mx-auto opacity-60">Resume</button>
+                </div>
             </div>
         </div>
         </>
