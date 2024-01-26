@@ -13,6 +13,7 @@ import Login from './login/login.jsx'
 import Pricing from './pricing/pricing.jsx'
 import Docs from './docs/docs.jsx'
 import Dashboard from './dashboard/dashboard.jsx';
+import SignUp from './signup/SignUp.jsx';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';
@@ -58,9 +59,7 @@ function App() {
           </Route>
           
           <Route exact path="/CharlamagneDB/login"> 
-            {!user && (
               <Login/>
-            )}
             {user && (
               <Redirect to="/CharlamagneDB/dashboard" />
             )}
@@ -77,6 +76,13 @@ function App() {
             )}
             {!user && (
               <Redirect to="/CharlamagneDB/login" />
+            )}
+          </Route>
+          <Route exact path="/CharlamagneDB/signup">
+              
+              <SignUp />
+              {user && (
+              <Redirect to="/CharlamagneDB/dashboard" />
             )}
           </Route>
         </Switch>

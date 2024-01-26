@@ -29,7 +29,7 @@ const DashboardNavbar = () => {
                         </Link>
                     <Link to="/CharlamagneDB/dashboard">
                         <h2 className='my-0 inline-block text-[1.1rem] pr-4 font-semibold'>{user.displayName}</h2>
-                        <img className='max-h-[20px] inline rounded-full ' src={user.photoURL}
+                        <img className='max-h-[30px] inline rounded-full border-2 border-mainPink' src={user.photoURL}
                         alt="" />
                     </Link>
                 </div>

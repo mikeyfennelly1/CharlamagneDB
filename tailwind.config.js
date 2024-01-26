@@ -19,7 +19,7 @@ module.exports = {
         "./src/dashboard/dashboard-items/dashboardMainItems/Overview.jsx",
         // dashboard/dashboard-items/dashboardMainItems/Quickstart
             "./src/dashboard/dashboard-items/dashboardMainItems/Quickstart.jsx",
-    // docs
+    // docs 
     "./src/docs/docsPage1.jsx",
         // docs/CreateAnAccount/tabs-contents
         "./src/docs/documents/CreateAnAccount/tabs-contents/LocoCLI.jsx",
@@ -51,6 +51,8 @@ module.exports = {
     "./src/loco/loco-2.jsx",
     // login
     "./src/login/login.jsx",
+    // signup
+    "./src/signup/SignUp.jsx",
     // misc
     "./src/misc/Navbar.jsx",
     "./src/misc/heroSVG.jsx",
