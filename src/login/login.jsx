@@ -56,7 +56,7 @@ const Login = () => {
                     
                     <div className="mb-[50px] cursor-pointer">
                         <img className="inline max-h-[30px]" src="./images/Vector 88.png" alt="" />
-                        <a href='/' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
+                        <a href='/CharlamagneDB' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Log in to your account</h1>
                         <h4 className='text-white opacity-80'>Don't have an account? <Link className="text-mainPink" to="/CharlamagneDB/signup">Sign Up</Link></h4>
@@ -73,7 +73,7 @@ const Login = () => {
                             GitHub
                         </button>
 
-                        <p className="text-[0.7rem] opacity-70 px-auto py-[10px]">Or with email and password.</p>
+                        <p className="text-[0.7rem] opacity-70 px-auto py-[10px] border-t-[1px]">Or with email and password.</p>
                         
                         <EmailErrorContext.Provider value={useState('noError')}>
                             <EmailPasswordLoginForm />
@@ -100,10 +100,12 @@ const EmailPasswordLoginForm = () => {
 
     const EmailErrorVisibleClasses = "visible text-[1rem] text-[#F00]"
     const EmailErrorInvisibleClasses = "hidden"
-    const InputClasses ="border-2 border-[#ff6200] focus:border-[#ff6200] bg-black rounded-[10px] text-[1.4rem]"
-    const InputErrorClasses ="border-2 border-[#F00] bg-black rounded-[10px] text-[1.4rem]"
+    const InputClasses ="border-2 border-opacity-50 border-white bg-black rounded-[10px] text-[1.4rem]"
+    const InputErrorClasses ="border-2 border-opacity-50 border-[#F00] bg-black rounded-[10px] text-[1.4rem]"
     const ButtonUsableClasses = 'cursor-pointer text-[1rem] block my-[20px] border-[1px] border-white py-[15px] px-[30px] rounded-[10px]'
     const ButtonUnusableClasses = 'cursor-[not-allowed] text-[1rem] block my-[20px] border-[1px] opacity-50 border-white py-[15px] px-[30px] rounded-[10px]'    
+    
+    
     useEffect(() => {
         if (emailTypingStart == true && providedEmail.length == 0) {
             setEmailErrorContext('error')
@@ -113,13 +115,13 @@ const EmailPasswordLoginForm = () => {
 
         if (passwordTypingStart == true && providedPassword.length == 0) {
             setPasswordErrorContext('error')
-        } else if (passwordTypingStart == true && providedPassword.length > 0) {
+        } else if (passwordTypingStart == true && providedPassword.length > 8) {
             setPasswordErrorContext('noError')
         }
 
-        if (emailErrorContext == 'noError' && passwordErrorContext == 'noError') {
+        if (emailErrorContext == 'noError' && passwordErrorContext == 'noError' && emailTypingStart == true) {
             setFormSuccess(true)
-        } else if (emailErrorContext != 'noError' || passwordErrorContext != 'noError') {
+        } else if (emailErrorContext != 'noError' || emailTypingStart != true || passwordErrorContext != 'noError') {
             setFormSuccess(false)
         }
     })
@@ -134,7 +136,7 @@ const EmailPasswordLoginForm = () => {
     return (
         <>
         <form onSubmit={handleEmailFormSubmit}>
-            <label className='mt-5 block text-[0.9rem]'>Enter email:</label>
+            <label className='mt-5 block text-[0.9rem]'>Email Address:</label>
             <input className={(emailErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="text" required value={providedEmail} onChange={(e) => setProvidedEmail(e.target.value) & setEmailTypingStart(true)} />
                 <p className={(emailErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
             

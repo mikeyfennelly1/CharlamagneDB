@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GoogleLogin } from "firebase/auth";
 import { FaGoogle, FaGithub } from 'react-icons/fa';
+import { useState, useContext, useEffect, createContext } from 'react';
 
 const SignUp = () => {
     return (
@@ -28,8 +29,12 @@ const SignUp = () => {
                             <FaGithub className='inline scale-[1.5] mr-[20px]'/>
                             GitHub
                         </button>
-                        <p className="text-[0.7rem] opacity-70 px-auto py-[10px]">Or with email and password.</p>
-                        <input className="border-2 border-[#ff6200] bg-black rounded-[10px]" type="text" />
+
+                        <p className="text-[0.7rem] opacity-70 px-auto py-[10px] border-t-[1px]">Or with email and password.</p>
+                        
+                        <EmailErrorContext.Provider value={useState('noError')}>
+                            <EmailPasswordSignUpForm />
+                        </EmailErrorContext.Provider>
                     </div>
                 </div>
             </div>
@@ -38,3 +43,66 @@ const SignUp = () => {
 }
  
 export default SignUp;
+
+const EmailErrorContext = createContext(null)
+
+const EmailPasswordSignUpForm = () => {
+    const [providedEmail, setProvidedEmail] = useState('')
+    const [providedPassword, setProvidedPassword] = useState('')
+    const [emailErrorContext, setEmailErrorContext] = useContext(EmailErrorContext)
+    const [emailTypingStart, setEmailTypingStart] = useState(false)
+    const [passwordTypingStart, setPasswordTypingStart] = useState(false)
+    const [passwordErrorContext, setPasswordErrorContext] = useState(false)
+    const [formSuccess, setFormSuccess] = useState(false)
+
+    const EmailErrorVisibleClasses = "visible text-[1rem] text-[#F00]"
+    const EmailErrorInvisibleClasses = "hidden"
+    const InputClasses ="border-2 border-opacity-50 border-white bg-black rounded-[10px] text-[1.4rem]"
+    const InputErrorClasses ="border-2 border-opacity-50 border-[#F00] bg-black rounded-[10px] text-[1.4rem]"
+    const ButtonUsableClasses = 'cursor-pointer text-[1rem] block my-[20px] border-[1px] border-white py-[15px] px-[30px] rounded-[10px]'
+    const ButtonUnusableClasses = 'cursor-[not-allowed] text-[1rem] block my-[20px] border-[1px] opacity-50 border-white py-[15px] px-[30px] rounded-[10px]'    
+    
+    
+    useEffect(() => {
+        if (emailTypingStart == true && providedEmail.length == 0) {
+            setEmailErrorContext('error')
+        } else if (emailTypingStart == true && providedEmail.length > 0) {
+            setEmailErrorContext('noError')
+        }
+
+        if (passwordTypingStart == true && providedPassword.length == 0) {
+            setPasswordErrorContext('error')
+        } else if (passwordTypingStart == true && providedPassword.length > 0) {
+            setPasswordErrorContext('noError')
+        }
+
+        if (emailErrorContext == 'noError' && passwordErrorContext == 'noError' && emailTypingStart == true) {
+            setFormSuccess(true)
+        } else if (emailErrorContext != 'noError' || emailTypingStart != true || passwordErrorContext != 'noError') {
+            setFormSuccess(false)
+        }
+    })
+
+    const handleEmailFormSubmit = (input) => {
+        input.preventDefault()
+        
+        const LoginDetails = {providedEmail, providedPassword}
+        
+        console.log(LoginDetails)
+    }
+    return (
+        <>
+        <form onSubmit={handleEmailFormSubmit}>
+            <label className='mt-5 block text-[0.9rem]'>Email Address:</label>
+            <input className={(emailErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="text" required value={providedEmail} onChange={(e) => setProvidedEmail(e.target.value) & setEmailTypingStart(true)} />
+                <p className={(emailErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
+            
+            <label className='mt-5 block text-[0.9rem]'>Create a password:</label>
+            <input className={(passwordErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="password" required value={providedPassword} onChange={(e) => setProvidedPassword(e.target.value) & setPasswordTypingStart(true)} />
+                <p className={(passwordErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
+            
+            <button className={(formSuccess === true ? ButtonUsableClasses : ButtonUnusableClasses)}>Create Account</button>
+        </form>
+        </>
+    );
+}
