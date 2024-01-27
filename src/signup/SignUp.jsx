@@ -70,9 +70,9 @@ const EmailPasswordSignUpForm = () => {
             setEmailErrorContext('noError')
         }
 
-        if (passwordTypingStart == true && providedPassword.length == 0) {
+        if (passwordTypingStart == true && providedPassword.length < 8) {
             setPasswordErrorContext('error')
-        } else if (passwordTypingStart == true && providedPassword.length > 0) {
+        } else if (passwordTypingStart == true && providedPassword.length > 8) {
             setPasswordErrorContext('noError')
         }
 
@@ -99,7 +99,7 @@ const EmailPasswordSignUpForm = () => {
             
             <label className='mt-5 block text-[0.9rem]'>Create a password:</label>
             <input className={(passwordErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="password" required value={providedPassword} onChange={(e) => setProvidedPassword(e.target.value) & setPasswordTypingStart(true)} />
-                <p className={(passwordErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
+                <p className={(passwordErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Password must be longer than 8 characters</p>
             
             <button className={(formSuccess === true ? ButtonUsableClasses : ButtonUnusableClasses)}>Create Account</button>
         </form>
