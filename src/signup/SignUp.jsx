@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { GoogleLogin } from "firebase/auth";
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { useState, useContext, useEffect, createContext } from 'react';
+import { CreateAccount } from '../firebase/firestoreSignUp';
 
 const SignUp = () => {
     return (
@@ -87,10 +88,9 @@ const EmailPasswordSignUpForm = () => {
         input.preventDefault()
         
         if (formSuccess == true) {
-            const LoginDetails = {providedEmail, providedPassword}
-            console.log(LoginDetails)
+            const SignUpDetails = {providedEmail, providedPassword}
+            CreateAccount(SignUpDetails)
         }
-        
     }
     return (
         <>

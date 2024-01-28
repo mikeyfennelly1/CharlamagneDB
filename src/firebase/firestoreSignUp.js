@@ -1,36 +1,46 @@
 import { getFirestore, collection, getDocs, addDoc } from 'firebase/firestore'
-import firebaseApp from './firebaseApp/firebaseInit'
+import { firebaseApp } from './firebaseApp/firebaseInit'
 
 // init services
 const db = getFirestore(firebaseApp)
 
 // collection ref
-const colRef = collection(db, 'books')
+const userAccountDetails = collection(db, 'userAccountDetails')
 
 // get collection data
-getDocs(colRef)
+getDocs(userAccountDetails)
   .then((snapshot) => {
-    let books = []
+    let userAccountDetails = []
     snapshot.docs.forEach((doc) => {
-      books.push({ ...doc.data(), id: doc.id })
+      userAccountDetails.push({ ...doc.data(), id: doc.id })
     })
-    console.log(books)
+    // console.log("userAccountDetails: " + userAccountDetails)
   })
   .catch(err => {
     console.log(err.message)
   })
 
 // adding documents
-const addBookForm = () => {
-e.preventDefault();
-
-addDoc(colRef, {
-    title: addBookForm.title.value,
-    author: addBookForm.author.value,
-})
-.then(() => {
-    addBookForm.reset()
-})
+const addUserForm = (accountDetails) => {
+  
+  console.log(accountDetails)
+  console.log("providedEmail: " + accountDetails.providedEmail)
+  console.log("providedPassword: " + accountDetails.providedPassword)
+  const CurrentDateAndTime = new Date();
+  // console.log(CurrentDateAndTime)
+  addDoc(userAccountDetails, {
+      emailAddress: accountDetails.providedEmail,
+      password: accountDetails.providedPassword,
+      signedUpWhen: CurrentDateAndTime,
+  })
+  .then(() => {
+      
+  })
 }
 
   // deleting documents
+
+
+export const CreateAccount = (accountDetails) => {
+  addUserForm(accountDetails)
+}
