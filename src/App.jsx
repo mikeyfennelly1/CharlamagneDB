@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './utils/firebase/firebaseAuth.js'
+import { auth } from './firebase/firebaseAuth.js'
 
 function App() {
   

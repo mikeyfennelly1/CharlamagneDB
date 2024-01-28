@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
-import {auth} from '../utils/firebase/firebaseAuth'
+import {auth} from '../firebase/firebaseAuth'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useContext, useEffect, useState } from 'react';
