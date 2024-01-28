@@ -86,19 +86,21 @@ const EmailPasswordSignUpForm = () => {
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
         
-        const LoginDetails = {providedEmail, providedPassword}
+        if (formSuccess == true) {
+            const LoginDetails = {providedEmail, providedPassword}
+            console.log(LoginDetails)
+        }
         
-        console.log(LoginDetails)
     }
     return (
         <>
-        <form onSubmit={handleEmailFormSubmit}>
+        <form formNoValidate onSubmit={handleEmailFormSubmit}>
             <label className='mt-5 block text-[0.9rem]'>Email Address:</label>
-            <input className={(emailErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="text" required value={providedEmail} onChange={(e) => setProvidedEmail(e.target.value) & setEmailTypingStart(true)} />
+            <input name="emailAddress" className={(emailErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="text" value={providedEmail} onChange={(e) => setProvidedEmail(e.target.value) & setEmailTypingStart(true)} required/>
                 <p className={(emailErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
             
             <label className='mt-5 block text-[0.9rem]'>Create a password:</label>
-            <input className={(passwordErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="password" required value={providedPassword} onChange={(e) => setProvidedPassword(e.target.value) & setPasswordTypingStart(true)} />
+            <input name="password" className={(passwordErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="password" required value={providedPassword} onChange={(e) => setProvidedPassword(e.target.value) & setPasswordTypingStart(true)} />
                 <p className={(passwordErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Password must be longer than 8 characters</p>
             
             <button className={(formSuccess === true ? ButtonUsableClasses : ButtonUnusableClasses)}>Create Account</button>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
-import {auth} from '../utils/firebase'
+import {auth} from '../utils/firebase/firebaseAuth'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useContext, useEffect, useState } from 'react';
@@ -115,7 +115,7 @@ const EmailPasswordLoginForm = () => {
 
         if (passwordTypingStart == true && providedPassword.length == 0) {
             setPasswordErrorContext('error')
-        } else if (passwordTypingStart == true && providedPassword.length > 8) {
+        } else if (passwordTypingStart == true && providedPassword.length > 0) {
             setPasswordErrorContext('noError')
         }
 
@@ -135,7 +135,7 @@ const EmailPasswordLoginForm = () => {
     }
     return (
         <>
-        <form onSubmit={handleEmailFormSubmit}>
+        <form noValidate onSubmit={handleEmailFormSubmit}>
             <label className='mt-5 block text-[0.9rem]'>Email Address:</label>
             <input className={(emailErrorContext === 'error' ? InputErrorClasses : InputClasses)} type="text" required value={providedEmail} onChange={(e) => setProvidedEmail(e.target.value) & setEmailTypingStart(true)} />
                 <p className={(emailErrorContext === 'error' ? EmailErrorVisibleClasses : EmailErrorInvisibleClasses)}>Input is not valid</p>
