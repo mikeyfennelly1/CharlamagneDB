@@ -14,6 +14,8 @@ import Pricing from './pricing/pricing.jsx'
 import Docs from './docs/docs.jsx'
 import Dashboard from './dashboard/dashboard.jsx';
 import SignUp from './signup/SignUp.jsx';
+import introJs from 'intro.js';
+import 'intro.js/introjs.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useEffect } from 'react';
@@ -29,7 +31,8 @@ console.log(constructUrl("/path"))
 
 function App() {
   
-  useEffect( () => {
+  console.log("window.location.pathname.toLowerCase():", window.location.pathname.toLowerCase())
+  useEffect(() => {
     (
       async () => {
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
@@ -39,6 +42,7 @@ function App() {
         locomotiveScroll()
       }
       )()
+    introJs().start();   
     }, [])
     
     const [user] = useAuthState(auth)
@@ -50,7 +54,7 @@ function App() {
           <Route exact path={constructUrl('/')}>
             <div className='max-w-screen overflow-x-hidden'>
               <Hero />
-              <Navbar />
+              <Navbar/>
               <FeatureAnimation />
               <Terminal />
               <Four />
@@ -84,7 +88,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
+              
     </>
   );
 }

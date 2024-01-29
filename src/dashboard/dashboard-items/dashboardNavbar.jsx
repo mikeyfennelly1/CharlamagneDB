@@ -9,7 +9,7 @@ const DashboardNavbar = () => {
 
     return (
         <>
-        <section className=" md:block text-white max-h-[100px]">
+        <section  className=" md:block text-white max-h-[100px]">
             <div className="flex flex-wrap justify-between max-w-[100vw] w-[99vw] bg-black min-h-[100px] text-[1.3rem] max-h-[100px]">
                     <div className="mx-auto flex items-center w-fit justify-start ml-[100px] max-h-[100px]">
                         <img className="max-h-[30px] mr-[10px]" src={constructUrl("./images/Vector 88.png")} alt="" />
