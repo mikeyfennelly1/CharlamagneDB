@@ -8,12 +8,12 @@ const SignUp = () => {
     return (
         <>
             <div className="bg-[#0F0F0F] min-h-screen">
-                <img className="absolute top-0 pointer-events-none" src="../images/loginCircles.png" alt="" />
+                <img className="absolute top-0 pointer-events-none" src={constructUrl("../images/loginCircles.png")} alt="" />
                 <div className="inline-block min-h-screen min-w-[500px] bg-black border-opacity-50">
                     <div className="text-white font-[Inter-Reg] text-[1.6rem] mt-[100px] px-[50px]">
                     
                     <div className="mb-[50px] cursor-pointer">
-                        <img className="inline max-h-[30px]" src="./images/Vector 88.png" alt="" />
+                        <img className="inline max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                         <a href='/' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Sign up for a CharlemagneDB account</h1>

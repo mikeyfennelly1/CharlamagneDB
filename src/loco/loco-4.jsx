@@ -1,3 +1,5 @@
+import { constructUrl } from "../utils/urlutils";
+
 const Loco4 = () => {
     return (
         <>
@@ -8,19 +10,19 @@ const Loco4 = () => {
                 <div className="grid grid-cols-3 my-[200px] max-w-[1300px] mx-auto">
                     <div>
                         <div className=" max-w-fit mx-auto">
-                            <img className='scale-125 mx-auto ' src="../images/dbIcon.png" alt="" />
+                            <img className='scale-125 mx-auto ' src={constructUrl("../images/dbIcon.png")} alt="" />
                             <h1 className="text-white mt-[30px] block text-center">Unlimited Scalability</h1>
                         </div>
                     </div>
                     <div>
                         <div className=" max-w-fit mx-auto">
-                            <img className='scale-125' src="../images/searchIcon.png" alt="" />
+                            <img className='scale-125' src={constructUrl("../images/searchIcon.png")} alt="" />
                             <h1 className="text-white mt-[30px] block">Search</h1>
                         </div>
                     </div>
                     <div>
                         <div className=" max-w-fit mx-auto">
-                            <img  className='scale-125 mx-auto ' src="../images/chartIcon.png" alt="" />
+                            <img  className='scale-125 mx-auto ' src={constructUrl("../images/chartIcon.png")} alt="" />
                             <h1 className="text-white mt-[30px] block">Charts</h1>
                         </div>
                     </div>

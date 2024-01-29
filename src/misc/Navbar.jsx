@@ -11,7 +11,7 @@ function Navbar() {
         <section className=" md:block z-1000 absolute top-0 text-white">
             <div className="absolute flex flex-wrap justify-between max-w-[100vw] w-[99vw] py-5 bg-black grid grid-cols-3">
                 <div className="mx-auto flex items-center w-[200px] justify-start ml-[100px]">
-                    <img className="max-h-[30px]" src="./images/Vector 88.png" alt="" />
+                    <img className="max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                     <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink ml-[10px]">CharlemagneDB</Link>
                 </div>
                 <div className="mx-auto gap-20 bg-[#212121] px-7 h-10 rounded-md hidden pb-0 max-h-10 max-w-fit font-[TT-Autonomous-Mono-Reg]
