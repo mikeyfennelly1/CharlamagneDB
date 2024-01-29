@@ -1,4 +1,4 @@
-const PRODUCTION_URL_PREFIX = '/CharlamagneDB';
+const PRODUCTION_URL_PREFIX = 'https://mikeyfennelly1.github.io/CharlamagneDB';
 export const hasProductionUrlPrefix = window.location.pathname.toLowerCase().startsWith(PRODUCTION_URL_PREFIX.toLowerCase())
 
 
