@@ -40,7 +40,7 @@ const Login = () => {
                     
                     <div className="mb-[50px] cursor-pointer">
                         <img className="inline max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
-                        <a href='/CharlamagneDB' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
+                        <a href={constructUrl('/')} className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Log in to your account</h1>
                         <h4 className='text-white opacity-80'>Don't have an account? <Link className="text-mainPink" to={constructUrl("/signup")}>Sign Up</Link></h4>

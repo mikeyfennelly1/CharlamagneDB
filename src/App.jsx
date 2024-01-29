@@ -49,8 +49,8 @@ function App() {
         <Switch>
           <Route exact path="/">
             <div className='max-w-screen overflow-x-hidden'>
-              <Navbar />
               <Hero />
+              <Navbar />
               <FeatureAnimation />
               <Terminal />
               <Four />

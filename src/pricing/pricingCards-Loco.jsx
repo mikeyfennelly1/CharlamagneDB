@@ -12,7 +12,7 @@ const CardsLoco = () => {
                         <h1  className="text-mainPink font-[TT-Travels-Next-Med]">Serverless</h1>
                         <h3 className="text-[1.2rem]">from $0.10/million reads</h3>
                         <Link to={constructUrl("/login")}>
-                            <button href='' className="text-[1.3rem] bg-mainPink text-black px-[30px] py-[10px] my-[50px] hover:bg-black hover:text-white">Sign Up</button>
+                            <button href={constructUrl('')} className="text-[1.3rem] bg-mainPink text-black px-[30px] py-[10px] my-[50px] hover:bg-black hover:text-white">Sign Up</button>
                         </Link>
                         <p className="text-[1.2rem] my-[50px]">For serverless applications with variable or infrequent traffic. Minimal configuration required.</p>
                         <ul className="text-[1rem]">

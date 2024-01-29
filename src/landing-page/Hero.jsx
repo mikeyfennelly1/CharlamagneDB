@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
-import HeroSVG from '../misc/heroSVG';
 import gsap from 'gsap';
 import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
 import TextPlugin from 'gsap/TextPlugin';
@@ -10,7 +9,6 @@ import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrambleTextPlugin) 
 gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(SplitText) 
-
 
 function Hero() {  
     const targetRef = useRef(null);
@@ -37,6 +35,7 @@ function Hero() {
       stagger: 0.05
     });
 
+
     return(
         <>
         <motion.section 
@@ -48,9 +47,7 @@ function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 3 }}
-            className="mx-auto grid z-10 grid-rows-3 py-auto max-h-screen pt-[25vh]">
-
-                <HeroSVG/>
+            className="mx-auto grid grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
                 <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw] min-h-[00px]
                 text-[1.8rem]

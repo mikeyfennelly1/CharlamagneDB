@@ -14,7 +14,7 @@ const SignUp = () => {
                     
                     <div className="mb-[50px] cursor-pointer">
                         <img className="inline max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
-                        <a href='/' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
+                        <a href={constructUrl('/')} className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Sign up for a CharlemagneDB account</h1>
                         <h4 className='text-white opacity-80'>Already have an account? <Link className="text-mainPink hover:cursor-pointer" to={constructUrl("/login")}>Log In</Link></h4>
