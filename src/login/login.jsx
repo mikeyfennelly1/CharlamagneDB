@@ -3,7 +3,6 @@ import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase
 import {auth} from '../firebase/firebaseAuth'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { LoginUserEmailPassword } from '../firebase/firebaseAuth'
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 
 const Login = () => {
@@ -29,8 +28,8 @@ const Login = () => {
         }
     }
 
-        const [user] = useAuthState(auth)
-        
+    const [user] = useAuthState(auth)
+    console.log(user)
         return (
             <>
             <div className="bg-[#0F0F0F] min-h-screen">
@@ -108,7 +107,7 @@ const EmailPasswordLoginForm = () => {
         } else if (emailErrorContext !== 'noError' || emailTypingStart !== true || passwordErrorContext !== 'noError') {
             setFormSuccess(false)
         }
-    })
+    }, [])
 
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()

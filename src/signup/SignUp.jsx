@@ -63,29 +63,29 @@ const EmailPasswordSignUpForm = () => {
     const ButtonUnusableClasses = 'cursor-[not-allowed] text-[1rem] block my-[20px] border-[1px] opacity-50 border-white py-[15px] px-[30px] rounded-[10px]'    
     
     useEffect(() => {
-        if (emailTypingStart == true && providedEmail.length == 0) {
+        if (emailTypingStart === true && providedEmail.length === 0) {
             setEmailErrorContext('error')
-        } else if (emailTypingStart == true && providedEmail.length > 0) {
+        } else if (emailTypingStart === true && providedEmail.length > 0) {
             setEmailErrorContext('noError')
         }
 
-        if (passwordTypingStart == true && providedPassword.length < 8) {
+        if (passwordTypingStart === true && providedPassword.length < 8) {
             setPasswordErrorContext('error')
-        } else if (passwordTypingStart == true && providedPassword.length > 8) {
+        } else if (passwordTypingStart === true && providedPassword.length > 8) {
             setPasswordErrorContext('noError')
         }
 
-        if (emailErrorContext == 'noError' && passwordErrorContext == 'noError' && emailTypingStart == true) {
+        if (emailErrorContext === 'noError' && passwordErrorContext === 'noError' && emailTypingStart === true) {
             setFormSuccess(true)
         } else if (emailErrorContext != 'noError' || emailTypingStart != true || passwordErrorContext != 'noError') {
             setFormSuccess(false)
         }
-    })
+    }, [emailTypingStart, providedEmail.length, passwordTypingStart, providedPassword.length, emailErrorContext, passwordErrorContext, setEmailErrorContext])
 
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
         
-        if (formSuccess == true) {
+        if (formSuccess === true) {
             const SignUpDetails = {providedEmail, providedPassword}
             CreateUserEmailPassword(SignUpDetails)
         }
