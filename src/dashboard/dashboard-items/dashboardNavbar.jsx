@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase/firebaseAuth'
 import { constructUrl } from '../../utils/urlutils';
+import { SignOutUser } from '../../firebase/firebaseAuth';
 
 const DashboardNavbar = () => {
     const [user] = useAuthState(auth)
@@ -16,20 +17,23 @@ const DashboardNavbar = () => {
                 </div>
 
                 {!user && (
-                <div className="ml-auto items-center w-[200px] justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
+                <div className="ml-auto items-center w-fit justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
                                 lg:block">
                     <Link to={constructUrl("/login")} className=" px-7 rounded-full hover:text-mainPink">Log In</Link>
                 </div>
                 )}
 
                 {user && (
-                    <div className="ml-auto w-[350px] items-center hidden font-[TT-Autonomous-Mono-Reg] max-h-[100px]
+                    <div className="ml-auto w-fit items-center hidden font-[TT-Autonomous-Mono-Reg] max-h-[100px]
                     lg:flex">
                     <Link to={constructUrl("/help")}>
-                        <h2 className='my-0 inline-block text-[1.1rem] pr-[20px] text-white font-thin'>Get Help</h2>
-                        </Link>
-                    <Link to={constructUrl("/dashboard")}>
-                        <h2 className='my-0 inline-block text-[1.1rem] pr-4 font-semibold'>{user.displayName}</h2>
+                        <h2 className='my-0 inline-block text-[1.1rem] mx-[30px] text-white font-thin'>Get Help</h2>
+                    </Link>
+                    <Link to={constructUrl('')}>
+                        <button className='hover:bg-black hover:text-mainPink border border-mainPink my-0 inline-block text-[1.1rem] py-[10px] mx-[30px] rounded-[5px] px-[20px] text-black font-thin bg-mainPink' onClick={SignOutUser}>Sign Out</button>                    
+                    </Link>
+                    <Link className="mx-[30px]" to={constructUrl("/dashboard")}>
+                        <h2 className='my-0 inline-block text-[1.1rem]  font-semibold mr-[10px]'>{user.displayName}</h2>
                         <img className='max-h-[30px] inline rounded-full border-2 border-mainPink' src={user.photoURL}
                         alt="" />
                     </Link>
