@@ -34,7 +34,7 @@ export const LoginUserEmailPassword = (emailpassword) => {
 }
 
 export const SignOutUser = () => {
-    window.location.replace(constructUrl("/dashboard"))
+    window.location.replace(constructUrl("/"))
     signOut(auth)
 }
 
