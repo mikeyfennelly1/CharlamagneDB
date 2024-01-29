@@ -3,6 +3,7 @@ import { GoogleLogin } from "firebase/auth";
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { useState, useContext, useEffect, createContext } from 'react';
 import { CreateAccount } from '../firebase/firestoreSignUp';
+import { CreateUserEmailPassword } from '../firebase/firebaseAuth'
 
 const SignUp = () => {
     return (
@@ -63,7 +64,6 @@ const EmailPasswordSignUpForm = () => {
     const ButtonUsableClasses = 'cursor-pointer text-[1rem] block my-[20px] border-[1px] border-white py-[15px] px-[30px] rounded-[10px]'
     const ButtonUnusableClasses = 'cursor-[not-allowed] text-[1rem] block my-[20px] border-[1px] opacity-50 border-white py-[15px] px-[30px] rounded-[10px]'    
     
-    
     useEffect(() => {
         if (emailTypingStart == true && providedEmail.length == 0) {
             setEmailErrorContext('error')
@@ -84,12 +84,16 @@ const EmailPasswordSignUpForm = () => {
         }
     })
 
+    const redirectToDashboard = () => {
+        console.log("redirectToDashboard called")
+    }
+
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
         
         if (formSuccess == true) {
             const SignUpDetails = {providedEmail, providedPassword}
-            CreateAccount(SignUpDetails)
+            CreateUserEmailPassword(SignUpDetails)
         }
     }
     return (

@@ -9,7 +9,6 @@ const overviewInctiveClasses = "hover:cursor-pointer font-[TT-Travels-Next-Med] 
 
 const DashboardSidebar = (props) => {
     const [dashboardContext, setDashboardContext] = useContext(DashboardContext)
-    console.log(dashboardContext)
     const dashboardSidebarItems = props.dashboardSidebarItems;
     return (
         <>

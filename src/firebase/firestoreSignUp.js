@@ -22,19 +22,14 @@ getDocs(userAccountDetails)
 
 // adding documents
 const addUserForm = (accountDetails) => {
-  
-  console.log(accountDetails)
-  console.log("providedEmail: " + accountDetails.providedEmail)
-  console.log("providedPassword: " + accountDetails.providedPassword)
   const CurrentDateAndTime = new Date();
-  // console.log(CurrentDateAndTime)
   addDoc(userAccountDetails, {
       emailAddress: accountDetails.providedEmail,
       password: accountDetails.providedPassword,
       signedUpWhen: CurrentDateAndTime,
   })
   .then(() => {
-      
+    window.location.replace("http://localhost:3000/CharlamagneDB/dashboard");
   })
 }
 

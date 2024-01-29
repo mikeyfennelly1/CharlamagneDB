@@ -10,7 +10,7 @@ const DashboardNavbar = () => {
         <section className=" md:block text-white max-h-[100px]">
             <div className="flex flex-wrap justify-between max-w-[100vw] w-[99vw] bg-black min-h-[100px] text-[1.3rem] max-h-[100px]">
                 
-                <div className="mx-auto flex items-center w-[400px] justify-start ml-[100px] max-h-[100px]">
+                <div className="mx-auto flex items-center w-fit justify-start ml-[100px] max-h-[100px]">
                     <Link to="/CharlamagneDB/" className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink">{user.displayName}'s CDB Dashboard</Link>
                 </div>
 

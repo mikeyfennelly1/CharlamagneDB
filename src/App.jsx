@@ -71,19 +71,10 @@ function App() {
             <Docs/>
           </Route>
           <Route exact path="/CharlamagneDB/dashboard">
-            {user && (
               <Dashboard/>
-            )}
-            {!user && (
-              <Redirect to="/CharlamagneDB/login" />
-            )}
           </Route>
           <Route exact path="/CharlamagneDB/signup">
-              
               <SignUp />
-              {user && (
-              <Redirect to="/CharlamagneDB/dashboard" />
-            )}
           </Route>
         </Switch>
       </Router>
