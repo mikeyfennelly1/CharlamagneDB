@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup} from 'firebase/auth'
 import {auth} from '../firebase/firebaseAuth'
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useContext, useEffect, useState } from 'react';
-
+import { LoginUserEmailPassword } from '../firebase/firebaseAuth'
 import { FaGoogle, FaGithub } from 'react-icons/fa';
-import { TiTick } from "react-icons/ti";
 
 const Login = () => {
     // Sign in with google
@@ -30,21 +28,7 @@ const Login = () => {
             console.log(error);
         }
     }
-    
-    //Sign in with Email and Password
-    
-    // const auth = getAuth();
-    // signInWithEmailAndPassword(auth, email, password)
-    //   .then((userCredential) => {
-        //     // Signed in 
-    //     const user = userCredential.user;
-    //     // ...
-    //   })
-    //   .catch((error) => {
-        //     const errorCode = error.code;
-        //     const errorMessage = error.message;
-        //   });    
-        
+
         const [user] = useAuthState(auth)
         
         return (
@@ -107,30 +91,28 @@ const EmailPasswordLoginForm = () => {
     
     
     useEffect(() => {
-        if (emailTypingStart == true && providedEmail.length == 0) {
+        if (emailTypingStart === true && providedEmail.length === 0) {
             setEmailErrorContext('error')
-        } else if (emailTypingStart == true && providedEmail.length > 0) {
+        } else if (emailTypingStart === true && providedEmail.length > 0) {
             setEmailErrorContext('noError')
         }
 
-        if (passwordTypingStart == true && providedPassword.length == 0) {
+        if (passwordTypingStart === true && providedPassword.length === 0) {
             setPasswordErrorContext('error')
-        } else if (passwordTypingStart == true && providedPassword.length > 0) {
+        } else if (passwordTypingStart === true && providedPassword.length > 0) {
             setPasswordErrorContext('noError')
         }
 
-        if (emailErrorContext == 'noError' && passwordErrorContext == 'noError' && emailTypingStart == true) {
+        if (emailErrorContext === 'noError' && passwordErrorContext === 'noError' && emailTypingStart === true) {
             setFormSuccess(true)
-        } else if (emailErrorContext != 'noError' || emailTypingStart != true || passwordErrorContext != 'noError') {
+        } else if (emailErrorContext !== 'noError' || emailTypingStart !== true || passwordErrorContext !== 'noError') {
             setFormSuccess(false)
         }
     })
 
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
-        
         const LoginDetails = {providedEmail, providedPassword}
-        
         console.log(LoginDetails)
     }
     return (

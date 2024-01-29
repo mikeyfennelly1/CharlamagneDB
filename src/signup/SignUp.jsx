@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-import { GoogleLogin } from "firebase/auth";
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { useState, useContext, useEffect, createContext } from 'react';
-import { CreateAccount } from '../firebase/firestoreSignUp';
 import { CreateUserEmailPassword } from '../firebase/firebaseAuth'
 
 const SignUp = () => {
@@ -83,10 +81,6 @@ const EmailPasswordSignUpForm = () => {
             setFormSuccess(false)
         }
     })
-
-    const redirectToDashboard = () => {
-        console.log("redirectToDashboard called")
-    }
 
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
