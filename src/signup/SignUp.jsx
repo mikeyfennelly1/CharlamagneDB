@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { useState, useContext, useEffect, createContext } from 'react';
 import { CreateUserEmailPassword } from '../firebase/firebaseAuth'
+import { constructUrl } from '../utils/urlutils'
 
 const SignUp = () => {
     return (
@@ -16,7 +17,7 @@ const SignUp = () => {
                         <a href='/' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Sign up for a CharlemagneDB account</h1>
-                        <h4 className='text-white opacity-80'>Already have an account? <Link className="text-mainPink hover:cursor-pointer" to="/CharlamagneDB/login">Log In</Link></h4>
+                        <h4 className='text-white opacity-80'>Already have an account? <Link className="text-mainPink hover:cursor-pointer" to={constructUrl("/login")}>Log In</Link></h4>
 
                         <button 
                         className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[15px] rounded-[10px]">

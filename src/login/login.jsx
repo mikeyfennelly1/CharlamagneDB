@@ -4,6 +4,7 @@ import {auth} from '../firebase/firebaseAuth'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
+import { constructUrl } from '../utils/urlutils';
 
 const Login = () => {
     // Sign in with google
@@ -42,7 +43,7 @@ const Login = () => {
                         <a href='/CharlamagneDB' className="font-[TT-Travels-Next-Med] text-[1rem] text-mainPink ml-[10px]">CharlemagneDB</a>
                     </div>
                         <h1 className="font-[Inter-Bold]">Log in to your account</h1>
-                        <h4 className='text-white opacity-80'>Don't have an account? <Link className="text-mainPink" to="/CharlamagneDB/signup">Sign Up</Link></h4>
+                        <h4 className='text-white opacity-80'>Don't have an account? <Link className="text-mainPink" to={constructUrl("/signup")}>Sign Up</Link></h4>
                         <button 
                         onClick={GoogleLogin}
                         className="cursor-pointer text-[1rem] block my-[20px] border-[1px] border-opacity-50 border-white min-w-[100%] py-[15px] rounded-[10px]">

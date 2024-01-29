@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { constructUrl } from '../utils/urlutils';
 
 const CardsEnterPrise = () => {
     return (
@@ -32,12 +33,12 @@ const CardsEnterPrise = () => {
 
                     <div className="min-h-[100px]">
                         <div className="border-mainPink my-[50px] m-auto max-w-fit">
-                            <Link className="mx-[30px]"  to="/CharlamagneDB/docs">
+                            <Link className="mx-[30px]"  to={constructUrl("/docs")}>
                                 <button className="bg-[#0F0F0F] border-[1px] py-[10px] px-[20px] rounded-[7px]">
                                     Learn More
                                 </button>
                             </Link>
-                            <Link className="mx-[30px]" to="/CharlamagneDB/login">
+                            <Link className="mx-[30px]" to={constructUrl("/login")}>
                                 <button className="bg-[#0F0F0F] border-[1px] py-[10px] px-[20px] rounded-[7px]">
                                     Contact Sales
                                 </button>

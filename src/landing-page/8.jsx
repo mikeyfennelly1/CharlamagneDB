@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { constructUrl } from '../utils/urlutils';
 
 const Eight = () => {
     return (
@@ -24,15 +25,15 @@ const Eight = () => {
                                 <a href="/" className="block text-[1.3rem] font-bold mb-[14px] font-[TT-Autonomous-Mono-Variable] ">Company</a>
                                 <a href="/" className="block cursor-pointer mb-[6px]">About</a>
                                 <a href="/" className="block cursor-pointer mb-[6px]">Blog</a>
-                                <Link to="/CharlamagneDB/login" className="block cursor-pointer mb-[6px]">Contact Us</Link>
+                                <Link to={constructUrl("/login")} className="block cursor-pointer mb-[6px]">Contact Us</Link>
                             </ul>
                         </div>
                         <div className="block border-black md:mr-[200px] min-w-fit">
                             <ul>
                                 <a href="/" className="block text-[1.3rem] font-bold mb-[14px] font-[TT-Autonomous-Mono-Variable] ">CharlemagneDB</a>
-                                <a href="/CharlamagneDB/pricing" className="block cursor-pointer mb-[6px]">Pricing</a>
-                                <a href="/CharlamagneDB/loco" className="block cursor-pointer mb-[6px]">Showcase</a>
-                                <a href="/CharlamagneDB/docs" className="block cursor-pointer mb-[6px]">Resources</a>
+                                <a href="/pricing" className="block cursor-pointer mb-[6px]">Pricing</a>
+                                <a href="/loco" className="block cursor-pointer mb-[6px]">Showcase</a>
+                                <a href="/docs" className="block cursor-pointer mb-[6px]">Resources</a>
                                 <a href="/" className="block cursor-pointer mb-[6px]">Community</a>
                             </ul>
                         </div>

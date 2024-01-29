@@ -29,7 +29,7 @@ const addUserForm = (accountDetails) => {
       signedUpWhen: CurrentDateAndTime,
   })
   .then(() => {
-    window.location.replace("http://localhost:3000/CharlamagneDB/dashboard");
+    window.location.replace("http://localhost:3000/dashboard");
   })
 }
 

@@ -21,6 +21,12 @@ import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase/firebaseAuth.js'
 
+import { hasProductionUrlPrefix } from './utils/urlutils'
+import { constructUrl } from './utils/urlutils'
+
+console.log("hasProductionUrlPrefix:", hasProductionUrlPrefix)
+console.log(constructUrl("/path"))
+
 function App() {
   
   useEffect( () => {
@@ -41,7 +47,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/CharlamagneDB/">
+          <Route exact path="/">
             <div className='max-w-screen overflow-x-hidden'>
               <Navbar />
               <Hero />
@@ -54,26 +60,26 @@ function App() {
               <Eight />
             </div>
           </Route>
-          <Route exact path="/CharlamagneDB/loco">
+          <Route exact path={constructUrl('/loco')}>
             <Loco />
           </Route>
           
-          <Route exact path="/CharlamagneDB/login"> 
+          <Route exact path={constructUrl('/login')}> 
               <Login/>
             {user && (
-              <Redirect to="/CharlamagneDB/dashboard" />
+              <Redirect to={constructUrl('/dashboard')} />
             )}
           </Route>
-          <Route exact path="/CharlamagneDB/pricing">
+          <Route exact path={constructUrl('/pricing')}>
             <Pricing/>
           </Route>
-          <Route exact path="/CharlamagneDB/docs">
+          <Route exact path={constructUrl('/docs')}>
             <Docs/>
           </Route>
-          <Route exact path="/CharlamagneDB/dashboard">
+          <Route exact path={constructUrl('/dashboard')}>
               <Dashboard/>
           </Route>
-          <Route exact path="/CharlamagneDB/signup">
+          <Route exact path={constructUrl('/signup')}>
               <SignUp />
           </Route>
         </Switch>
