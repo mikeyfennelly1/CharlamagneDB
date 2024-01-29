@@ -34,11 +34,11 @@ const Pricing1 = () => {
                 <div className="grid xl:grid-cols-2 max-w-[1000px] mx-auto pt-[100px]">
                     <div onClick={clickA} className={activityStateA}>
                         <h1 className="text-mainPink font-[TT-Travels-Next-Med]">Loco</h1>
-                        <h2>Developer Data Platform</h2>
+                        <h2 className='text-[1.3rem]'>Developer Data Platform</h2>
                     </div>
                     <div onClick={clickB} className={activityStateB}>
                         <h1 className="text-mainPink font-[TT-Travels-Next-Med]">Enterprise</h1>
-                        <h2>Self-Managed Database & Services</h2>
+                        <h2 className='text-[1.3rem]'>Self-Managed Database & Services</h2>
                     </div>
                 </div>
 
