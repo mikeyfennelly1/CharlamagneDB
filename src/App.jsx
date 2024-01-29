@@ -47,7 +47,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={constructUrl('/')}>
             <div className='max-w-screen overflow-x-hidden'>
               <Hero />
               <Navbar />
