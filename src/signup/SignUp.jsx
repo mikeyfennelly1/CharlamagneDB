@@ -77,7 +77,7 @@ const EmailPasswordSignUpForm = () => {
 
         if (emailErrorContext === 'noError' && passwordErrorContext === 'noError' && emailTypingStart === true) {
             setFormSuccess(true)
-        } else if (emailErrorContext != 'noError' || emailTypingStart != true || passwordErrorContext != 'noError') {
+        } else if (emailErrorContext !== 'noError' || emailTypingStart !== true || passwordErrorContext !== 'noError') {
             setFormSuccess(false)
         }
     }, [emailTypingStart, providedEmail.length, passwordTypingStart, providedPassword.length, emailErrorContext, passwordErrorContext, setEmailErrorContext])

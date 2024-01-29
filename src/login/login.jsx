@@ -107,7 +107,7 @@ const EmailPasswordLoginForm = () => {
         } else if (emailErrorContext !== 'noError' || emailTypingStart !== true || passwordErrorContext !== 'noError') {
             setFormSuccess(false)
         }
-    }, [])
+    }, [emailTypingStart, providedEmail.length, passwordTypingStart, providedPassword.length, emailErrorContext, passwordErrorContext, setEmailErrorContext])
 
     const handleEmailFormSubmit = (input) => {
         input.preventDefault()
