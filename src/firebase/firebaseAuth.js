@@ -34,11 +34,8 @@ export const LoginUserEmailPassword = (emailpassword) => {
 }
 
 export const SignOutUser = () => {
+    window.location.replace(constructUrl("/dashboard"))
     signOut(auth)
-    .then(() => {
-        window.location.replace(constructUrl("/dashboard"))
-        // home
-    })
 }
 
 export const auth = getAuth(firebaseApp);
