@@ -42,7 +42,6 @@ function App() {
         locomotiveScroll()
       }
       )()
-    introJs().start();   
     }, [])
     
     const [user] = useAuthState(auth)
