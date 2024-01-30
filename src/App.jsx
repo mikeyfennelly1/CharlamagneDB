@@ -26,12 +26,8 @@ import { auth } from './firebase/firebaseAuth.js'
 import { hasProductionUrlPrefix } from './utils/urlutils'
 import { constructUrl } from './utils/urlutils'
 
-console.log("hasProductionUrlPrefix:", hasProductionUrlPrefix)
-console.log(constructUrl("/path"))
-
 function App() {
   
-  console.log("window.location.pathname.toLowerCase():", window.location.pathname.toLowerCase())
   useEffect(() => {
     (
       async () => {
@@ -42,9 +38,10 @@ function App() {
         locomotiveScroll()
       }
       )()
+      console.log("App mounted")
     }, [])
     
-    const [user] = useAuthState(auth)
+    // const [user] = useAuthState(auth)
 
   return (
     <>
@@ -69,9 +66,9 @@ function App() {
           
           <Route exact path={constructUrl('/login')}> 
               <Login/>
-            {user && (
+            {/* {user && ( */}
               <Redirect to={constructUrl('/dashboard')} />
-            )}
+            {/* )} */}
           </Route>
           <Route exact path={constructUrl('/pricing')}>
             <Pricing/>

@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import {  useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
@@ -12,11 +12,11 @@ gsap.registerPlugin(SplitText)
 
 function Hero() {  
     const targetRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: targetRef,
-        offset: ["start start", "end start"]
-    })
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+    // const { scrollYProgress } = useScroll({
+    //     target: targetRef,
+    //     offset: ["start start", "end start"]
+    // })
+    // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
     useEffect( () => {
         gsap.to('.typewriter', {
@@ -38,15 +38,15 @@ function Hero() {
 
     return(
         <>
-        <motion.section 
-        style={{ opacity } } 
+        <section 
+        // style={{ opacity } } 
         ref={targetRef}
         className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px] overflow-hidden">
 
-            <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 3 }}
+            <div
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ delay: 1, duration: 3 }}
             className="mx-auto grid grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
                 <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw] min-h-[00px]
@@ -74,8 +74,8 @@ function Hero() {
                         </button>
                     </Link>
                 </div>
-            </motion.div>
-        </motion.section>
+            </div>
+        </section>
         </>
     );
 }
