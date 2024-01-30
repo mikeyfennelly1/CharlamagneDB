@@ -1,8 +1,8 @@
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/all';
-import { ScrollTrigger } from 'gsap/all';
+import { TextPlugin } from 'gsap/TextPlugin';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { constructUrl } from '../utils/urlutils';
 
 gsap.registerPlugin(TextPlugin)

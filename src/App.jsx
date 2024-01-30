@@ -26,12 +26,8 @@ import { auth } from './firebase/firebaseAuth.js'
 import { hasProductionUrlPrefix } from './utils/urlutils'
 import { constructUrl } from './utils/urlutils'
 
-console.log("hasProductionUrlPrefix:", hasProductionUrlPrefix)
-console.log(constructUrl("/path"))
-
 function App() {
-  
-  console.log("window.location.pathname.toLowerCase():", window.location.pathname.toLowerCase())
+
   useEffect(() => {
     (
       async () => {
@@ -42,7 +38,7 @@ function App() {
         locomotiveScroll()
       }
       )()
-    introJs().start();   
+      console.log("App mounte")
     }, [])
     
     const [user] = useAuthState(auth)
