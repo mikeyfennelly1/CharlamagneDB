@@ -47,7 +47,7 @@ const Terminal = () => {
                             grid xl:grid-cols-2    lg:p-[150px]   p-[50px] 
                             w-screen lg:min-w-[1600px]'>
                  <div className='lg:pr-[75px] max-w-[600px]'>
-                    <p className='text-xl font-[TT-Travels-Next-Med] border-2 rounded-full max-w-fit text-white px-4 mt-[50px]'>AI Driven</p>
+                    <p className='text-xl font-[TT-Travels-Next-Med] border-2 border-mainPink rounded-full max-w-fit text-white px-4 py-[0.5rem] mt-[50px]'>AI Driven</p>
                     <h2 className='text-mainPink text-[1.9rem] lg:text-5xl pb-[50px] pt-[30px] font-[TT-Autonomous-Mono-Variable] block max-w-[500px]'>SCHEMA CREATION</h2>
                     <p className='text-white text-[1rem] max-w-[300px] lg:text-[1.5rem] pt-[50px] font-[TT-Autonomous-Mono-Variable] inline max-w-[500px]'>The first databse to have easy query prompting through the command line. We have integrated generative AI to build schemas for you from the ground up, so you can spend less time doing and more time delivering.</p>
                 </div>

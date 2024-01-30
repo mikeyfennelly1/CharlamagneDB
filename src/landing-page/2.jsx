@@ -28,7 +28,6 @@ const FeatureAnimation = () => {
               autoAlpha: 1
             })
 
-
             const tl = gsap.timeline({
                 scrollTrigger: {
                   pin: true,
