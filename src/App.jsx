@@ -27,7 +27,7 @@ import { hasProductionUrlPrefix } from './utils/urlutils'
 import { constructUrl } from './utils/urlutils'
 
 function App() {
-  
+
   useEffect(() => {
     (
       async () => {
@@ -38,10 +38,10 @@ function App() {
         locomotiveScroll()
       }
       )()
-      console.log("App mounted")
+      console.log("App mounte")
     }, [])
     
-    // const [user] = useAuthState(auth)
+    const [user] = useAuthState(auth)
 
   return (
     <>
@@ -66,9 +66,9 @@ function App() {
           
           <Route exact path={constructUrl('/login')}> 
               <Login/>
-            {/* {user && ( */}
+            {user && (
               <Redirect to={constructUrl('/dashboard')} />
-            {/* )} */}
+            )}
           </Route>
           <Route exact path={constructUrl('/pricing')}>
             <Pricing/>

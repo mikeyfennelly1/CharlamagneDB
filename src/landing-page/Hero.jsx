@@ -5,6 +5,7 @@ import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
 import TextPlugin from 'gsap/TextPlugin';
 import SplitText from 'gsap/SplitText';
 import { Link } from 'react-router-dom';
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrambleTextPlugin) 
 gsap.registerPlugin(TextPlugin)
@@ -12,11 +13,6 @@ gsap.registerPlugin(SplitText)
 
 function Hero() {  
     const targetRef = useRef(null);
-    // const { scrollYProgress } = useScroll({
-    //     target: targetRef,
-    //     offset: ["start start", "end start"]
-    // })
-    // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
     useEffect( () => {
         gsap.to('.typewriter', {
@@ -27,14 +23,19 @@ function Hero() {
         });
     })
 
-    var split = new SplitText("#ID", {type: "chars"});
-    gsap.from(split.chars, {
-      duration: 1, 
-      y: 100, 
-      autoAlpha: 0, 
-      stagger: 0.05
-    });
-
+    useGSAP(() => {
+        const heroOpacityTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: targetRef.current,
+              start: "25% 0%",
+              end: "75% 0%",
+              scrub: true,
+            },
+          });
+          heroOpacityTl.to(targetRef.current, {
+            autoAlpha: 0
+          })
+    })
 
     return(
         <>

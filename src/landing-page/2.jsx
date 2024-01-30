@@ -18,6 +18,7 @@ const FeatureAnimation = () => {
                 // markers: true,
                 end: "200 25%",
                 scrub: true,
+                // markers: true
               },
             });
             tl2.from("#title", {
@@ -33,16 +34,15 @@ const FeatureAnimation = () => {
                   pin: true,
                   trigger: "#outerDiv",
                   start: "top 25%",
-                //   markers: true,
                   end: "bottom 25%",
                   scrub: true,
                 },
               });
             //   var split = new SplitText("#typingText", {type: "chars, words"});
-              //now animate each character into place from 100px above, fading in:
               tl.to("#typingText", {
                 text: "Charlemagne is designed with speed in mind, in query simplicity, in an integrated AI tool for schema creation and in response times, so that you can ship a high quality app fast.",
                 ease: "none",
+                // stagger: 1,
                 duration: 2,
               });
               
@@ -53,7 +53,7 @@ const FeatureAnimation = () => {
         max-w-screen mb-[150px] flex justify-center">
         
             <div id='innerDiv' className="
-            max-h-[400px] 2xl:max-w-[1600px] 2xl:min-w-[1600px] mt-[200px]
+            max-h-[400px] 2xl:max-w-[1600px] 2xl:min-w-[1600px] 
             ">
                 <h1 id="title" className='text-mainPink font-[TT-Autonomous-Mono-Variable] font-thin max-w-fit text-[1rem]
                 text-[1.9rem] 2xl:text-[3rem]'>
