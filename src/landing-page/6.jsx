@@ -5,24 +5,64 @@ import { constructUrl } from '../utils/urlutils'
 
 const Six = () => {
 
+    useEffect(() => {
+        const createAnimations4 = () => {
+            const tl = gsap.timeline({
+                onComplete: function () {
+                  tl.restart();
+                }
+              });
+            tl.to(".image3", {
+                delay: 0,
+                autoAlpha: 0,
+                duration: 0.6,
+                x: -250,
+                y: 0,
+                ease: "power4.out",
+            });
+            tl.to(".image3", {
+                autoAlpha: 1,
+                duration: 0.6,
+                x: 0,
+                y: 0,
+                ease: "power4.out",
+            }, ">");
+            tl.to(".image3", {
+                autoAlpha: 1,
+                delay: 5,
+                duration: 1,
+                x: 0,
+                y: 150,
+                ease: "power4.in",
+            }, ">");
+            tl.to(".image3", {
+                autoAlpha: 0,
+                duration: 0,
+                x: -250,
+                y: 0,
+                ease: "power4.in"
+            }, ">");
+        }
+        
+        createAnimations4()
+    }, [])
     
     useEffect( () => {
         gsap.registerPlugin(ScrollTrigger);
         const delayTime1 = 0;
         const delayTime2 = 7200;
         const delayTime3 = 7200 * 2;
-
+        
         (setTimeout(() => {
             createAnimations1()
         }, delayTime1));
-
         (setTimeout(() => {
             createAnimations2()
         }, delayTime2));
         (setTimeout(() => {
             createAnimations3()
         }, delayTime3));
-
+        
 
     }, [])
     
@@ -139,6 +179,8 @@ const Six = () => {
             y: 0,
             ease: "power4.in"
         }, ">");
+
+
     }
 
     return (

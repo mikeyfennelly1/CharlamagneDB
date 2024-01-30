@@ -3,8 +3,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 import { TextPlugin } from "gsap/TextPlugin";
 import { useGSAP } from "@gsap/react";
-import BlazingFastText from './blazingFastText'
-
 gsap.registerPlugin(ScrollTrigger) 
 gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(SplitText);
