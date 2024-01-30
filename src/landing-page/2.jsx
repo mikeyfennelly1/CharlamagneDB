@@ -11,27 +11,27 @@ const FeatureAnimation = () => {
     }, [])
     
     
-    const createAnimations = () => {
-        // const innerDiv = document.getElementById('#innerDiv')
-        gsap.to('#innerDiv', {y: 360})
-
-        const tl = gsap.timeline({
-            scrollTrigger: {
-              pin: true,
-              trigger: "#outerDiv",
-              start: "top 50%",
-            //   endTrigger: "#pin-windmill-wrap",
-              end: "bottom 50%",
-            },
-          });
-          
-          tl.to("#innerDiv", {
-            y: 360,
-          });
-          
-
-    }
-    createAnimations()
+    // const createAnimations = () => {
+    //     // const innerDiv = document.getElementById('#innerDiv')
+        useGSAP(() => {
+            gsap.to('#innerDiv', {y: 360})
+    
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                  pin: true,
+                  trigger: "#outerDiv",
+                  start: "top 50%",
+                  markers: true,
+                  pinReparent: true,
+                //   endTrigger: "#pin-windmill-wrap",
+                  end: "bottom 50%",
+                },
+              });
+              
+              tl.to("#innerDiv", {
+                y: -10,
+              });
+        })
     return (
         <>
         <div id='outerDiv' className="h-[1000px]
