@@ -14,7 +14,6 @@ import Pricing from './pricing/pricing.jsx'
 import Docs from './docs/docs.jsx'
 import Dashboard from './dashboard/dashboard.jsx';
 import SignUp from './signup/SignUp.jsx';
-import introJs from 'intro.js';
 import 'intro.js/introjs.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -23,7 +22,6 @@ import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase/firebaseAuth.js'
 
-import { hasProductionUrlPrefix } from './utils/urlutils'
 import { constructUrl } from './utils/urlutils'
 
 function App() {
