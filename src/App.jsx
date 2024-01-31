@@ -64,7 +64,7 @@ function App() {
           <Route exact path={constructUrl('/')}>
             <div className='font-[TT-Autonomous-Mono-Reg] max-w-screen overflow-x-hidden relative'>
               <a target="_blank" href="https://github.com/mikeyfennelly1/CharlamagneDB">
-                <div  id='viewOnGit' className=' text-white fixed z-99 right-[50px] top-[calc(100vh-150px)] border-white  pl-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a]'>
+                <div style={{zIndex: 99}} id='viewOnGit' className=' text-white fixed right-[50px] top-[calc(100vh-150px)] border-white  pl-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a]'>
                     <FaGithub className='absolute scale-[2] left-[30px] top-[40px]'/><h1 className='my-auto inline m-[20px] text-[1.5rem]'>Click here to see the source code on GitHub.</h1>
                 </div>
               </a>
