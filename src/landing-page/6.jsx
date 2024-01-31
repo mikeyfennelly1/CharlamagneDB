@@ -7,11 +7,7 @@ const Six = () => {
 
     useEffect(() => {
         const createAnimations4 = () => {
-            const tl = gsap.timeline({
-                onComplete: function () {
-                  tl.restart();
-                }
-              });
+            const tl = gsap.timeline({});
             tl.to(".image3", {
                 delay: 0,
                 autoAlpha: 0,
@@ -43,7 +39,7 @@ const Six = () => {
                 ease: "power4.in"
             }, ">");
         }
-        
+
         createAnimations4()
     }, [])
     
