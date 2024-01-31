@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 
 
@@ -37,7 +37,7 @@ const GraphSVG = () => {
                 start: '300 100%',
                 end: '1000 100%',
                 scrub: true,
-                // markers: true,
+                // markers: false,
             }
         })
             keyTl.to('.draw-key', {
