@@ -3,15 +3,20 @@ export const hasProductionUrlPrefix = window.location.pathname.toLowerCase().sta
 
 
 export const constructUrl = (url) => {
+    const hasOneDotPrefix = url.startsWith(".")
+    const hasTwoDotPrefix = url.startsWith("..")
     if (hasProductionUrlPrefix) {
-        return `${PRODUCTION_URL_PREFIX}${url}`;
+        if (hasTwoDotPrefix) {
+            return `${PRODUCTION_URL_PREFIX}${url.substring(2)}`;
+        }
+        if (hasOneDotPrefix) {
+            return `${PRODUCTION_URL_PREFIX}${url.substring(1)}`;
+        } else {
+            return `${PRODUCTION_URL_PREFIX}${url}`;
+        }
     }
     return url;
 }
 
-export const constructImgURL = (url) => {
-    const URLwithoutFirstTwo = url.substring(2)
-    if (hasProductionUrlPrefix) {
-        return `${PRODUCTION_URL_PREFIX}${URLwithoutFirstTwo}`;
-    }
-}
+
+console.log(constructUrl('../image'))
