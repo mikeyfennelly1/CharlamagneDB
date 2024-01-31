@@ -1,24 +1,24 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+// import ScrollTrigger from "gsap/ScrollTrigger";
+// import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
 import { constructUrl } from "../utils/urlutils";
 
 const Seven = () => {
-    const diskClasses = 'scale-y-[0.2] absolute'
+    // const diskClasses = 'scale-y-[0.2] absolute'
 
-    const preDuration = 1
-    const scaleYConst = 0.2
-    const scaleXConst = 0.6
-    const leftConstant = -0
-    const radius = 150
-    const initialYConstant = 350
-    const separationConst = 0.3
+    // const preDuration = 1
+    // const scaleYConst = 0.2
+    // const scaleXConst = 0.6
+    // const leftConstant = -0
+    // const radius = 150
+    // const initialYConstant = 350
+    // const separationConst = 0.3
 
-    const separation = (x) => {
-        const result = 100 + 100*(x * separationConst)
-        return result
-    }
+    // const separation = (x) => {
+    //     const result = 100 + 100*(x * separationConst)
+    //     return result
+    // }
 
     return (
         <>
@@ -49,7 +49,7 @@ const Seven = () => {
 
                     {/* <svg className='block absolute top-[100px] left-[575px] mx-auto mb-5' width="600" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path className='absolute invisible' id='oval' d="M448 97.5C448 110.293 442.025 122.643 430.887 134.054C419.74 145.475 403.513 155.851 383.304 164.608C342.893 182.119 286.925 193 225 193C163.075 193 107.107 182.119 66.6962 164.608C46.4873 155.851 30.2597 145.475 19.1128 134.054C7.97491 122.643 2 110.293 2 97.5C2 84.7065 7.97491 72.3566 19.1128 60.9456C30.2597 49.5254 46.4873 39.1494 66.6962 30.3922C107.107 12.8806 163.075 2 225 2C286.925 2 342.893 12.8806 383.304 30.3922C403.513 39.1494 419.74 49.5254 430.887 60.9456C442.025 72.3566 448 84.7065 448 97.5Z" stroke="white" strokeWidth="2"/>
-                        <circle clip-path="#myClip"  className={`${diskClasses}  + top-`} strokeOpacity="0.25" id='circle1' cx="150" cy="160" r={radius} stroke="white" strokeWidth="2" fill="none"/>
+                        // <circle clip-path="#myClip"  className={`${diskClasses}  + top-`} strokeOpacity="0.25" id='circle1' cx="150" cy="160" r={radius} stroke="white" strokeWidth="2" fill="none"/>
                         <circle clip-path="#myClip"  className={`${diskClasses}  + top-[220px]`} strokeOpacity="0.25" id='circle2' cx="150" cy="160" r={radius} stroke="white" strokeWidth="2" fill="none"/>
                         <circle clip-path="#myClip"  className={`${diskClasses}  + top-`} strokeOpacity="0.25" id='circle3' cx="150" cy="160" r={radius} stroke="white" strokeWidth="2" fill="none"/>
                         <circle clip-path="#myClip"  className={`${diskClasses}  + top-`} strokeOpacity="0.25" id='circle4' cx="150" cy="160" r={radius} stroke="white" strokeWidth="2" fill="none"/>

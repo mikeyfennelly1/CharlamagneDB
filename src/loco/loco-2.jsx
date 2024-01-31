@@ -146,8 +146,8 @@ const Loco2 = () => {
 
                 </div>
 
-                <div className="my-auto  font-[TT-Autonomous-Mono-Variable] text-center max-w-[800px] md:mx-auto mx-5 ">
-                    <h1 className='text-mainPink text-[1.9rem] font-[TT-Travels-Next-Med] pt-5 text-center'>Document model explained</h1>
+                <div className="my-auto  font-[TT-Autonomous-Mono-Variable] text-left max-w-[800px] md:mx-auto mx-5 pl-[50px]">
+                    <h1 className='text-mainPink text-[1.9rem] font-[TT-Travels-Next-Med] pt-5 text-left'>Document model explained</h1>
                     <h3 className='text-white mt-[30px] text-[1.3rem]'>Discover a more flexible and intuitive way to handle your data with the CharlemagneDB document model. Store data in rich, nested structures for effortless organization and querying, all while experiencing top-notch performance and scalability. Ready to transform your data management? Learn more about the document model with CDB.</h3>
                 </div>
             </div>

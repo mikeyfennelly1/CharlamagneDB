@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 

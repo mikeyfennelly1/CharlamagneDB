@@ -1,4 +1,3 @@
-import {  useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
