@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Loco2 = () => {
 
-    useEffect( () => {
+    useEffect(() => {
         MorphSVGPlugin.convertToPath("#circle1");
         MorphSVGPlugin.convertToPath("#circle2");
         MorphSVGPlugin.convertToPath("#circle3");
