@@ -8,3 +8,10 @@ export const constructUrl = (url) => {
     }
     return url;
 }
+
+export const constructImgURL = (url) => {
+    const URLwithoutFirstTwo = url.substring(2)
+    if (hasProductionUrlPrefix) {
+        return `${PRODUCTION_URL_PREFIX}${URLwithoutFirstTwo}`;
+    }
+}

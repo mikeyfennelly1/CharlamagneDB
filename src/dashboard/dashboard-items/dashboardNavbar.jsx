@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase/firebaseAuth'
-import { constructUrl } from '../../utils/urlutils';
+import { constructImgURL, constructUrl } from '../../utils/urlutils';
 import { SignOutUser } from '../../firebase/firebaseAuth';
 
 const DashboardNavbar = () => {
@@ -12,7 +12,7 @@ const DashboardNavbar = () => {
         <section  className=" md:block text-white max-h-[100px]">
             <div className="flex flex-wrap justify-between max-w-[100vw] w-[99vw] bg-black min-h-[100px] text-[1.3rem] max-h-[100px]">
                     <div className="mx-auto flex items-center w-fit justify-start ml-[100px] max-h-[100px]">
-                        <img className="max-h-[30px] mr-[10px]" src={constructUrl("./images/Vector 88.png")} alt="" />
+                        <img className="max-h-[30px] mr-[10px]" src={constructImgURL("./images/Vector 88.png")} alt="" />
                         <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink">{user.displayName}'s CDB Dashboard</Link>
                     </div>
 
