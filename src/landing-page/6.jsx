@@ -1,11 +1,12 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
+import { useGSAP } from "@gsap/react";
 import { constructUrl } from '../utils/urlutils'
+
 
 const Six = () => {
 
-    useEffect(() => {
+    useGSAP(() => {
         const createAnimations4 = () => {
             const tl = gsap.timeline({});
             tl.to(".image3", {
@@ -43,7 +44,7 @@ const Six = () => {
         createAnimations4()
     }, [])
     
-    useEffect( () => {
+    useGSAP( () => {
         gsap.registerPlugin(ScrollTrigger);
         const delayTime1 = 0;
         const delayTime2 = 7200;
