@@ -1,37 +1,49 @@
-import { constructUrl } from "../utils/urlutils";
-import Slider from "react-slick";    
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import MorphSVGPlugin from 'gsap/MorphSVGPlugin';
 
 const Seven = () => {
-    var settings = {
-      dots: true,
-      autoPlay: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1
-    };
-    
+    gsap.registerPlugin(ScrollTrigger);
+
+    useGSAP(() => {
+        const circleTl = new gsap.timeline({
+            scrollTrigger: {
+                trigger: '#containingBox',
+                start: 'top 100%',
+                end: 'bottom 100%',
+                scrub: false,
+                markers: true,
+            }
+        })
+    })
+
     return (
         <>
-            <div className="max-w-screen">
-                <div className="min-h-[200px]">
-                    <div className="mb-[100px] mx-auto">
-                        <Slider {...settings}>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                                <img src={constructUrl("../images/officePhoto.jpg")} alt="" className="mx-[10px] hover:cursor-grab max-h-[800px] mx-auto max-w-[80vw] rounded-[50px]"/>
-                        </Slider>
-                            <h1 className=" ml-[50px] text-[1.7rem] max-w-[80vw] xl:text-[3rem] mt-[75px] text-mainPink font-[TT-Travels-Next-Med]">Work at CharlemagneDB</h1>
-                        <a href="https://linkedin.com">
-                            <button className=" ml-[50px] text-[1.2rem] xl:text-[1.8rem] my-[30px] xl:my-[50px] text-white font-[TT-Autonomous-Mono-Reg] border-2 border-white max-w-fit px-[20px] rounded-full opacit hover:bg-mainPink hover:text-black hover:border-mainPink">View Job Openings</button>
-                        </a>
+            <div id="containingBox" className="min-h-[700px] flex justify-center min-w-[1000px]  pb-[100px] font-[TT-Autonomous-Mono-Reg]">
+
+
+                <div className="min-h-[600px] w-[1100px] px-[100px] py-[100px] bg-[#0F0F0F] rounded-[30px] relative">
+                    <div className="-[#F00] absolute z-10 min-h-[100%] text-white ">
+                        <h5 className="border-l-mainPink border-l-[10px] mb-[40px] max-w-[200px] py-[5px] pl-[20px]">Start here</h5>
+                        <h1 className="text-[2rem] pl-[25px] font-[TT-Travels-Next-Reg]">Build the next big thing. 
+                        </h1>
+                        <h1 className="text-[1.5rem] pl-[25px] font-[TT-Travels-Next-Bold] text-mainPink">( Do it fast with Charlemagne )</h1>
+                        <h3 className="text-[#6b6b6b] pl-[25px] font-[TT-Autonomous-Mono-Variable] font-light text-[1.2rem] max-w-[550px]">Build the applications of tomorrow with the tools of tomorrow.</h3>
+                        <button className="bg-mainPink rounded-[10px] px-[40px] py-[20px] text-black ml-[25px] hover:bg-white mt-[40px]">Try for free</button>
                     </div>
+
+                    <svg className='block absolute top-[100px] left-[575px] mx-auto mb-5' width="600" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle className='' strokeOpacity="0.25" id='circle5' cx="150" cy="150" r="150" stroke="white" strokeWidth="2" fill="none"/>
+                    </svg>
+
+                    <div className="absolute min-w-[400px] min-h-[40px] top-[450px] left-[600px] bg-black rounded-[100%] z-0">
+
+                    </div>
+                
                 </div>
+
+
             </div>
         </>
     );
