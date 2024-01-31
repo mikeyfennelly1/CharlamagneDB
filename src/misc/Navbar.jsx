@@ -8,7 +8,7 @@ function Navbar() {
 
     return(
         <>
-        <section className=" md:block z-1000 absolute top-0 text-white pt-[10px]">
+        <section className=" md:block z-10 absolute top-0 text-white pt-[10px]">
             <div className="absolute flex items-center py-[10px] justify-between max-w-[100vw] w-[99vw] bg-black grid grid-cols-3  ">
                 {/* COLUMN ONE */}
                 <div className=''>

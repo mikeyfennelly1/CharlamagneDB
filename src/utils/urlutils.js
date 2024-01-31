@@ -17,6 +17,3 @@ export const constructUrl = (url) => {
     }
     return url;
 }
-
-
-console.log(constructUrl('../image'))
