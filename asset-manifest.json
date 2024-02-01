@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d0162d12.css",
-    "main.js": "./static/js/main.f699bc06.js",
+    "main.css": "./static/css/main.bc3b3f5b.css",
+    "main.js": "./static/js/main.e68b5eac.js",
     "static/js/423.e660197c.chunk.js": "./static/js/423.e660197c.chunk.js",
     "static/js/787.98651143.chunk.js": "./static/js/787.98651143.chunk.js",
     "static/media/Inter-Bold.ttf": "./static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
@@ -22,13 +22,13 @@
     "static/media/TT Autonomous Mono Trial Regular.ttf": "./static/media/TT Autonomous Mono Trial Regular.5181c511eaf7f1f3e189.ttf",
     "static/media/SvelteTrial-Regular.ttf": "./static/media/SvelteTrial-Regular.06f43778c5005ccf8647.ttf",
     "index.html": "./index.html",
-    "main.d0162d12.css.map": "./static/css/main.d0162d12.css.map",
-    "main.f699bc06.js.map": "./static/js/main.f699bc06.js.map",
+    "main.bc3b3f5b.css.map": "./static/css/main.bc3b3f5b.css.map",
+    "main.e68b5eac.js.map": "./static/js/main.e68b5eac.js.map",
     "423.e660197c.chunk.js.map": "./static/js/423.e660197c.chunk.js.map",
     "787.98651143.chunk.js.map": "./static/js/787.98651143.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0162d12.css",
-    "static/js/main.f699bc06.js"
+    "static/css/main.bc3b3f5b.css",
+    "static/js/main.e68b5eac.js"
   ]
 }
