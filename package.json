@@ -32,7 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "email": "email dev --dir ./src/emails"
+    "email": "email dev --dir ./src/emails",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^13.6.4",
     "dotenv": "^16.3.2",
     "gh-pages": "^6.1.0",
     "gsap": "npm:@gsap/shockingly@^3.12.5",
