@@ -167,7 +167,7 @@ const Tour = () => {
 
               {/* Tour 1 */}
                 <div style={{zIndex: 99}} id='tour1' className='text-white fixed right-[50px] bottom-[30px] border-white  px-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a] max-w-[90vw]'>
-                    <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 1]: <span className='text-white'>Hero section</span></h1>
+                    <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 1]: </h1>
                     <p>The animations for this page were done with the <GSAPCoreLink /> (for animating the opacity of the main title), and also the <TextPluginLink /> (for the text you see just above the "Try for free" button).</p>
                 </div>
 
