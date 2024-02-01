@@ -1,11 +1,9 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SplitText } from 'gsap/SplitText';
 import { TextPlugin } from "gsap/TextPlugin";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger) 
 gsap.registerPlugin(TextPlugin)
-gsap.registerPlugin(SplitText);
 
 const FeatureAnimation = () => {
     useGSAP(() => {
@@ -36,7 +34,6 @@ const FeatureAnimation = () => {
                   scrub: true,
                 },
               });
-            //   var split = new SplitText("#typingText", {type: "chars, words"});
               tl.to("#typingText", {
                 text: "Charlemagne is designed with speed in mind, in query simplicity, in an integrated AI tool for schema creation and in response times, so that you can ship a high quality app fast.",
                 ease: "none",
