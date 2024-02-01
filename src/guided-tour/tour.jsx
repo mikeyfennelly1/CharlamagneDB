@@ -56,7 +56,7 @@ const Tour = () => {
         })
           viewOnGithubTlIn.from("#viewOnGit", {
             duration: 1.5,
-            x: 2000,
+            x: -2000,
             ease: "power4.inOut"
           })
           viewOnGithubTlIn.to("#viewOnGit", {
@@ -77,7 +77,7 @@ const Tour = () => {
         })
         tourTl1.from("#tour1", {
             duration: 1.5,
-            x: 2000,
+            x: -2000,
             ease: "power4.inOut"
           })
           tourTl1.to("#tour1", {
@@ -98,7 +98,7 @@ const Tour = () => {
         })
             tourTl2.from("#tour2", {
                 duration: 1.5,
-                x: 2000,
+                x: -2000,
                 ease: "power4.inOut"
               })
               tourTl2.to("#tour2", {
@@ -119,7 +119,7 @@ const Tour = () => {
             })
                 tourTl3.from("#tour3", {
                     duration: 1.5,
-                    x: 2000,
+                    x: -2000,
                     ease: "power4.inOut"
                   })
                   tourTl3.to("#tour3", {
@@ -141,7 +141,7 @@ const Tour = () => {
                 })
                     tourTl4.from("#tour4", {
                         duration: 1.5,
-                        x: 2000,
+                        x: -2000,
                         ease: "power4.inOut"
                       })
                       tourTl4.to("#tour4", {
