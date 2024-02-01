@@ -187,7 +187,7 @@ const Tour = () => {
                 {/* Tour 4 */}
                 <div style={{zIndex: 99}} id='tour4' className='text-white fixed right-[50px] bottom-[30px] border-white  px-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a] max-w-[90vw]'>
                     <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 4]: <span className='text-white'></span></h1>
-                    <p>This section was made with the <ScrollTriggerLink /> again. I designed the SVG elemnts on <FigmaLink /> and used the <DrawSVGPluginLink /> to give the effect of the SVG elements being drawn as you scroll down the page. (Didn't notice? - try scrolling back up.)</p>
+                    <p>This section was made with the <ScrollTriggerLink /> again. I designed the SVG elemnts on <FigmaLink /> and used the <DrawSVGPluginLink /> to give the effect of the SVG elements being drawn as you scroll down the page. (Didn't notice? - try scrolling back up).</p>
                 </div>
         </>
     );
