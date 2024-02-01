@@ -35,14 +35,17 @@ module.exports = {
         "./src/docs/doc-components/tabs/TitlesBar.jsx",
         "./src/docs/doc-components/tabs/TabsContentSection.jsx",
     // landing-page
-    "./src/landing-page/2.jsx",
-    "./src/landing-page/4.jsx",
-    "./src/landing-page/5.jsx",
-    "./src/landing-page/6.jsx",
-    "./src/landing-page/7.jsx",
-    "./src/landing-page/8.jsx",
+    "./src/landing-page/betEverythingOnCDB.jsx",
+    "./src/landing-page/blazingFast.jsx",
+    "./src/landing-page/blazingFastText.jsx",
+    "./src/landing-page/buildAppsOfTomorrow.jsx",
+    "./src/landing-page/companiesUsingCDB.jsx",
+    "./src/landing-page/footer.jsx",
     "./src/landing-page/Hero.jsx",
+    "./src/landing-page/serverAndGraph.jsx",
     "./src/landing-page/terminal.jsx",
+    // guided-tour
+    "./src/guided-tour/tour.jsx",
     // loco
     "./src/loco/loco.jsx",
     "./src/loco/Loco-serverSVG.jsx",

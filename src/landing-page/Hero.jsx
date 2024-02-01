@@ -1,14 +1,10 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin';
 import TextPlugin from 'gsap/TextPlugin';
-import SplitText from 'gsap/SplitText';
 import { Link } from 'react-router-dom';
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrambleTextPlugin) 
 gsap.registerPlugin(TextPlugin)
-gsap.registerPlugin(SplitText) 
 
 function Hero() {  
     const targetRef = useRef(null);
@@ -40,9 +36,9 @@ function Hero() {
         <>
         <section 
         // style={{ opacity } } 
+        id="hero"
         ref={targetRef}
         className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px] overflow-hidden">
-
             <div
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}

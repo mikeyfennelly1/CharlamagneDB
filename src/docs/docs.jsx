@@ -1,4 +1,4 @@
-import Eight from "../landing-page/8";
+import Eight from "../landing-page/footer";
 import Navbar from "../misc/Navbar";
 import DocsPage1 from "./docsPage1";
 
