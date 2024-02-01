@@ -40,11 +40,11 @@ const Tour = () => {
       </>
     )
   }
-
-
-    useGSAP(() => {
-        gsap.registerPlugin(ScrollTrigger)
-
+  
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    
+      const viewportWidth = window.innerWidth
         const viewOnGithubTlIn = new gsap.timeline({
             scrollTrigger: {
                 trigger: '#hero',
@@ -56,13 +56,13 @@ const Tour = () => {
         })
           viewOnGithubTlIn.from("#viewOnGit", {
             duration: 1.5,
-            x: -2000,
+            x: viewportWidth + document.getElementById('viewOnGit').offsetWidth,
             ease: "power4.inOut"
           })
           viewOnGithubTlIn.to("#viewOnGit", {
             duration: 1.5,
             delay: 5,
-            x: 2000,
+            x: viewportWidth,
             ease: "power4.inOut"
           })
 
@@ -77,13 +77,13 @@ const Tour = () => {
         })
         tourTl1.from("#tour1", {
             duration: 1.5,
-            x: -2000,
+            x: viewportWidth + document.getElementById('tour1').offsetWidth,
             ease: "power4.inOut"
           })
           tourTl1.to("#tour1", {
             duration: 1.5,
             delay: 5,
-            x: 2000,
+            x: viewportWidth - document.getElementById('tour1').offsetWidth,
             ease: "power4.inOut"
           })
 
@@ -98,13 +98,13 @@ const Tour = () => {
         })
             tourTl2.from("#tour2", {
                 duration: 1.5,
-                x: -2000,
+                x: viewportWidth + document.getElementById('tour2').offsetWidth,
                 ease: "power4.inOut"
               })
               tourTl2.to("#tour2", {
                 duration: 1.5,
                 delay: 5,
-                x: 2000,
+                x: viewportWidth,
                 ease: "power4.inOut"
               })
 
@@ -119,13 +119,13 @@ const Tour = () => {
             })
                 tourTl3.from("#tour3", {
                     duration: 1.5,
-                    x: -2000,
+                    x: viewportWidth + document.getElementById('tour3').offsetWidth,
                     ease: "power4.inOut"
                   })
                   tourTl3.to("#tour3", {
                     duration: 1.5,
                     delay: 5,
-                    x: 2000,
+                    x: viewportWidth,
                     ease: "power4.inOut"
                   })
 
@@ -141,13 +141,13 @@ const Tour = () => {
                 })
                     tourTl4.from("#tour4", {
                         duration: 1.5,
-                        x: -2000,
+                        x: viewportWidth + document.getElementById('tour4').offsetWidth,
                         ease: "power4.inOut"
                       })
                       tourTl4.to("#tour4", {
                         duration: 1.5,
                         delay: 5,
-                        x: 2000,
+                        x: viewportWidth,
                         ease: "power4.inOut"
                       })
       })
