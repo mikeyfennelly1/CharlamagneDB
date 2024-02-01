@@ -83,7 +83,7 @@ const Tour = () => {
           tourTl1.to("#tour1", {
             duration: 1.5,
             delay: 5,
-            x: viewportWidth - document.getElementById('tour1').offsetWidth,
+            x: viewportWidth,
             ease: "power4.inOut"
           })
 
