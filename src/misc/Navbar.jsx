@@ -8,8 +8,8 @@ function Navbar() {
 
     return(
         <>
-        <section className=" md:block z-10 absolute top-0 text-white pt-[10px]">
-            <div className="absolute flex items-center py-[10px] justify-between max-w-[100vw] w-[99vw] bg-black grid grid-cols-3  ">
+        <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">
+            <div className="absolute flex items-center py-[20px] justify-between max-w-[100vw] w-[99vw] bg-gradient-to-b from-black grid grid-cols-3  ">
                 {/* COLUMN ONE */}
                 <div className=''>
                     <div className="ml-[100px] flex items-center w-[200px] justify-start ">
