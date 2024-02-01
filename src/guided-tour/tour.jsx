@@ -8,35 +8,35 @@ const Tour = () => {
   const ScrollTriggerLink = () => {
     return (
       <>
-        <a target="_blank" href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/"><span className='text-[#ff8c00]'>GSAP ScrollTrigger</span></a>
+        <a rel="noreferrer" target="_blank" href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/"><span className='text-[#ff8c00]'>GSAP ScrollTrigger</span></a>
       </>
     )
   }
   const TextPluginLink = () => {
     return (
       <>
-          <a target="_blank" href="https://gsap.com/docs/v3/Plugins/TextPlugin/"><span className='text-[#ff8c00]'>GSAP Text Plugin</span></a>
+          <a rel="noreferrer" target="_blank" href="https://gsap.com/docs/v3/Plugins/TextPlugin/"><span className='text-[#ff8c00]'>GSAP Text Plugin</span></a>
       </>
     )
   }
   const GSAPCoreLink = () => {
     return (
       <>
-          <a target="_blank" href="https://gsap.com/core/"><span className='text-[#ff8c00]'>GSAP core kit</span></a>
+          <a rel="noreferrer" target="_blank" href="https://gsap.com/core/"><span className='text-[#ff8c00]'>GSAP core kit</span></a>
       </>
     )
   }
   const DrawSVGPluginLink = () => {
     return (
       <>
-          <a target="_blank" href="https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/"><span className='text-[#ff8c00]'>GSAP DrawSVGPlugin</span></a>
+          <a rel="noreferrer" target="_blank" href="https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/"><span className='text-[#ff8c00]'>GSAP DrawSVGPlugin</span></a>
       </>
     )
   }
   const FigmaLink = () => {
     return (
       <>
-          <a target="_blank" href="https://figma.com/"><span className='text-[#ff8c00]'>Figma</span></a>
+          <a rel="noreferrer" target="_blank" href="https://figma.com/"><span className='text-[#ff8c00]'>Figma</span></a>
       </>
     )
   }
