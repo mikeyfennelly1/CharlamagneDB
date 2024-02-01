@@ -156,7 +156,7 @@ const Tour = () => {
 
     return (
         <>
-              <a target="_blank" href="https://github.com/mikeyfennelly1/CharlamagneDB">
+              <a  rel="noreferrer" target="_blank" href="https://github.com/mikeyfennelly1/CharlamagneDB">
                 <div style={{zIndex: 99}} id='viewOnGit' className='
                 bottom-[230px] fixed right-[50px]
                 hover:text-black hover:bg-white 
