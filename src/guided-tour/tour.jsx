@@ -174,13 +174,13 @@ const Tour = () => {
                 {/* Tour 2 */}
                 <div style={{zIndex: 99}} id='tour2' className='text-white fixed right-[50px] bottom-[30px] border-white  px-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a] max-w-[90vw]'>
                     <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 2]: <span className='text-white'></span></h1>
-                    <p>The animations for this page were done with the <ScrollTriggerLink /> in combination with the <TextPluginLink />. It also uses the <GSAPCoreLink /> to animate the opacity of the title on its appearance. Scub is set to 'true', which gives the user control of the progression of the animation by changing their scroll position. This section also has pinning set to true.</p>
+                    <p>The animations for this page were done with the <ScrollTriggerLink /> in combination with the <TextPluginLink />. It also uses the <GSAPCoreLink /> to animate the opacity of the title on its appearance. Scrub is set to 'true', which gives the user control of the progression of the animation by changing their scroll position. This section also has pinning set to true.</p>
                 </div>
 
                 {/* Tour 3 */}
                 <div style={{zIndex: 99}} id='tour3' className='text-white fixed right-[50px] bottom-[30px] border-white  px-[50px] py-[30px] min-w-[300px]  bg-[#0a0a0a] max-w-[90vw]'>
                     <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 3]: <span className='text-white'></span></h1>
-                    <p>The animations for this page were again done with the <ScrollTriggerLink /> in combination with the <TextPluginLink /> and <GSAPCoreLink />. Scub is set to 'true' for the opacity of the pink panel, but set to false for the text generation in the terminal on the right. This is done to give the impression of how an LLM would generate a response to a prompt.</p>
+                    <p>The animations for this page were again done with the <ScrollTriggerLink /> in combination with the <TextPluginLink /> and <GSAPCoreLink />. Scrub is set to 'true' for the opacity of the pink panel, but set to false for the text generation in the terminal on the right. This is done to give the impression of how an LLM would generate a response to a prompt.</p>
                 </div>
 
 
