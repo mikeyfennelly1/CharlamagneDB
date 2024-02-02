@@ -2,9 +2,12 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
 import { FaGithub } from 'react-icons/fa';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
+import TourContext from './tourContext';
+import { useContext } from 'react';
 
 const Tour = () => {
+  const [tourContext, setTourContext] = useContext(TourContext)
+
   const ScrollTriggerLink = () => {
     return (
       <>
@@ -156,6 +159,7 @@ const Tour = () => {
 
     return (
         <>
+        <div className={tourContext === true ? 'visible' : 'hidden'}>
               <a  rel="noreferrer" target="_blank" href="https://github.com/mikeyfennelly1/CharlamagneDB">
                 <div style={{zIndex: 99}} id='viewOnGit' className='
                 bottom-[230px] fixed right-[50px]
@@ -189,6 +193,7 @@ const Tour = () => {
                     <h1 className='my-auto inline text-[1.5rem] text-[#ff8c00] text-bold'>GUIDED TOUR [PART 4]: <span className='text-white'></span></h1>
                     <p>This section was made with the <ScrollTriggerLink /> again. I designed the SVG elemnts on <FigmaLink /> and used the <DrawSVGPluginLink /> to give the effect of the SVG elements being drawn as you scroll down the page. (Didn't notice? - try scrolling back up).</p>
                 </div>
+        </div>
         </>
     );
 }

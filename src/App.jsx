@@ -15,14 +15,16 @@ import Docs from './docs/docs.jsx'
 import Dashboard from './dashboard/dashboard.jsx';
 import SignUp from './signup/SignUp.jsx';
 import Tour from './guided-tour/tour.jsx';
+import TourContext from './guided-tour/tourContext';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase/firebaseAuth.js'
 
 import { constructUrl } from './utils/urlutils'
+
 
 function App() {
 
@@ -46,9 +48,11 @@ function App() {
         <Switch>
           <Route exact path={constructUrl('/')}>
             <div className='font-[TT-Autonomous-Mono-Reg] max-w-screen overflow-x-hidden relative'>
-              <Tour />
-              <Hero id="hero"/>
-              <Navbar/>
+              <TourContext.Provider value={useState(false)}>
+                <Tour />
+                <Hero id="hero"/>
+                <Navbar value={useState(false)}/>
+              </TourContext.Provider>
               <FeatureAnimation />
               <Terminal />
               <Four />

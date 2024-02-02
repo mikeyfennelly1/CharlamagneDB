@@ -2,20 +2,30 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase/firebaseAuth'
 import { constructUrl } from '../utils/urlutils';
+import { useContext } from 'react';
+import TourContext from '../guided-tour/tourContext';
+
+const TourFalseClasses = 'px-[30px] py-[10px] rounded-[5px] border border-mainPink text-white bg-black tourFalse'
+const TourTrueClasses = 'px-[30px] py-[10px] rounded-[5px] border border-mainPink text-black bg-mainPink tourTrue'
 
 function Navbar() {
     const [user] = useAuthState(auth)
+    const [tourContext, setTourContext] = useContext(TourContext)
 
     return(
         <>
         <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">
             <div className="absolute flex items-center py-[20px] justify-between max-w-[100vw] w-[99vw] bg-gradient-to-b from-black grid grid-cols-3  ">
                 {/* COLUMN ONE */}
-                <div className=''>
-                    <div className="ml-[100px] flex items-center w-[200px] justify-start ">
+                <div className='grid grid-cols-2'>
+                    <div className="ml-[100px] flex items-center w-[200px] justify-start">
                         <img className="max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                         <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink text-[1.1rem] pl-[10px]">CharlemagneDB</Link>
                     </div>
+                    <div className="ml-[100px] flex items-center w-[200px] justify-start text-white ">
+                        <button onClick={() => tourContext === true ? setTourContext(false) : setTourContext(true)} className={tourContext === true ? TourTrueClasses : TourFalseClasses}>Tour Mode</button>
+                    </div>
+
                 </div>
                 {/* COLUMN TWO */}
                 <div className=''>
