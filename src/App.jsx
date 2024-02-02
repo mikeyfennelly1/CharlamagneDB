@@ -46,7 +46,7 @@ function App() {
         <Switch>
           <Route exact path={constructUrl('/')}>
             <div className='font-[TT-Autonomous-Mono-Reg] max-w-screen overflow-x-hidden relative'>
-              <Tour />
+              {/* <Tour /> */}
               <Hero id="hero"/>
               <Navbar/>
               <FeatureAnimation />
