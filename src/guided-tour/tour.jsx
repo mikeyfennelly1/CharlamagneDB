@@ -6,7 +6,7 @@ import TourContext from './tourContext';
 import { useContext } from 'react';
 
 const Tour = () => {
-  const [tourContext, setTourContext] = useContext(TourContext)
+  const [tourContext] = useContext(TourContext)
 
   const ScrollTriggerLink = () => {
     return (

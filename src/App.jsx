@@ -18,7 +18,7 @@ import Tour from './guided-tour/tour.jsx';
 import TourContext from './guided-tour/tourContext';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { createContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase/firebaseAuth.js'
