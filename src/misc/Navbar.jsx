@@ -12,7 +12,7 @@ function Navbar() {
     const [user] = useAuthState(auth)
     const [tourContext, setTourContext] = useContext(TourContext)
 
-    return(
+    return (
         <>
         <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">
             <div className="absolute flex items-center py-[20px] justify-between max-w-[100vw] w-[99vw] bg-gradient-to-b from-black grid grid-cols-3  ">
@@ -22,9 +22,11 @@ function Navbar() {
                         <img className="max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                         <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink text-[1.1rem] pl-[10px]">CharlemagneDB</Link>
                     </div>
+                    {!(window.location.pathname === constructUrl('/')) && (
                     <div className="ml-[100px] flex items-center w-[200px] justify-start text-white ">
                         <button onClick={() => tourContext === true ? setTourContext(false) : setTourContext(true)} className={tourContext === true ? TourTrueClasses : TourFalseClasses}>Tour Mode</button>
                     </div>
+                    )}
 
                 </div>
                 {/* COLUMN TWO */}
