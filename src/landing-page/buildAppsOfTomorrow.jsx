@@ -22,10 +22,8 @@ const Seven = () => {
 
     return (
         <>
-            <div id="containingBox" className="min-h-[700px] flex justify-center min-w-[1000px]  pb-[100px] font-[TT-Autonomous-Mono-Reg]">
-
-
-                <div className="min-h-[600px] w-[1100px] px-[100px] py-[100px] bg-[#0F0F0F] rounded-[30px] relative">
+            <div id="containingBox" className="min-h-[700px] mx-w-screen mx-[20px] flex justify-center lg:min-w-[1000px] pb-[100px] font-[TT-Autonomous-Mono-Reg]">
+                <div className="min-h-[600px] border-2 w-[1100px] px-[50px] md:px-[100px] py-[100px] bg-[#0F0F0F] rounded-[30px] relative">
                     <div className="-[#F00] absolute z-10 min-h-[100%] text-white ">
                         <h5 className="border-l-mainPink border-l-[10px] mb-[40px] max-w-[200px] py-[5px] pl-[20px]">Start here</h5>
                         <h1 className="text-[2rem] pl-[25px] font-[TT-Travels-Next-Reg]">Build the next big thing. 
