@@ -45,7 +45,7 @@ const FeatureAnimation = () => {
 
     return (
         <>
-        <div id='outerDiv' className="h-[700px]
+        <div id='outerDiv' className="h-[350px] sm:h-[700px]
         max-w-screen mb-[150px] flex justify-center">
         
             <div id='innerDiv' className="

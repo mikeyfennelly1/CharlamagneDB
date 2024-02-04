@@ -46,26 +46,27 @@ function Hero() {
             className="mx-auto grid grid-rows-3 py-auto max-h-screen pt-[25vh]">
 
                 <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw] min-h-[00px]
-                text-[1.8rem]
+                text-[2.3rem] pb-[20px]
                 sm:text-[3rem]
                 md:text-[4.5rem]
                 lg:mx-auto 
                 xl:text-[7.5rem] xl:bg-red'>
-                        <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
-                        <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>OF ALL</div>   
-                        <div className='pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></div>
+                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
+                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>OF ALL</div>   
+                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></div>
                 </div>
                 <div className='flex justify-center flex-col'>
                     <div className='border-[#F00] mx-auto'>
-                        <div className='typewriter text-[1rem] App font-[TT-Autonomous-Mono-Reg] text-white     mx-auto max-w-fit block max-w-[1000px] opacity-80 text-center
-                                        sm:text-[1.3rem] min-h-[120px]'>
+                        <div className='typewriter text-[0.8rem] mt-[100px] px-[20px] font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] opacity-80 text-center
+                        sm:text-[1.3rem] min-h-[120px]'>
+                            {/* Find out for yourself */}
                         </div>
                     </div>                    
 
                     <Link  to='/pricing' className='mx-auto'>
-                        <button data-cy="try" className="font-[TT-Autonomous-Mono-Reg] text-white text-center border-2 border-mainPink rounded-full mt-5 py-1 px-3
-                                        text-lg py-2 px-5 mt-7 mx-auto
-                                        hover:bg-white hover:text-black hover:font-black hover:border-white">
+                        <button data-cy="try" className="font-[TT-Autonomous-Mono-Reg] text-white text-center border-2 border-mainPink rounded-full py-1 px-3
+                        text-lg py-2 px-5 mt-[150px] sm:mt-7 mx-auto
+                        hover:bg-white hover:text-black hover:font-black hover:border-white">
                             Try For Free
                         </button>
                     </Link>
