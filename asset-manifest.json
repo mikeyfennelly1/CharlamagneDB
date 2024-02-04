@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.a4e8f501.css",
+    "main.css": "./static/css/main.8a1bef8f.css",
     "main.js": "./static/js/main.f4ef52e6.js",
     "static/js/423.e660197c.chunk.js": "./static/js/423.e660197c.chunk.js",
     "static/js/787.98651143.chunk.js": "./static/js/787.98651143.chunk.js",
@@ -22,13 +22,13 @@
     "static/media/TT Autonomous Mono Trial Regular.ttf": "./static/media/TT Autonomous Mono Trial Regular.5181c511eaf7f1f3e189.ttf",
     "static/media/SvelteTrial-Regular.ttf": "./static/media/SvelteTrial-Regular.06f43778c5005ccf8647.ttf",
     "index.html": "./index.html",
-    "main.a4e8f501.css.map": "./static/css/main.a4e8f501.css.map",
+    "main.8a1bef8f.css.map": "./static/css/main.8a1bef8f.css.map",
     "main.f4ef52e6.js.map": "./static/js/main.f4ef52e6.js.map",
     "423.e660197c.chunk.js.map": "./static/js/423.e660197c.chunk.js.map",
     "787.98651143.chunk.js.map": "./static/js/787.98651143.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4e8f501.css",
+    "static/css/main.8a1bef8f.css",
     "static/js/main.f4ef52e6.js"
   ]
 }
