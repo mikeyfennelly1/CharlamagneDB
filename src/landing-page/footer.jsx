@@ -17,11 +17,11 @@ const Eight = () => {
                         </div>
                     </div>
 
-                    <div className="grid pt-[50px] font-[TT-Autonomous-Mono-Reg] ml-[30px] grid-cols-2 max-w-[500px]
+                    <div className="grid pt-[50px] font-[TT-Autonomous-Mono-Reg] sm:ml-[30px] grid-cols-2 max-w-[500px]
                                     
                                     lg:min-w-[800px] lg:max-w-[800px] lg:max-w-[50%] xl:ml-auto lg:grid-cols-3">
                         <div className="border-black md:mr-[200px]">
-                            <ul>
+                            <ul className='pl-5'>
                                 <a href="/" className="block text-[1.3rem] font-bold mb-[14px] font-[TT-Autonomous-Mono-Variable] ">Company</a>
                                 <a href="/" className="block cursor-pointer mb-[6px]">About</a>
                                 <a href="/" className="block cursor-pointer mb-[6px]">Blog</a>
@@ -29,7 +29,7 @@ const Eight = () => {
                             </ul>
                         </div>
                         <div className="block border-black md:mr-[200px] min-w-fit">
-                            <ul>
+                            <ul className='pl-0'>
                                 <a href="/" className="block text-[1.3rem] font-bold mb-[14px] font-[TT-Autonomous-Mono-Variable] ">CharlemagneDB</a>
                                 <a href="/pricing" className="block cursor-pointer mb-[6px]">Pricing</a>
                                 <a href="/loco" className="block cursor-pointer mb-[6px]">Showcase</a>
@@ -38,7 +38,7 @@ const Eight = () => {
                             </ul>
                         </div>
                         <div className="block border-black md:mr-[200px] min-w-fit">
-                            <ul>
+                            <ul className='pl-5'>
                                 <a href="/" className="block text-[1.3rem] font-bold mb-[14px] font-[TT-Autonomous-Mono-Variable] ">Connect</a>
                                 <a href="https://www.linkedin.com" className="block cursor-pointer mb-[6px]">LinkedIn</a>
                                 <a href="https://www.github.com" className="block cursor-pointer mb-[6px]">GitHub</a>
