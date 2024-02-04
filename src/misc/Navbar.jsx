@@ -15,10 +15,10 @@ function Navbar() {
     return (
         <>
         <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">
-            <div className="absolute flex items-center py-[20px] justify-between max-w-[100vw] w-[99vw] bg-gradient-to-b from-black grid grid-cols-3  ">
+            <div className="absolute flex items-center py-[20px] justify-center sm:justify-between max-w-[100vw] w-[99vw] bg-gradient-to-b from-black sm:grid grid-cols-3  ">
                 {/* COLUMN ONE */}
-                <div className='grid grid-cols-2'>
-                    <div className="ml-[100px] flex items-center w-[200px] justify-start">
+                <div className='grid sm:grid-cols-2'>
+                    <div className="sm:ml-[100px] flex items-center w-[200px] justify-center">
                         <img className="max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                         <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink text-[1.1rem] pl-[10px]">CharlemagneDB</Link>
                     </div>

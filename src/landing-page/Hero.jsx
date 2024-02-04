@@ -38,7 +38,7 @@ function Hero() {
         // style={{ opacity } } 
         id="hero"
         ref={targetRef}
-        className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 mx-[50px] overflow-hidden">
+        className="border-2 border-transparent min-h-screen h-[calc(100vh-60px)] max-h-[90vh] max-w-screen border-2 sm:mx-[50px] overflow-hidden">
             <div
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
