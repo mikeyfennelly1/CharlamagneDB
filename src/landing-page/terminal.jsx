@@ -52,49 +52,6 @@ const Terminal = () => {
                     <p className='text-white text-[1rem] max-w-[300px] lg:text-[1.5rem] pt-[50px] font-[TT-Autonomous-Mono-Variable] inline max-w-[500px]'>The first databse to have easy query prompting through the command line. We have integrated generative AI to build schemas for you from the ground up, so you can spend less time doing and more time delivering.</p>
                 </div>
 
-            {/* RIGHT HAND SIDE TERMINAL *<p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8'>
-                                <span className='text-[#fffc38]'>const</span> <span className='text-[#008cff]'>customerSchema</span> <span className='text-white'>=</span> <span className='text-[#fffc38]'>new</span> cdb.<span className='text-[#00bd74]'>Schema</span> <span className='text-[#ff9900]'>&#123;</span>
-                                <br />
-                                <span className='ml-8'>name<span className='text-white'>:</span> <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
-
-                                <span className='ml-8'>subscribedToChannel<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
-
-                                <span className='ml-8'>subscribeDate<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span> Date<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>default</span><span className='text-white'>:</span>  Date<span className='text-white'>.</span>now<br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span></span>
-                                <span className='block text-[#ff9900]'>&#125;</span>e py-[80px] lg:block text-[0.8rem]'>
-                    <img src="../images/terminal2.png" alt="" className='max-w-[700px] inline min-h-[500px] lg:min-h-[600px]'/>
-                        <p className=' font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8 max-w-[700px]'>cdb prompt: <span className='text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
-                            <p className='response font-[SourceCodePro-Medium] text-[#00ff9d] absolute top-[230px] left-8'>
-                                <span className='text-[#fffc38]'>const</span> <span className='text-[#008cff]'>customerSchema</span> <span className='text-white'>=</span> <span className='text-[#fffc38]'>new</span> cdb.<span className='text-[#00bd74]'>Schema</span> <span className='text-[#ff9900]'>&#123;</span>
-                                <br />
-                                <span className='ml-8'>name<span className='text-white'>:</span> <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
-
-                                <span className='ml-8'>subscribedToChannel<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span>  String<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span><span className='text-white'>,</span><br /></span>
-
-                                <span className='ml-8'>subscribeDate<span className='text-white'>:</span>  <span className='text-[#fffc38]'>&#123;</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>type</span><span className='text-white'>:</span> Date<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>required</span><span className='text-white'>:</span>  true<span className='text-white'>,</span><br /></span>
-                                    <span className='ml-16'><span className='text-[#00bbff]'>default</span><span className='text-white'>:</span>  Date<span className='text-white'>.</span>now<br /></span>
-                                <span className='ml-8'><span className='text-[#fffc38]'>&#125;</span></span>
-                                <span className='block text-[#ff9900]'>&#125;</span>
-                            </p>
-                </div> */}
-
                 <div className='relative py-[80px] lg:block text-[0.8rem] max-w-screen'>
                     <img src={constructUrl("../images/terminal3.png")} alt="" className='terminal max-w-screen lg:max-w-[700px] inline min-h-[500px] lg:min-h-[600px]'/>
                         <p className=' text-[0.7rem] sm:text-[1rem] font-[SourceCodePro-Medium] text-mainPink absolute top-[150px] left-8 max-w-[700px] font-bold'>cdb prompt: <span className=' text-white'>"Create a schema in JS for my ecommerce store, so that I can track my customers' names, orders and locations."</span></p>
