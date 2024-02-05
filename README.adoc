@@ -56,11 +56,14 @@ When I started making this website I really wanted to use animations more, and a
 === How I implemented OAuth
 When making this site I wanted to add Google and Github login pages. This was because I had a dashboard component that I wanted users to be logged in for before using. As well as that the need for OAuth is quite ubiquitous in a real world production setting and so I wanted to add it to my arsenal. I used Google Firebase as the database for Charlemagne as it is easy to implement and comes with OAuth features out of the box, which was exactly what I wanted. To implement it I had to make a Firebase project and then go to Build / Authentication / Sign-in-method. Press 'Add New Provider' and select a provider. To add firebase to the project I had to go to my project settings for the CharlemagneDB project and then setup and configure the SDK with the npm configuration. It was quite easy, and would use Firebase again in a heartbeat for any service that doesn't require much complex data.
 
-=== How I implemented Continuous Integration and Delivery (CI/CD)
-My goal with this site was to replicate a real world application, and production environment/attmosphere to as much of an extent as I could (whether this be in quality or in other features such as CI/CD or testing). 
+== How I implemented Continuous Integration and Delivery (CI/CD)
+My goal with this site was to replicate a real world application as much as possible. 
 
-When I was looking for a way in which I could build a CI/CD pipeline for this project I weighed up my options between Jenkins, GitLab and Github Actions. As I was already using GitHub at the time as my source control manager, my choice gravitated towards either Github Actions and Jenkins, but GitHub actions seemed a bit more convenient in it's setup and use (there is no need to set up or maintain servers - GitHub Actions provides that out of the box). 
-This meant that I ended up chosing GitHub Actions and built out my workflow in a https://github.com/mikeyfennelly1/CharlamagneDB/blob/main/.github/workflows/ci.yml[ci.yml file] (defining the workflow in yml being one of the benefits of GitHub Actions as it is simple in comparison to Jenkins which uses Groovy to define it's pipelines).
+When I was looking for a way in which I could build a CI/CD pipeline for this project I weighed up my options between Jenkins, GitLab and Github Actions. As I was already using GitHub at the time as my source control manager, my choice gravitated towards either Github Actions or Jenkins, but I went with GitHub actions because it seemed more convenient in it's setup and use (there is no need to set up or maintain servers - GitHub Actions provides that out of the box). 
+
+* See GitHub Actions workflow file: https://github.com/mikeyfennelly1/CharlamagneDB/blob/main/.github/workflows/ci.yml[ci.yml file]. Defining the workflow in yml being one of the benefits of GitHub Actions as it is simple in comparison to Jenkins which uses Groovy to define it's pipelines.
+
+* See https://github.com/mikeyfennelly1/CharlamagneDB/actions[GitHub Actions build history]
 
 == Where the idea for CharlemagneDB came from
 
