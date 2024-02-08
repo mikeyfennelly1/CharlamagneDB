@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase/firebaseAuth'
 import { constructUrl } from '../utils/urlutils';
-import { useContext } from 'react';
-import TourContext from '../guided-tour/tourContext';
+// import { useContext } from 'react';
+// import TourContext from '../guided-tour/tourContext';
 
-const TourFalseClasses = 'px-[30px] py-[10px] rounded-[5px] border border-white text-white bg-black tourFalse'
-const TourTrueClasses = 'px-[30px] py-[10px] rounded-[5px] border border-white text-black bg-white tourTrue'
+// const TourFalseClasses = 'px-[30px] py-[10px] rounded-[5px] border border-white text-white bg-black tourFalse'
+// const TourTrueClasses = 'px-[30px] py-[10px] rounded-[5px] border border-white text-black bg-white tourTrue'
 
 function Navbar() {
     const [user] = useAuthState(auth)
