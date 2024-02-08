@@ -10,8 +10,9 @@ const TourTrueClasses = 'px-[30px] py-[10px] rounded-[5px] border border-white t
 
 function Navbar() {
     const [user] = useAuthState(auth)
-    const [tourContext, setTourContext] = useContext(TourContext)
-
+    // const [tourContext, setTourContext] = useContext(TourContext)
+    const isOnHomePage = (window.location.pathName === constructUrl('/'))
+    console.log("isOnHomePage" + isOnHomePage)
     return (
         <>
         <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">
@@ -22,11 +23,11 @@ function Navbar() {
                         <img className="max-h-[30px]" src={constructUrl("./images/Vector 88.png")} alt="" />
                         <Link to={constructUrl("/")} className="font-[TT-Travels-Next-Med] cursor-pointer text-mainPink text-[1.1rem] pl-[10px]">CharlemagneDB</Link>
                     </div>
-                    {!(window.location.pathname === constructUrl('/')) && (
+                    {/* {isOnHomePage && (
                     <div className="ml-[100px] flex items-center w-[200px] justify-start text-white ">
                         <button onClick={() => tourContext === true ? setTourContext(false) : setTourContext(true)} className={tourContext === true ? TourTrueClasses : TourFalseClasses}>Tour Mode</button>
                     </div>
-                    )}
+                    )} */}
 
                 </div>
                 {/* COLUMN TWO */}
