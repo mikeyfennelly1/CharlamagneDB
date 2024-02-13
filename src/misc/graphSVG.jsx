@@ -15,7 +15,6 @@ const GraphSVG = () => {
                 start: 'top 100%',
                 end: '700 100%',
                 scrub: true,
-                // markers: false,
             }
         })
             mainlineTl.to('.draw-mainLine', {
@@ -36,7 +35,6 @@ const GraphSVG = () => {
                 start: '300 100%',
                 end: '1000 100%',
                 scrub: true,
-                // markers: false,
             }
         })
             keyTl.to('.draw-key', {
@@ -56,7 +54,6 @@ const GraphSVG = () => {
                 start: '700 100%',
                 end: '1000 100%',
                 scrub: true,
-                // markers: false,
             }
         })
             b1Tl.from('.background1', {
@@ -79,7 +76,6 @@ const GraphSVG = () => {
                 start: '400 100%',
                 end: '7000 100%',
                 scrub: true,
-                // markers: false,
             }
         })
             b2Tl.from('.background2', {
@@ -102,7 +98,6 @@ const GraphSVG = () => {
                     start: 'top 100%',
                     end: 'bottom 100%',
                     scrub: false,
-                    // markers: false,
                 }
             })
             changeToVisible.to('.changeToVisible', {

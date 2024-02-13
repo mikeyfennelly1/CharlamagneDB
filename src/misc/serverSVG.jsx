@@ -1,6 +1,5 @@
 import gsap from 'gsap'
 import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
-// import { useEffect } from 'react'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
@@ -19,11 +18,9 @@ const ServerSVG = () => {
                 start: '-=300 100%',
                 end: '700 100%',
                 scrub: true,
-                // markers: true
             }
         })
             cableLines.from('.cableLines', {
-                // autoAlpha: 0,
                 drawSVG: "0%",
                 ease: "power4.inOut"
             })
@@ -35,7 +32,6 @@ const ServerSVG = () => {
                 start: '500 100%',
                 end: '900 100%',
                 scrub: true,
-                // markers: false
             }
         })
             opacityInTl.from('.opacityIn', {
@@ -49,7 +45,6 @@ const ServerSVG = () => {
                 start: '0 100%',
                 end: '0 100%',
                 scrub: false,
-                // markers: true,
             }
         })
             changeToVisible.to('.changeToVisible', {

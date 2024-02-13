@@ -12,7 +12,6 @@ export const CreateUserEmailPassword = (emailpassword) => {
         photoURL: "https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"
       }).then(() => {
         window.location.replace(constructUrl("/dashboard"))
-        // dashboard
     }).catch((err) => {
         console.log(err)
     })
@@ -26,7 +25,6 @@ export const LoginUserEmailPassword = (emailpassword) => {
     .then(() => {
         console.log("changing wl")
         window.location.replace(constructUrl("/dashboard"))
-        // dashboard
     })
     .catch((err) => {
         console.log(err)

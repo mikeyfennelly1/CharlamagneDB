@@ -7,9 +7,6 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 
 const LocoServer = () => {
-    
-    // console.log("LocoServer MOUNTED")
-
     useEffect( () => {
 
         gsap.registerPlugin(ScrollTrigger);

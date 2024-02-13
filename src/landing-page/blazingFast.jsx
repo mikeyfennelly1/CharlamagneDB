@@ -11,10 +11,8 @@ const FeatureAnimation = () => {
               scrollTrigger: {
                 trigger: "#outerDiv",
                 start: "-=200 25%",
-                // markers: true,
                 end: "200 25%",
                 scrub: true,
-                // markers: true
               },
             });
             tl2.from("#title", {
@@ -37,7 +35,6 @@ const FeatureAnimation = () => {
               tl.to("#typingText", {
                 text: "Charlemagne is designed with speed in mind, in query simplicity, in an integrated AI tool for schema creation and in response times, so that you can ship a high quality app fast.",
                 ease: "none",
-                // stagger: 1,
                 duration: 2,
               });
               
@@ -60,7 +57,6 @@ const FeatureAnimation = () => {
                 <div className=' text-white text-center mt-[30px] sm:mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit
                 text-[2rem] relative
                 2xl:text-[3rem]'>
-                    {/* <p className='text-left opacity-20'>Charlemagne is designed with speed in mind, in query simplicity, in an integrated AI tool for schema creation and in response times, so that you can ship a high quality app fast.</p> */}
                     <p id='typingText' className='text-left absolute text-[1.4rem] md:text-[1.5rem] 2xl:text-[3rem]'></p>
                 </div>
             </div>
