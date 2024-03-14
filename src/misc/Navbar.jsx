@@ -5,7 +5,6 @@ import { constructUrl } from '../utils/urlutils';
 
 function Navbar() {
     const [user] = useAuthState(auth)
-    const isOnHomePage = (window.location.pathName === constructUrl('/'))
     return (
         <>
         <section style={{zIndex: 10}} className=" md:block fixed top-0 text-white">

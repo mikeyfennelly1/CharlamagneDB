@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
 import { Link } from 'react-router-dom';
 import { useGSAP } from "@gsap/react";
+import { constructUrl } from '../utils/urlutils';
 
 gsap.registerPlugin(TextPlugin)
 
@@ -63,7 +64,7 @@ function Hero() {
                         </div>
                     </div>                    
 
-                    <Link  to='/pricing' className='mx-auto'>
+                    <Link  to={constructUrl('/pricing')} className='mx-auto'>
                         <button data-cy="try" className="font-[TT-Autonomous-Mono-Reg] text-white text-center border-2 border-mainPink rounded-full py-1 px-3
                         text-lg py-2 px-5 mt-[150px] sm:mt-7 mx-auto
                         hover:bg-white hover:text-black hover:font-black hover:border-white">
