@@ -14,7 +14,7 @@ const Quickstart = () => {
         <>
             <div className={(dashboardContext === "Quickstart" ? QuickstartVisibleClasses : QuickstartInvisibleClasses)}>
                 <h2>Security Quickstart</h2>
-                <p>To access data stored in Atlas, you’ll need to create users and set up network security controls. Learn more about security setup</p>
+                <p>To access data stored in Loco, you’ll need to create users and set up network security controls. Learn more about security setup</p>
                 <h3>How would you like to authenticate your connection?</h3>
                 <p>Your first user will have permission to read and write any data in your project.</p>
 
@@ -62,7 +62,7 @@ const UsernameAndPasswordContent = () => {
     return (
         <>
             <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Username and Password" ? null : "hidden") }>
-                <p>Create a database user using a username and password. Users will be given the read and write to any database privilege by default. You can update these permissions and/or create additional users later. Ensure these credentials are different to your MongoDB Cloud username and password. You can manage existing users via the Database Access Page.</p>
+                <p>Create a database user using a username and password. Users will be given the read and write to any database privilege by default. You can update these permissions and/or create additional users later. Ensure these credentials are different to your CDB Cloud username and password. You can manage existing users via the Database Access Page.</p>
                 <p className="text-[1rem] pb-0 mb-0 opacity-60">Username</p>
                 <input type="text" placeholder="Enter Username" className="bg-[#111] p-2 rounded-[10px] border min-w-[400px] mb-[20px]"/>
 
@@ -79,7 +79,7 @@ const CertificateContent = () => {
     return (
         <>
             <div className={`text-white bg-[#222] p-10 mx-[20px] mt-[50px] rounded-[10px] ` + (cardContext === "Certificate" ? null : "hidden") }>
-                <p>MongoDB uses X.509 certificates for passwordless authentication. Users will be given the read and write to any database privilege by default.</p>
+                <p>Charlemagne uses X.509 certificates for passwordless authentication. Users will be given the read and write to any database privilege by default.</p>
                 <p className="text-[1rem] pb-0 mb-0 opacity-60">Common Name</p>
                 <input type="text" placeholder="e.g. new-user_31" className="bg-[#111] p-2 rounded-[10px] border min-w-[400px] mb-[20px]"/>
             </div>
@@ -145,7 +145,7 @@ const CloudEnvironmentCard = () => {
         <>
             <div onClick={() => setCardContext("Cloud Environment")}
             className={`rounded-[10px] hover:cursor-pointer mt-[50px] px-auto border inline-block max-w-[400px] ml-[20px] p-10 ` + (cardContext === "Cloud Environment" ? "border-mainPink text-mainPink" : null) }>Cloud Environment
-            <p className="text-[0.8rem] opacity-80 text-white">Use this to configure network access between Atlas and your cloud or on-premise environment. Specifically, set up IP Access Lists, Network Peering, and Private Endpoints.</p>
+            <p className="text-[0.8rem] opacity-80 text-white">Use this to configure network access between Loco and your cloud or on-premise environment. Specifically, set up IP Access Lists, Network Peering, and Private Endpoints.</p>
             </div>
         </>
     );
@@ -177,12 +177,12 @@ const CloudEnvironmentContent = () => {
             <div className="mx-[20px] flex justify-start mt-[50px]">
                 <div className="inline-block p-10 bg-[#222] max-w-[300px] rounded-[10px] mr-[20px]">
                     <p className="opacity-60">VC Peering</p>
-                    <p className="max-w-[250px] text-[0.9rem]">Peer your VPC with your Atlas cluster's VPC to ensure that traffic does not traverse the public internet. Requires an M10 cluster or higher.</p>
+                    <p className="max-w-[250px] text-[0.9rem]">Peer your VPC with your Loco cluster's VPC to ensure that traffic does not traverse the public internet. Requires an M10 cluster or higher.</p>
                     <button className="inline-block1 hover:cursor-[not-allowed]">Configure</button>
                 </div>
                 <div className="inline-block p-10 bg-[#222] max-w-[300px] rounded-[10px] mr-[20px]">
                     <p className="opacity-60">Private Endpoint</p>
-                    <p className="max-w-[250px] text-[0.9rem]">Use your Private Endpoint to create a one-way connection from your VPC to your MongoDB Atlas VPC, ensuring Atlas cannot initiate connections back to your network. Requires an M10 cluster or higher.</p>
+                    <p className="max-w-[250px] text-[0.9rem]">Use your Private Endpoint to create a one-way connection from your VPC to your CDB Loco VPC, ensuring Loco cannot initiate connections back to your network. Requires an M10 cluster or higher.</p>
                     <button className="inline-block1 hover:cursor-[not-allowed]">Configure</button>
                 </div>
             </div>

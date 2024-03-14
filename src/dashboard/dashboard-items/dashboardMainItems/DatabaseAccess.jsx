@@ -17,7 +17,7 @@ const DatabaseAccess = () => {
                 <div className=" grid grid-cols-5 text-[0.8rem] flex space-around bg-[#111] border border-mainPink min-w-[100%]">
                     <div className="py-2 mx-auto">User Name</div>
                     <div className="py-2 mx-auto">Authentication Method</div>
-                    <div className="py-2 mx-auto">MongoDB Roles</div>
+                    <div className="py-2 mx-auto">CharlemagneDB Roles</div>
                     <div className="py-2 mx-auto">Resources</div>
                     <div className="py-2 mx-auto">Actions</div>
                 </div>

@@ -12,13 +12,13 @@ const Advanced = () => {
             <h2 className="">Advanced</h2>
                 <div className="">
                     <h3>LDAP Authentication</h3>
-                    <p>LDAP authentication allows database users to log into dedicated (M10 or higher) Atlas clusters using credentials that are verified by a LDAP server you control. Database users can be configured in the project-level Access Manager.</p>
+                    <p>LDAP authentication allows database users to log into dedicated (M10 or higher) Loco clusters using credentials that are verified by a LDAP server you control. Database users can be configured in the project-level Access Manager.</p>
                     <p>Turning on this feature will increase your daily cluster pricing. Read more.</p>
                     
                 </div>
                 <div className="">
                     <h3>LDAP Authorization (LDAP Authentication required)</h3>
-                    <p>LDAP authorization allows database users to be managed at LDAP group level. LDAP groups can be managed in the project-level Access Manager and be assigned a specific set of privileges. All database users in an LDAP group can then authenticate to dedicated (M10 or higher) Atlas clusters with those privileges.</p>
+                    <p>LDAP authorization allows database users to be managed at LDAP group level. LDAP groups can be managed in the project-level Access Manager and be assigned a specific set of privileges. All database users in an LDAP group can then authenticate to dedicated (M10 or higher) Loco clusters with those privileges.</p>
                     <p>Turning on this feature will increase your daily cluster pricing. Read more.</p>
                     
                 </div>
@@ -36,13 +36,13 @@ const Advanced = () => {
                 </div>
                 <div className="">
                     <h3>Push-Based Log Export</h3>
-                    <p>Allows you to configure Atlas to automatically export database logs to an AWS S3 bucket.</p>
+                    <p>Allows you to configure Loco to automatically export database logs to an AWS S3 bucket.</p>
                     <p>Exporting logs may incur data transfer costs. Read more.</p>
                     
                 </div>
                 <div className="">
                     <h3>Self-managed X.509 Authentication</h3>
-                    <p>With self-managed X.509 authentication, you can configure Atlas to trust your public key infrastructure and issue certificates to users yourself. Read more</p>
+                    <p>With self-managed X.509 authentication, you can configure Loco to trust your public key infrastructure and issue certificates to users yourself. Read more</p>
                     
                 </div>
             </div>
