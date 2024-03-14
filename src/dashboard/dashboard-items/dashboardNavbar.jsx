@@ -17,10 +17,10 @@ const DashboardNavbar = () => {
                     </div>
 
                 {!user && (
-                <div className="ml-auto items-center w-fit justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
-                                lg:block">
-                    <Link to={constructUrl("/login")} className=" px-7 rounded-full hover:text-mainPink">Log In</Link>
-                </div>
+                        <div className="ml-auto items-center w-fit justify-end hidden self-center font-[TT-Autonomous-Mono-Reg]
+                                        lg:block">
+                            <Link to={constructUrl("/login")} className=" px-7 rounded-full hover:text-mainPink">Log In</Link>
+                        </div>
                 )}
 
                 {user && (
