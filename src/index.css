@@ -6,81 +6,98 @@
     /* TT Travels Next */
     @font-face {
         font-family: "TT-Travels-Next-Med";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Medium.ttf);
     }
     @font-face {
         font-family: "TT-Travels-Next-Reg";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Regular.ttf);
     }
     @font-face {
         font-family: "TT-Travels-Next-Thin";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Thin.ttf);
     }
     @font-face {
         font-family: "TT-Travels-Next-Bold";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Bold.ttf);
     }
     @font-face {
         font-family: "TT-Travels-Next-Light";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Light.ttf);
     }
     @font-face {
         font-family: "TT-Travels-Next-Outline";
+        font-display: block;
         src: url(../public/fonts/TT\ Travels\ Next\ Trial\ Black\ Outline\ Italic.ttf);
     }
 
     /* TT Autonomous Mono  */
     @font-face {
         font-family: "TT-Autonomous-Mono-Reg";
+        font-display: block;
         src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
     }
     @font-face {
         font-family: "TT-Autonomous-Mono-Variable";
+        font-display: block;
         src: url(../public/fonts/TT\ Autonomous\ Mono\ Trial\ Variable\ Roman.ttf);
     }
     @font-face {
         font-family: "TT-Autonomous-Mono-Outline";
+        font-display: block;
         src: url(../public/fonts/TT\ Autonomous\ ExtraBold\ Outline\ Trial.ttf);
     }
     /* Source Code Pro */
     @font-face {
         font-family: "SourceCodePro-Medium";
+        font-display: block;
         src: url(../public/fonts/SourceCodePro-Medium.ttf);
     }
     @font-face {
         font-family: "SourceCodePro-Variable";
+        font-display: block;
         src: url(../public/fonts/SourceCodePro-VariableFont_wght.ttf);
     }
 
     /* Inter  */
     @font-face {
         font-family: "Inter-Reg";
+        font-display: block;
         src: url(../public/fonts/Inter-Regular.ttf);
     }
     @font-face {
         font-family: "Inter-Med";
+        font-display: block;
         src: url(../public/fonts/Inter-Medium.ttf);
     }
     @font-face {
         font-family: "Inter-Bold";
+        font-display: block;
         src: url(../public/fonts/Inter-Bold.ttf);
     }
 
     /* Svelte */
     @font-face {
         font-family: "Svelte";
+        font-display: block;
         src: url(../public/fonts/SvelteTrial-Regular.ttf);
     }
 
     /* PlayfairDisplay */
     @font-face {
         font-family: "Playfair";
+        font-display: block;
         src: url(../public/fonts/PlayfairDisplay-VariableFont_wght.ttf);
     }
 
     /* Barlow */
     @font-face {
         font-family: "Barlow";
+        font-display: block;
         src: url(../public/fonts/BarlowCondensed-ExtraLight.ttf);
     }
 }
