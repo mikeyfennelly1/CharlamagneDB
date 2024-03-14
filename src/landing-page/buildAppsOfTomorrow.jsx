@@ -1,4 +1,5 @@
 import { constructUrl } from "../utils/urlutils";
+import { Link } from 'react-router-dom';
 
 const Seven = () => {
 
@@ -12,9 +13,9 @@ const Seven = () => {
                         </h1>
                         <h1 className="text-[1.3rem] sm:text-[1.5rem] sm:pl-[25px] font-[TT-Travels-Next-Bold] text-mainPink pr-[20px]">( Do it fast with Charlemagne )</h1>
                         <h3 className="text-[#6b6b6b] sm:pl-[25px] font-[TT-Autonomous-Mono-Variable] font-light text-[1rem] sm:text-[1.2rem] max-w-[550px]">Build the applications of tomorrow with the tools of tomorrow.</h3>
-                        <a href={constructUrl('/pricing')}>
+                        <Link to={constructUrl('/pricing')}>
                             <button className="bg-mainPink rounded-[10px] px-[40px] py-[20px] text-black sm:ml-[25px] hover:bg-white mt-[20px] sm:mt-[40px]">Try for free</button>
-                        </a>
+                        </Link>
                     </div>
 
                     <svg viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
