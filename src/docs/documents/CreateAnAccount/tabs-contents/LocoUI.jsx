@@ -91,7 +91,7 @@ const LocoCLITabContent = () => {
             
                 <h3>Next Steps</h3>
                 <p>With your Loco account, open the organization and its project, and then proceed to Deploy a Free Cluster.</p>
-                <Tip tip={"To learn about shortcuts you can use to navigate your new Atlas account, see Quickly Navigate with Atlas Goto."}/>
+                <Tip tip={"To learn about shortcuts you can use to navigate your new Loco account, see Quickly Navigate with Loco Goto."}/>
             </div>
         </>
     );
