@@ -9,6 +9,8 @@
 
 = CharlemagneDB
 
+video::B1VlPPYB6y8[youtube]
+
 == What is CharlemagneDB?
 
 CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant processes in database configuration for most simple applications.
