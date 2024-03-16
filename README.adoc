@@ -6,12 +6,12 @@
 :tailwindcss: https://tailwindcss.com/
 :cockroachdb: https://www.cockroachlabs.com/
 :scaleai: https://scale.com/
+:youtubevideo: https://youtu.be/B1VlPPYB6y8
 
 = CharlemagneDB
 
-video::B1VlPPYB6y8[youtube]
-
 == What is CharlemagneDB?
+{youtubevideo}[How I made CharlemagneDB in 120 seconds]
 
 CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant processes in database configuration for most simple applications.
 
