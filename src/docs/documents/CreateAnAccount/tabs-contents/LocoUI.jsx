@@ -2,7 +2,7 @@ import '../../documentationStyles.css'
 import Note from '../../../doc-components/note'
 import Tip from '../../../doc-components/tip'
 import TabsSection from '../../../doc-components/tabs/TabsSection'
-
+import CodeSnippet from '../../../doc-components/codeSnippet'
 
 const EmailAddressContent = () => {
     return (
@@ -73,7 +73,25 @@ const LocoCLITabContent = () => {
     return (
         <>
             <div className='text-white pl-[30px] py-[50px]'>
-                <p>random1</p>
+                <p>To authenticate with Loco using the Loco CLI, run the following command:</p>
+                <CodeSnippet code={"loco auth login [options]"}/>
+                <p>To learn more about the command syntax and parameters, see the Loco CLI documentation for loco auth login.</p>
+                <Tip tip={
+                    <ul>
+                        <li>Install the Loco CLI</li>
+                        <li>Connect to the Loco CLI</li>
+                    </ul>
+                }/>
+                <p>For step-by-step instructions on logging in using the Loco CLI, see Connect from the Loco CLI.</p>
+                <h3>Create A Loco Organization and Project</h3>
+                <p>Loco creates an organization and project for you. You can also create them on your own.</p>
+                <p>At the Organization level, you can implement security controls and create users which work across one or more Projects. To learn more, see The Organization Level.</p>
+                <p>You can create project-level Loco users and roles with appropriate access to the different production and development application environments. To learn more, see The Project Level.</p>
+                <p>Create an Loco organization and then create a project in this organization. You will deploy your first cluster in this project.</p>
+            
+                <h3>Next Steps</h3>
+                <p>With your Loco account, open the organization and its project, and then proceed to Deploy a Free Cluster.</p>
+                <Tip tip={"To learn about shortcuts you can use to navigate your new Atlas account, see Quickly Navigate with Atlas Goto."}/>
             </div>
         </>
     );
