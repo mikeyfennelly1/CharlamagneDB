@@ -11,7 +11,7 @@
 = CharlemagneDB
 
 == What is CharlemagneDB?
-{youtubevideo}[How I made CharlemagneDB in 120 seconds]
+image::../public/images/CDB_youtube_thumbnail.png[thumbnail, link=https://youtu.be/B1VlPPYB6y8]
 
 CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant processes in database configuration for most simple applications.
 
