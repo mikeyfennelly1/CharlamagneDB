@@ -42,14 +42,14 @@ const Terminal = () => {
 
     return (
         <>
-        <motion.div ref={terminalContainer} style={{ opacity }} className=' lg:mx-auto lg:max-w-[1600px] max-w-[90vw]'>
+        <motion.div ref={terminalContainer} style={{ opacity }} className=' lg:mx-auto lg:max-w-[1600px] max-w-[90vw] flex justify-center'>
             <div className='border-2 border-mainPink max-h-fit max-w-[1600px] bg-gradient-to-b from-[#101] bg-opacity-20 
-                            grid xl:grid-cols-2 lg:p-[150px] p-[50px] 
-                            w-screen lg:min-w-[1600px]'>
+                            grid xl:grid-cols-2 lg:p-[150px] p-[50px]
+                            max-w-screen lg:max-w-[80vw] 2xl:min-w-[1600px]'>
                  <div className='lg:pr-[75px] max-w-[600px]'>
                     <p className='text-xl font-[TT-Travels-Next-Med] border-2 border-mainPink rounded-full max-w-fit text-white px-4 mt-[50px] py-[0.5rem]'>AI Driven</p>
                     <h2 className='text-mainPink text-[1.9rem] lg:text-5xl sm:pb-[50px] sm:pt-[30px] font-[TT-Autonomous-Mono-Variable] block max-w-[500px]'>SCHEMA CREATION</h2>
-                    <p className='text-white text-[1rem] max-w-[300px] lg:text-[1.5rem] pt-[50px] font-[TT-Autonomous-Mono-Variable] inline max-w-[500px]'>The first databse to have easy query prompting through the command line. We have integrated generative AI to build schemas for you from the ground up, so you can spend less time doing and more time delivering.</p>
+                    <p className='text-white text-[1rem] max-w-[300px] xl:text-[1.2rem] pt-[50px] font-[TT-Autonomous-Mono-Variable] inline max-w-[500px]'>The first databse to have easy query prompting through the command line. We have integrated generative AI to build schemas for you from the ground up, so you can spend less time doing and more time delivering.</p>
                 </div>
 
                 <div className='relative py-[80px] lg:block text-[0.8rem] max-w-screen'>

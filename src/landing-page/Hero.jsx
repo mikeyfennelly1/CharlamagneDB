@@ -44,22 +44,22 @@ function Hero() {
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
             // transition={{ delay: 1, duration: 3 }}
-            className="mx-auto grid grid-rows-3 py-auto max-h-screen pt-[25vh]">
+            className="mx-auto grid grid-rows-3 py-auto max-h-screen pt-[25vh] xl:pt-[15vh]">
 
-                <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw] min-h-[00px]
+                <div className='grid grid-rows-3 text-white font-[TT-Travels-Next-Light] font-bold max-w-[100vw]
                 text-[2.3rem] pb-[20px]
                 sm:text-[3rem]
                 md:text-[4.5rem]
-                lg:mx-auto 
-                xl:text-[7.5rem] xl:bg-red'>
-                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>THE <span className=''>EMPEROR</span> </div>
-                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto'>OF ALL</div>   
-                        <div className='sm:pb-[20px] lg:pb-[40px]  xl:pb-[50px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></div>
+                lg:mx-auto
+                xl:text-[8rem] xl:pb-[0px] xl:min-h-[380px]'>
+                        <h1 className='sm:pb-[20px] lg:pb-[40px] min-h-[120px] xl:pb-[0px] block mx-auto'>THE EMPEROR</h1>
+                        <h1 className='sm:pb-[20px] lg:pb-[40px] min-h-[120px] xl:pb-[0px] block mx-auto'>OF ALL</h1>  
+                        <h1 className='sm:pb-[20px] lg:pb-[40px] min-h-[120px] xl:pb-[0px] block mx-auto text-mainPink'>DATABASES<span className='text-white'>.</span></h1>
                 </div>
                 <div className='flex justify-center flex-col'>
                     <div className='border-[#F00] mx-auto'>
-                        <div className='typewriter text-[0.8rem] mt-[100px] px-[20px] font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] opacity-80 text-center
-                        sm:text-[1.3rem] min-h-[120px]'>
+                        <div className='typewriter text-[0.8rem] mt-[100px] xl:mt-[100px] px-[20px] font-[TT-Autonomous-Mono-Reg] text-white mx-auto max-w-fit block max-w-[1000px] opacity-80 text-center
+                        sm:text-[1.3rem] min-h-[120px] xl:min-h-[250px] flex items-end'>
                             {/* Find out for yourself */}
                         </div>
                     </div>                    

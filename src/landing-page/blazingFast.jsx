@@ -43,7 +43,7 @@ const FeatureAnimation = () => {
     return (
         <>
         <div id='outerDiv' className="h-[350px] sm:h-[700px]
-        max-w-screen mb-[150px] flex justify-center">
+        max-w-screen mb-[150px] flex justify-center xl:h-[400px] 2xl:h-[700px]">
         
             <div id='innerDiv' className="
             max-h-[600px] px-[50px] sm:px-[100px] min-w-[100%] 2xl:max-w-[1600px] 2xl:min-w-[1600px] 
@@ -57,7 +57,7 @@ const FeatureAnimation = () => {
                 <div className=' text-white text-center mt-[30px] sm:mt-[60px] font-[TT-Autonomous-Mono-Variable] font-light flex flex-wrap height-fit
                 text-[2rem] relative
                 2xl:text-[3rem]'>
-                    <p id='typingText' className='text-left absolute text-[1.4rem] md:text-[1.5rem] 2xl:text-[3rem]'></p>
+                    <p id='typingText' className='text-left absolute text-[1.4rem] md:text-[2.5rem] 2xl:text-[3rem]'></p>
                 </div>
             </div>
         </div>
