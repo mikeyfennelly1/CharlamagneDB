@@ -17,7 +17,7 @@ const Backup = () => {
                     <div className="p-4 mx-auto">Last Snapshot (UTC)</div>
                     <div className="p-4 mx-auto">Next Snapshot</div>
                     <div className="p-4 mx-auto">Oldest Snapshot</div>
-                    <div className="p-4 mx-auto">Snapshot Region</div>
+                    <div className="p-4 mx-auto">Snapshot Regio</div>
                 </div>
                 <div className="flex space-around p-20 min-w-[100%]">
                     <div className="mx-auto opacity-80">(No data)</div>
